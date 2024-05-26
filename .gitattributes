@@ -9,3 +9,18 @@
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
+
+*.php text
+*.css text
+*.scss text
+*.js text
+*.html text
+*.json text
+*.md text
+*.xml text
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
