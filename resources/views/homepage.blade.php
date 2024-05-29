@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key Phone</title>
+    <title>KeyPhone</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
     <nav class="bg-gray-800 py-4">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-white text-2xl font-bold">Key Phone</a>
+            <a href="#" class="text-white text-2xl font-bold">KeyPhone</a>
             <ul class="flex space-x-6 text-white">
                 <li><a href="#" class="hover:text-gray-300">Home</a></li>
                 <li><a href="#" class="hover:text-gray-300">Store</a></li>
@@ -49,10 +49,10 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                 <?php for($i = 0; $i < 4; $i++): ?>
                 <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://via.placeholder.com/300" alt="Phone" class="w-full">
+                    <img src="https://via.placeholder.com/500" alt="Phone" class="w-full">
                     <div class="p-4">
                         <h3 class="text-xl font-bold mb-2">Phone Name</h3>
-                        <p class="text-gray-700">$999</p>
+                        <p class="text-gray-700">Php 999</p>
                         <button class="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Add to Cart</button>
                     </div>
                 </div>
