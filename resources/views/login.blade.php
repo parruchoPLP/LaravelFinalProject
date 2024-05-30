@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     @vite('resources/css/app.css')
     <title>Log in</title>
 </head>
@@ -19,9 +20,12 @@
                     <label for="email" class="block text-sky-950 font-bold mb-2">Email Address</label>
                     <input type="email" id="email" name="email" class="border-b form-input w-full focus:outline-none" placeholder="Enter your email address" required autofocus>
                 </div>
-                <div class="mb-4">
+                <div class="mb-4 relative">
                     <label for="password" class="block text-sky-950 font-bold mb-2">Password</label>
-                    <input type="password" id="password" name="password" class="border-b form-input w-full focus:outline-none" placeholder="Enter your password" required>
+                    <input type="password" id="password" name="password" class="border-b form-input w-full focus:outline-none pr-10" placeholder="Enter your password" required>
+                    <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
+                        <i class="fas fa-eye text-custom-darkBlue hover:text-custom-lightGray"></i>
+                    </button>
                 </div>
                 <div class="mb-4">
                     <input type="checkbox" id="remember" class="mr-1">
@@ -47,5 +51,17 @@
             </form>
         </div>
     </section>
+
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function (e) {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.querySelector('svg').classList.toggle('text-custom-darkBlue');
+            this.querySelector('svg').classList.toggle('text-red-500');
+        });
+    </script>
 </body>
 </html>
