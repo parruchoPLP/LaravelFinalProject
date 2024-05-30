@@ -154,7 +154,7 @@
         </div>
     </section>
 
-    <footer class="bg-gray-800 text-white pt-6">
+    <footer class="bg-custom-darkBlue text-white pt-6">
     <div class="container mx-auto md:flex md:justify-between">
         <div class="md:w-1/2 md:mb-0 mb-4 -ml-10">
             <h2 class="text-xl font-bold">Contact Us</h2>
@@ -193,7 +193,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-gray-700 py-3 mt-6 mb-0">
+    <div class="bg-custom-blueGray py-3 mt-6 mb-0">
         <div class="container mx-auto text-center">
             <p>&copy; 2024 KeyPhone. All rights reserved.</p>
         </div>
