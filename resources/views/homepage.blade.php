@@ -6,7 +6,7 @@
     <title>KeyPhone</title>
     @vite('resources/css/app.css')
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 overflow-x-hidden">
     <nav class="bg-custom-darkBlue py-4">
         <div class="w-full container mx-10 flex justify-between items-center">
             <ul class="flex space-x-6 text-white">
@@ -117,15 +117,15 @@
     </section>
 
     <footer class="bg-gray-800 text-white pt-6">
-    <div class="container px-4 md:flex md:justify-between">
-        <div class="md:w-1/2 md:mb-0 mb-4 mx-10">
+    <div class="container mx-auto md:flex md:justify-between">
+        <div class="md:w-1/2 md:mb-0 mb-4 -ml-10">
             <h2 class="text-xl font-bold">Contact Us</h2>
             <p class="mt-2">Pasig City, Metro Manila, Philippines</p>
             <p>Phone: +639374681175</p>
             <p>Email: keyphone@gmail.com</p>
         </div>
-        <div class="md:w-1/2 flex md:justify-end">
-            <div class="ml-6">
+        <div class="md:w-1/2 flex md:justify-end md:pr-0">
+            <div class="ml-auto -mr-10">
                 <h2 class="text-xl font-bold">Follow Us</h2>
                 <div class="flex mt-2">
                     <a href="#" class="mr-4">Facebook</a>
