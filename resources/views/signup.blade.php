@@ -52,6 +52,7 @@
                     <button type="submit" name="submit" class="bg-custom-darkBlue text-white font-bold px-6 py-2 rounded-xl mt-4 hover:bg-custom-lightGray hover:text-custom-darkBlue">Register</button>
                 </div>
             </form>
+            <h3 class="text-l mt-6">Already have an account? <a href="/login" class="text-custom-darkBlue font-bold hover:underline">Log in here</a>. </h3>
         </div>
     </section>
 

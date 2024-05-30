@@ -49,6 +49,7 @@
                     </div>
                 @endif
             </form>
+            <h3 class="text-l mt-6">Doesn't have an account yet? <a href="/signup" class="text-custom-darkBlue font-bold hover:underline">Sign up here</a>. </h3>
         </div>
     </section>
 
