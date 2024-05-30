@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
-    <title>Sign up</title>
+    <title>Log in</title>
 </head>
 <body class="bg-custom-lightGray">
     <section class="bg-white p-10 rounded-2xl shadow-md mx-auto mt-32 mb-32 max-w-4xl text-custom-darkBlue flex">
