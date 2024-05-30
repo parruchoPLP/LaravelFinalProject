@@ -10,26 +10,26 @@
     <nav class="bg-custom-darkBlue py-4 fixed top-0 w-full z-50">
         <div class="w-full container mx-10 flex justify-between items-center">
             <ul class="flex space-x-6 text-white">
-                <li><a href="#" class="text-white text-2xl font-bold">logo</a></li>
+                <li class="text-white text-2xl font-bold">logo</li>
                 <li><a href="#" class="text-white text-2xl font-bold">KeyPhone</a></li>
             </ul>
             <ul class="flex space-x-6 text-white w-16">
                 <li><a href="homepage" class="hover:border-b hover:border-custom-gold">Home</a></li>
                 <li><a href="storepage" class="hover:border-b hover:border-custom-gold">Store</a></li>
-                <li><a href="#" class="hover:border-b hover:border-custom-gold">Support</a></li>
-                <li><a href="#" class="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="ml-4">
+                <li><a href="support" class="hover:border-b hover:border-custom-gold">Support</a></li>
+                <li><a href="#" class="flex items-center" id="svgLink">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="ml-4" id="searchIcon">
                         <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     </a>
                 </li>
-                <li><a href="#" class="flex items-center">
+                <li><a href="checkout" class="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     </a>
                 </li>
-                <li><a href="#" class="flex items-center">
+                <li><a href="login" class="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 20 20" version="1.1" class="text-white fill-current">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Dribbble-Light-Preview" transform="translate(-380.000000, -2159.000000)" fill="#ffffff">
@@ -43,14 +43,23 @@
                 </li>
             </ul>
         </div>
+        <div id="searchContainer" class="absolute w-full left-0 bg-custom-darkBlue py-4 px-8 hidden">
+            <div class="flex space-x-2">
+                <input type="text" id="searchBar" placeholder="Search KeyPhone" class="w-full p-2 rounded">
+                <a href="#"><button id="searchButton" class="bg-custom-blueGray text-white px-4 py-2 rounded hover:bg-blue-500">Search</button></a>
+            </div>
+        </div>
     </nav>
+    <div id="searchContainer" style="display: none;">
+        <input type="text" id="searchBar" placeholder="Search...">
+    </div>
     <section class="relative bg-cover bg-center" style="background-image: url('images/phones-bg.jpeg');">
         <div class="bg-custom-darkBlue bg-opacity-75 text-white py-52 flex flex-wrap items-center justify-center p-12 relative z-20">
             <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">
                 <div class="text-center m-8">
                     <h1 class="text-5xl font-bold mb-7">Welcome to KeyPhone</h1>
                     <p class="text-xl">Welcome to KeyPhone, your premier destination for the latest and greatest in mobile technology. Discover our extensive selection of cutting-edge smartphones, designed to keep you connected and ahead of the curve. At KeyPhone, we combine quality with affordability, ensuring you get the best value for your money. Join our community of tech enthusiasts today and experience the future of mobile communication. Shop now and unlock the power of innovation with KeyPhone!</p>
-                    <a href="#" class="mt-6 inline-block bg-blue-700 hover:bg-custom-blueGray text-white font-bold py-3 px-8 rounded">Shop Now</a>
+                    <a href="storepage" class="mt-6 inline-block bg-blue-700 hover:bg-custom-blueGray text-white font-bold py-3 px-8 rounded">Shop Now</a>
                 </div>
             </div>
         </div>
@@ -92,7 +101,7 @@
                     </div>
                 </div>
                 <p class="text-xl">Looking to elevate your mobile experience? Look no further! At KeyPhone, we've got what you're looking for. Dive into our range of sleek and stylish smartphones, each packed with features tailored to suit every lifestyle. Whether you crave seamless connectivity or crave stunning camera capabilities, KeyPhone delivers it all. Don't settle for less when you can have the best. Shop now and make every call, text, and selfie count with KeyPhone - Your Future in Your Pocket.</p>
-                <a href="#" class="mt-6 inline-block bg-blue-700 hover:bg-custom-blueGray text-white font-bold py-3 px-8 rounded">Shop Now</a>
+                <a href="storepage" class="mt-6 inline-block bg-blue-700 hover:bg-custom-blueGray text-white font-bold py-3 px-8 rounded">Shop Now</a>
             </div>
         </div>
     </div>
@@ -190,5 +199,16 @@
         </div>
     </div>
     </footer>
+<script>
+document.getElementById('svgLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    var searchContainer = document.getElementById('searchContainer');
+    if (searchContainer.classList.contains('hidden')) {
+        searchContainer.classList.remove('hidden');
+    } else {
+        searchContainer.classList.add('hidden');
+      }
+});
+</script>
 </body>
 </html>
