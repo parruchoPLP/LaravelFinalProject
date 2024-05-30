@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
-    <nav class="bg-gray-800 py-4">
+    <nav class="bg-custom-gold py-4">
         <div class="w-full container mx-8 flex justify-between items-center">
             <ul class="flex space-x-6 text-white">
                 <li><a href="#" class="text-white text-2xl font-bold">logo</a></li>
