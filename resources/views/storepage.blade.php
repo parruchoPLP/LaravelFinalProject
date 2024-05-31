@@ -68,180 +68,135 @@
             <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Huawei">Huawei</a></li>
             <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Oppo">Oppo</a></li>
             <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Realme">Realme</a></li>
-            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Tecno">Tecno</a></li>
+            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Samsung">Samsung</a></li>
             <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Vivo">Vivo</a></li>
             <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Xiaomi">Xiaomi</a></li>
         </ul>
         <div class="w-full mt-6">
             <h2 class="text-2xl font-bold mb-4 text-custom-darkBlue">Latest KeyPhones</h2>
         <div class="flex mb-8">
-            <img src="{{ asset('images/apple.png') }}" alt="Apple" class="w-1/3 mr-4">
+            <img src="{{ asset('images/products/Xiaomi-14.png') }}" alt="14" class="w-64 h-auto">
             <div class="flex flex-col">
-                <h3 class="text-xl font-semibold mb-2">Apple iPhone 12</h3>
-                <p class="text-gray-700 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3 class="text-xl font-semibold mb-2 text-custom-darkBlue hover:border-b hover:border-custom-gold">Xiaomi 14</h3>
+                <p class="text-yellow-400 mb-2">★★★★★</p>
+                <p class="text-lg font-bold mb-2">Php 1231233r4</p>
+            </div>
+        </div>
+        <div class="flex mb-8">
+            <img src="{{ asset('images/products/vivo-Y03.png') }}" alt="Y03" class="w-64 h-auto">
+            <div class="flex flex-col">
+                <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">Vivo Y03</h3>
+                <p class="text-yellow-400 mb-2">★★★★☆</p>
                 <p class="text-lg font-bold mb-2">$999</p>
             </div>
         </div>
         <div class="flex mb-8">
-            <img src="{{ asset('images/apple.png') }}" alt="Apple" class="w-1/3 mr-4">
+            <img src="{{ asset('images/products/SAMSUNG-Galaxy-Z-Flip5.png') }}" alt="Flip5" class="w-64 h-auto">
             <div class="flex flex-col">
-                <h3 class="text-xl font-semibold mb-2">Apple iPhone 12</h3>
-                <p class="text-gray-700 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">Samsung Galaxy Z Flip 5</h3>
+                <p class="text-yellow-400 mb-2">★★★★★</p>
+                <p class="text-lg font-bold mb-2">$999</p>
+            </div>
+        </div>
+        <div class="flex mb-8">
+            <img src="{{ asset('images/products/iPhone-15-Pro-Max.png') }}" alt="15" class="w-64 h-auto">
+            <div class="flex flex-col">
+                <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">iPhone 15 Pro Max</h3>
+                <p class="text-yellow-400 mb-2">★★★★★</p>
                 <p class="text-lg font-bold mb-2">$999</p>
             </div>
         </div>
         <div class="flex">
-            <img src="{{ asset('images/apple.png') }}" alt="Apple" class="w-1/3 mr-4">
+            <img src="{{ asset('images/products/OPPO-Reno11-Pro-5G.png') }}" alt="15" class="w-64 h-auto">
             <div class="flex flex-col">
-                <h3 class="text-xl font-semibold mb-2">Apple iPhone 12</h3>
-                <p class="text-gray-700 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">Oppo Reno 11 Pro 5G</h3>
+                <p class="text-yellow-400 mb-2">★★★★★</p>
                 <p class="text-lg font-bold mb-2">$999</p>
             </div>
         </div>
         </div>
     </aside>
-    <div class="w-3/4 container mx-auto px-2">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10" id="productGrid">
+    <div class="w-3/4 container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="productGrid">
             <?php 
             $products = [
-                [
-                    'name' => 'Xiaomi Redmi 13C',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/Redmi13C.png'),
-                    'brand' => 'Xiaomi'
-                ],
-                [
-                    'name' => 'Xiaomi Redmi 13C',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/Redmi13C.png'),
-                    'brand' => 'Xiaomi'
-                ],
-                [
-                    'name' => 'Xiaomi Redmi 13C',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/Redmi13C.png'),
-                    'brand' => 'Xiaomi'
-                ],
-                [
-                    'name' => 'Xiaomi Redmi 13C',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/Redmi13C.png'),
-                    'brand' => 'Xiaomi'
-                ],
-                [
-                    'name' => 'Xiaomi Redmi 13C',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/Redmi13C.png'),
-                    'brand' => 'Xiaomi'
-                ],
-                [
-                    'name' => 'Xiaomi Redmi 13C',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/Redmi13C.png'),
-                    'brand' => 'Xiaomi'
-                ],
-                [
-                    'name' => 'Xiaomi Redmi 13C',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/Redmi13C.png'),
-                    'brand' => 'Xiaomi'
-                ],
-                [
-                    'name' => 'Xiaomi Redmi 13C',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/Redmi13C.png'),
-                    'brand' => 'Xiaomi'
-                ],
-                [
-                    'name' => 'Xiaomi Redmi 13C',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/Redmi13C.png'),
-                    'brand' => 'Xiaomi'
-                ],
-                [
-                    'name' => 'Realme 12 5G',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/realme-12-5G.png'),
-                    'brand' => 'Realme'
-                ],
-                [
-                    'name' => 'Realme 12 Plus 5G',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/realme-12-plus-5g.png'),
-                    'brand' => 'Realme'
-                ],
-                [
-                    'name' => 'Realme 12 Pro Plus 5G',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/realme-12-Pro-plus-5G.png'),
-                    'brand' => 'Realme'
-                ],
-                [
-                    'name' => 'Realme C30s',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/realme-C30s.png'),
-                    'brand' => 'Realme'
-                ],
-                [
-                    'name' => 'Realme C53',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/realme-C53.png'),
-                    'brand' => 'Realme'
-                ],
-                [
-                    'name' => 'Realme C55',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/realme-C55.png'),
-                    'brand' => 'Realme'
-                ],
-                [
-                    'name' => 'Realme C67',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/realme-C67.png'),
-                    'brand' => 'Realme'
-                ],
-                [
-                    'name' => 'Realme GT Neo 3',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/realme-GT-Neo-3.png'),
-                    'brand' => 'Realme'
-                ],
-                [
-                    'name' => 'Realme Note 50',
-                    'price' => 'Php 1799',
-                    'description' => 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    'image' => asset('images/products/realme-Note-50.png'),
-                    'brand' => 'Realme'
-                ],
+                [ 'name' => 'Apple iPhone 11', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-11.png'),'brand' => 'Apple'],
+                [ 'name' => 'Apple iPhone 12', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-12.png'),'brand' => 'Apple'],
+                [ 'name' => 'Apple iPhone 13', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-13.png'),'brand' => 'Apple'],
+                [ 'name' => 'Apple iPhone 14 Plus', 'price' => 'Php 1799', 'rating' => '★★★★★','image' => asset('images/products/iPhone-14-Plus.png'),'brand' => 'Apple'],
+                [ 'name' => 'Apple iPhone 14', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-14.png'),'brand' => 'Apple'],
+                [ 'name' => 'Apple iPhone 15 Plus', 'price' => 'Php 1799', 'rating' => '★★★★★','image' => asset('images/products/iPhone-15-Plus.png'),'brand' => 'Apple'],
+                [ 'name' => 'Apple iPhone 15 Pro Max', 'price' => 'Php 1799', 'rating' => '★★★★★','image' => asset('images/products/iPhone-15-Pro-Max.png'),'brand' => 'Apple'],
+                [ 'name' => 'Apple iPhone 15 Pro', 'price' => 'Php 1799', 'rating' => '★★★★★','image' => asset('images/products/iPhone-15-Pro.png'),'brand' => 'Apple'],
+                [ 'name' => 'Apple iPhone 15', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-15.png'),'brand' => 'Apple'],
+                [ 'name' => 'Apple iPhone SE 3rd Gen 2022', 'price' => 'Php 1799', 'rating' => '★★★☆☆','image' => asset('images/products/iPhone-SE-3rd-gen-2022.png'),'brand' => 'Apple'],
+                [ 'name' => 'Vivo Y100', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-Y100.png'), 'brand' => 'Vivo'],
+                [ 'name' => 'Vivo Y27s', 'price' => 'Php 1799', 'rating' => '★★★★★','image' => asset('images/products/vivo-Y27s.png'), 'brand' => 'Vivo'],
+                [ 'name' => 'Vivo Y17s', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-Y17s.png'), 'brand' => 'Vivo'],
+                [ 'name' => 'Vivo Y03', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-Y03.png'), 'brand' => 'Vivo'],
+                [ 'name' => 'Vivo V30e 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-V30e-5G.png'), 'brand' => 'Vivo'],
+                [ 'name' => 'Vivo V30 Pro 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-V30-Pro-5G.png'), 'brand' => 'Vivo'],
+                [ 'name' => 'Vivo V30 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-V30-5G.png'), 'brand' => 'Vivo'],
+                [ 'name' => 'Vivo V29e 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-V29e-5G.png'), 'brand' => 'Vivo'],
+                [ 'name' => 'Vivo V29 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-V29-5G.png'), 'brand' => 'Vivo'],
+                [ 'name' => 'Xiaomi Poco F6', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/POCO-F6.png'), 'brand' => 'Xiaomi'],
+                [ 'name' => 'Xiaomi Redmi A3', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Redmi-A3.png'), 'brand' => 'Xiaomi'],
+                [ 'name' => 'Xiaomi Redmi Note 13', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Redmi-Note-13.png'), 'brand' => 'Xiaomi'],
+                [ 'name' => 'Xiaomi 13T', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/Xiaomi-13T.png'), 'brand' => 'Xiaomi'],
+                [ 'name' => 'Xiaomi 14', 'price' => 'Php 1799', 'rating' => '★★★★☆',  'image' => asset('images/products/Xiaomi-14.png'), 'brand' => 'Xiaomi'],
+                [ 'name' => 'Xiaomi Redmi Note 13 Pro', 'price' => 'Php 1799', 'rating' => '★★★★☆',  'image' => asset('images/products/Redmi-Note-13-Pro.png'), 'brand' => 'Xiaomi'],
+                [ 'name' => 'Xiaomi Redmi Note 13 Pro 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/Redmi-Note-13-Pro-5G.png'), 'brand' => 'Xiaomi'],
+                [ 'name' => 'Xiaomi Redmi Note 13 Pro Plus 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆',  'image' => asset('images/products/Redmi-Note-13-Pro-Plus-5G.png'), 'brand' => 'Xiaomi'],
+                [ 'name' => 'Realme 12 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/realme-12-5G.png'), 'brand' => 'Realme'],
+                [ 'name' => 'Realme 12 Plus 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/realme-12-plus-5g.png'), 'brand' => 'Realme'],
+                [ 'name' => 'Realme 12 Pro Plus 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/12ProRealme.png'), 'brand' => 'Realme'],
+                [ 'name' => 'Realme C30s', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/realme-C30s.png'), 'brand' => 'Realme'],
+                [ 'name' => 'Realme C53', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/realme-C53.png'), 'brand' => 'Realme'],
+                [ 'name' => 'Realme C55', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/realme-C55.png'), 'brand' => 'Realme'],
+                [ 'name' => 'Realme C67', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/realme-C67.png'), 'brand' => 'Realme'],
+                [ 'name' => 'Realme GT Neo 3', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/realme-GT-Neo-3.png'), 'brand' => 'Realme'],
+                [ 'name' => 'Realme Note 50', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/realme-Note-50.png'), 'brand' => 'Realme'],
+                [ 'name' => 'Samsung Galaxy A05', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/Samsung-Galaxy-A05.png'), 'brand' => 'Samsung'],
+                [ 'name' => 'Samsung Galaxy A05s', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-A05s.png'), 'brand' => 'Samsung'],
+                [ 'name' => 'Samsung Galaxy A15 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-A15-5G.png'), 'brand' => 'Samsung'],
+                [ 'name' => 'Samsung Galaxy A25 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-A25-5G.png'), 'brand' => 'Samsung'],
+                [ 'name' => 'Samsung Galaxy A35 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-A35-5G.png'), 'brand' => 'Samsung'],
+                [ 'name' => 'Samsung Galaxy A55 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/Samsung-Galaxy-A55-5G.png'), 'brand' => 'Samsung'],
+                [ 'name' => 'Samsung Galaxy S23 FE', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-S23-FE.png'), 'brand' => 'Samsung'],
+                [ 'name' => 'Samsung Galaxy S24 Plus', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-S24-Plus.png'), 'brand' => 'Samsung'],
+                [ 'name' => 'Samsung Galaxy S24 Ultra', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-S24-Ultra.png'), 'brand' => 'Samsung'],
+                [ 'name' => 'Samsung Galaxy S24', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-S24.png'), 'brand' => 'Samsung'],
+                [ 'name' => 'Samsung Galaxy Z Flip5', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/Samsung-Galaxy-Z-Flip5.png'), 'brand' => 'Samsung'],
+                [ 'name' => 'Oppo A18', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-A18.png'), 'brand' => 'Oppo'],
+                [ 'name' => 'Oppo A38', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-A38.png'), 'brand' => 'Oppo'],
+                [ 'name' => 'Oppo A58', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-A58.png'), 'brand' => 'Oppo'],
+                [ 'name' => 'Oppo A60', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-A60.png'), 'brand' => 'Oppo'],
+                [ 'name' => 'Oppo A98 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-A98-5G.png'), 'brand' => 'Oppo'],
+                [ 'name' => 'Oppo Find N3 Flip', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-Find-N3-Flip.png'), 'brand' => 'Oppo'],
+                [ 'name' => 'Oppo Reno11 F 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-Reno11-F-5G.png'), 'brand' => 'Oppo'],
+                [ 'name' => 'Oppo Reno11 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-Reno11-5G.png'), 'brand' => 'Oppo'],
+                [ 'name' => 'Oppo Reno11 Pro 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/OPPO-Reno11-Pro-5G.png'), 'brand' => 'Oppo'],
+                [ 'name' => 'Huawei Mate X3', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/HUAWEI-Mate-X3.png'),'brand' => 'Huawei'],
+                [ 'name' => 'Huawei Nova 11 Pro', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/HUAWEI-nova-11-Pro.png'),'brand' => 'Huawei'],
+                [ 'name' => 'Huawei Nova 11', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/HUAWEI-nova-11.png'),'brand' => 'Huawei'],
+                [ 'name' => 'Huawei Nova 11i', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/HUAWEI-nova-11i.png'),'brand' => 'Huawei'],
+                [ 'name' => 'Huawei Nova 12 SE', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Huawei-nova-12-SE.png'),'brand' => 'Huawei'],
+                [ 'name' => 'Huawei Nova 12i', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Huawei-nova-12i.png'),'brand' => 'Huawei'],
+                [ 'name' => 'Huawei P60 Pro', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/HUAWEI-P60-Pro.png'),'brand' => 'Huawei'],
             ];
             ?>
             @foreach ($products as $product)
             <div class="bg-white p-6 rounded-lg shadow-md product relative flex flex-col" phone-brand="{{ $product['brand'] }}">
+                <a href='/product/{{$product['name']}}'>
                 <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}" class="w-full mb-4">
+                </a>
                 <h3 class="text-xl font-semibold mb-2">{{ $product['name'] }}</h3>
-                <p class="text-gray-700 mb-4">{{ $product['description'] }}</p>
-                <p class="text-lg font-bold mb-4 py-8">{{ $product['price'] }}</p>
+                <p class="text-yellow-400 font-semibold text-lg">{{ $product['rating'] }}</p>
+                <p class="text-lg font-bold mb-4 pt-1 py-10">{{ $product['price'] }}</p>
                 <div class="flex-grow"></div>
-            <a href="#" class="block bg-custom-darkBlue text-white text-center py-2 rounded-lg hover:bg-blue-700">Add to Cart</a>
+                <a href="#" class="block bg-custom-darkBlue text-white text-center py-2 rounded-lg hover:bg-custom-blueGray absolute bottom-0 left-0 right-0 mb-6 mx-6">Add to Cart</a>
             </div>
-            @endforeach
+            @endforeach 
         </div>
     </div>
     </section>

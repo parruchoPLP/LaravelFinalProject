@@ -71,7 +71,7 @@
                 <img src="{{ asset('images/realme.png') }}" alt="Realme" style="width: 320px; height: 150px;">
                 <img src="{{ asset('images/xiaomi.png') }}" alt="Xiaomi" style="width: 200px; height: 150px;">
                 <img src="{{ asset('images/oppo.png') }}" alt="Oppo" style="width: 200px; height: 150px;">
-                <img src="{{ asset('images/tecno.png') }}" alt="Tecno Mobile" style="width: 240px; height: 150px;">
+                <img src="{{ asset('images/samsunglogo.png') }}" alt="Samsung" style="width: 240px; height: 150px;">
                 <img src="{{ asset('images/huawei.png') }}" alt="Huawei" style="width: 180px; height: 150px;">
                 <img src="{{ asset('images/vivo.png') }}" alt="Vivo" style="width: 200px; height: 150px;">
             </div>
