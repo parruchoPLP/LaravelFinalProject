@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +26,6 @@ Route::get('/signup', function () {
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/delivery-and-shipping', [Controller::class, 'showDeliveryAndShipping']);
+Route::get('/payment', [Controller::class, 'showPayment']);
+Route::get('/aboutus', [Controller::class, 'showAboutus']);
