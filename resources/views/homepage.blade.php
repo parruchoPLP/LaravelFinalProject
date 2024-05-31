@@ -154,7 +154,7 @@
         </div>
     </section>
 
-    <footer class="bg-custom-darkBlue text-white pt-6">
+    <footer class="bg-gray-900 text-white pt-6">
     <div class="container mx-auto md:flex md:justify-between">
         <div class="md:w-1/2 md:mb-0 mb-4 -ml-10">
             <h2 class="text-xl font-bold">Contact Us</h2>
