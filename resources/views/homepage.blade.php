@@ -193,7 +193,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-custom-blueGray py-3 mt-6 mb-0">
+    <div class="bg-custom-darkBlue py-3 mt-6 mb-0">
         <div class="container mx-auto text-center">
             <p>&copy; 2024 KeyPhone. All rights reserved.</p>
         </div>
