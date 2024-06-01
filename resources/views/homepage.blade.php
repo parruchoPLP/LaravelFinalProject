@@ -59,7 +59,7 @@
                 <div class="text-center m-8">
                     <h1 class="text-5xl font-bold mb-7">Welcome to KeyPhone</h1>
                     <p class="text-xl">Welcome to KeyPhone, your premier destination for the latest and greatest in mobile technology. Discover our extensive selection of cutting-edge smartphones, designed to keep you connected and ahead of the curve. At KeyPhone, we combine quality with affordability, ensuring you get the best value for your money. Join our community of tech enthusiasts today and experience the future of mobile communication. Shop now and unlock the power of innovation with KeyPhone!</p>
-                    <a href="storepage" class="mt-6 inline-block bg-blue-700 hover:bg-custom-blueGray text-white font-bold py-3 px-8 rounded">Shop Now</a>
+                    <a href="storepage" class="mt-6 inline-block bg-custom-blueGray hover:bg-blue-500 text-white font-bold py-3 px-8 rounded">Shop Now</a>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
         </div>
     </section>
     <section class="relative">
-    <div class="bg-custom-darkBlue bg-opacity-95 text-white py-52 flex flex-wrap items-center justify-center p-12 relative z-20">
+    <div class="bg-gray-900  text-white py-52 flex flex-wrap items-center justify-center p-12 relative z-20">
         <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">
             <div class="text-center">
                 <h1 class="text-5xl font-bold mb-7">KeyPhone: Your Future in Your Pocket.</h1>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <p class="text-xl">Looking to elevate your mobile experience? Look no further! At KeyPhone, we've got what you're looking for. Dive into our range of sleek and stylish smartphones, each packed with features tailored to suit every lifestyle. Whether you crave seamless connectivity or crave stunning camera capabilities, KeyPhone delivers it all. Don't settle for less when you can have the best. Shop now and make every call, text, and selfie count with KeyPhone - Your Future in Your Pocket.</p>
-                <a href="storepage" class="mt-6 inline-block bg-blue-700 hover:bg-custom-blueGray text-white font-bold py-3 px-8 rounded">Shop Now</a>
+                <a href="storepage" class="mt-6 inline-block bg-custom-blueGray hover:bg-blue-500 text-white font-bold py-3 px-8 rounded">Shop Now</a>
             </div>
         </div>
     </div>
