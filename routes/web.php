@@ -22,7 +22,9 @@ Route::get('/homepage', function () {
 Route::get('/storepage', function () {
     return view('storepage');
 });
-
+Route::get('/checkout', function () {
+    return view('checkout');
+});
 Route::get('/product', function () {
     return view('product');
 });

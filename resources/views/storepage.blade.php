@@ -11,13 +11,13 @@
         <div class="w-full container mx-10 flex justify-between items-center">
             <ul class="flex space-x-6 text-white">
                 <li class="text-white text-2xl font-bold">logo</li>
-                <li><a href="#" class="text-white text-2xl font-bold">KeyPhone</a></li>
+                <li><a href="homepage" class="text-white text-2xl font-bold">KeyPhone</a></li>
             </ul>
             <ul class="flex space-x-6 text-white w-16">
                 <li><a href="homepage" class="hover:border-b hover:border-custom-gold">Home</a></li>
                 <li><a href="storepage" class="hover:border-b hover:border-custom-gold">Store</a></li>
                 <li><a href="support" class="hover:border-b hover:border-custom-gold">Support</a></li>
-                <li><a href="#" class="flex items-center" id="svgLink">
+                <li><a href="#" class="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="ml-4" id="searchIcon">
                         <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -188,7 +188,7 @@
             @foreach ($products as $product)
             <div class="bg-white p-6 rounded-lg shadow-md product relative flex flex-col" phone-brand="{{ $product['brand'] }}">
                 <a href='/product/{{$product['name']}}'>
-                <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}" class="w-full mb-4">
+                    <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}" class="w-full mb-4">
                 </a>
                 <h3 class="text-xl font-semibold mb-2">{{ $product['name'] }}</h3>
                 <p class="text-yellow-400 font-semibold text-lg">{{ $product['rating'] }}</p>
