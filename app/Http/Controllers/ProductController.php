@@ -8,7 +8,7 @@ class ProductController extends Controller
 {
     public function storepage()
     {
-        $products = [
+        $keyphone = [
             [ 'name' => 'Apple iPhone 11', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-11.png'),'brand' => 'Apple'],
             [ 'name' => 'Apple iPhone 12', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-12.png'),'brand' => 'Apple'],
             [ 'name' => 'Apple iPhone 13', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-13.png'),'brand' => 'Apple'],
@@ -72,10 +72,8 @@ class ProductController extends Controller
             [ 'name' => 'Huawei Nova 12 SE', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Huawei-nova-12-SE.png'),'brand' => 'Huawei'],
             [ 'name' => 'Huawei Nova 12i', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Huawei-nova-12i.png'),'brand' => 'Huawei'],
             [ 'name' => 'Huawei P60 Pro', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/HUAWEI-P60-Pro.png'),'brand' => 'Huawei'],
-            [ 'name' => 'Huawei Nova 11 Pro', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/HUAWEI-nova-11-Pro.png'),'brand' => 'Huawei'],
         ];
-
-        return view('storepage', ['products' => $products]);
+        return view('storepage', compact('keyphone'));
 
     }
 }

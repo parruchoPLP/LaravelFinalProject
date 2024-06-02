@@ -7,17 +7,17 @@
     @vite('resources/css/app.css')
 </head>
 <body class="bg-gray-100 overflow-x-hidden">
-    <nav class="bg-custom-darkBlue py-4 fixed top-0 w-full z-50">
+    <nav class="bg-custom-darkBlue py-2 fixed top-0 w-full z-50">
         <div class="w-full container mx-10 flex justify-between items-center">
-            <ul class="flex space-x-6 text-white">
-                <li class="text-white text-2xl font-bold">logo</li>
+            <ul class="flex items-center space-x-2 text-white">
+                <li><a href="homepage"><img src="{{ asset('images/keyphone.png') }}" style="width: 50px; height: 50px;"></a></li>
                 <li><a href="homepage" class="text-white text-2xl font-bold">KeyPhone</a></li>
             </ul>
             <ul class="flex space-x-6 text-white w-16">
                 <li><a href="homepage" class="hover:border-b hover:border-custom-gold">Home</a></li>
                 <li><a href="storepage" class="hover:border-b hover:border-custom-gold">Store</a></li>
-                <li><a href="support" class="hover:border-b hover:border-custom-gold">Support</a></li>
-                <li><a href="#" class="flex items-center">
+                <li><a href="#" class="hover:border-b hover:border-custom-gold" id="supportDropdown">Support</a></li>
+                <li><a href="#" class="flex items-center" id="svgLink">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="ml-4" id="searchIcon">
                         <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -43,11 +43,31 @@
                 </li>
             </ul>
         </div>
-        <div id="searchContainer" class="absolute w-full left-0 bg-custom-darkBlue py-4 px-8 hidden">
-            <div class="flex space-x-2">
-                <input type="text" id="searchBar" placeholder="Search KeyPhone" class="w-full p-2 rounded">
-                <a href="#"><button id="searchButton" class="bg-custom-blueGray text-white px-4 py-2 rounded hover:bg-blue-500">Search</button></a>
+        <div id="searchContainer" class="relative w-full left-0 bg-custom-darkBlue pt-4 pb-2 px-8 hidden">
+            <div class="relative">
+                <div class="flex items-center">
+                    <input type="text" id="searchBar" placeholder="Search KeyPhone" class="w-full p-2 rounded mr-2">
+                    <a href="#" class="block">
+                        <button id="searchButton" class="bg-custom-blueGray text-white px-4 py-2 rounded hover:bg-blue-500">Search</button>
+                    </a>
+                </div>
+                <div id="brandDropdown" class="absolute left-0 w-full bg-white border border-gray-300 rounded mt-2 hidden">
+                    <ul>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Apple</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Huawei</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Oppo</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Realme</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Samsung</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Vivo</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Xiaomi</li>
+                    </ul>
+                </div>
             </div>
+        </div>
+        <div id="supportDropdownContent" class="absolute w-full left-0 bg-custom-darkBlue py-4 px-8 hidden flex justify-center">
+            <a href="delivery-and-shipping" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Delivery and Shipping</a>
+            <a href="payment" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Payment</a>
+            <a href="#" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">About Us</a>
         </div>
     </nav>
     <section class="relative bg-cover bg-center" style="background-image: url('images/phones-bg.jpeg');">
@@ -118,74 +138,9 @@
     </aside>
     <div class="w-3/4 container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="productGrid">
-            <?php 
-            $products = [
-                [ 'name' => 'Apple iPhone 11', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-11.png'),'brand' => 'Apple'],
-                [ 'name' => 'Apple iPhone 12', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-12.png'),'brand' => 'Apple'],
-                [ 'name' => 'Apple iPhone 13', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-13.png'),'brand' => 'Apple'],
-                [ 'name' => 'Apple iPhone 14 Plus', 'price' => 'Php 1799', 'rating' => '★★★★★','image' => asset('images/products/iPhone-14-Plus.png'),'brand' => 'Apple'],
-                [ 'name' => 'Apple iPhone 14', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-14.png'),'brand' => 'Apple'],
-                [ 'name' => 'Apple iPhone 15 Plus', 'price' => 'Php 1799', 'rating' => '★★★★★','image' => asset('images/products/iPhone-15-Plus.png'),'brand' => 'Apple'],
-                [ 'name' => 'Apple iPhone 15 Pro Max', 'price' => 'Php 1799', 'rating' => '★★★★★','image' => asset('images/products/iPhone-15-Pro-Max.png'),'brand' => 'Apple'],
-                [ 'name' => 'Apple iPhone 15 Pro', 'price' => 'Php 1799', 'rating' => '★★★★★','image' => asset('images/products/iPhone-15-Pro.png'),'brand' => 'Apple'],
-                [ 'name' => 'Apple iPhone 15', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-15.png'),'brand' => 'Apple'],
-                [ 'name' => 'Apple iPhone SE 3rd Gen 2022', 'price' => 'Php 1799', 'rating' => '★★★☆☆','image' => asset('images/products/iPhone-SE-3rd-gen-2022.png'),'brand' => 'Apple'],
-                [ 'name' => 'Vivo Y100', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-Y100.png'), 'brand' => 'Vivo'],
-                [ 'name' => 'Vivo Y27s', 'price' => 'Php 1799', 'rating' => '★★★★★','image' => asset('images/products/vivo-Y27s.png'), 'brand' => 'Vivo'],
-                [ 'name' => 'Vivo Y17s', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-Y17s.png'), 'brand' => 'Vivo'],
-                [ 'name' => 'Vivo Y03', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-Y03.png'), 'brand' => 'Vivo'],
-                [ 'name' => 'Vivo V30e 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-V30e-5G.png'), 'brand' => 'Vivo'],
-                [ 'name' => 'Vivo V30 Pro 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-V30-Pro-5G.png'), 'brand' => 'Vivo'],
-                [ 'name' => 'Vivo V30 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-V30-5G.png'), 'brand' => 'Vivo'],
-                [ 'name' => 'Vivo V29e 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-V29e-5G.png'), 'brand' => 'Vivo'],
-                [ 'name' => 'Vivo V29 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/vivo-V29-5G.png'), 'brand' => 'Vivo'],
-                [ 'name' => 'Xiaomi Poco F6', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/POCO-F6.png'), 'brand' => 'Xiaomi'],
-                [ 'name' => 'Xiaomi Redmi A3', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Redmi-A3.png'), 'brand' => 'Xiaomi'],
-                [ 'name' => 'Xiaomi Redmi Note 13', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Redmi-Note-13.png'), 'brand' => 'Xiaomi'],
-                [ 'name' => 'Xiaomi 13T', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/Xiaomi-13T.png'), 'brand' => 'Xiaomi'],
-                [ 'name' => 'Xiaomi 14', 'price' => 'Php 1799', 'rating' => '★★★★☆',  'image' => asset('images/products/Xiaomi-14.png'), 'brand' => 'Xiaomi'],
-                [ 'name' => 'Xiaomi Redmi Note 13 Pro', 'price' => 'Php 1799', 'rating' => '★★★★☆',  'image' => asset('images/products/Redmi-Note-13-Pro.png'), 'brand' => 'Xiaomi'],
-                [ 'name' => 'Xiaomi Redmi Note 13 Pro 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/Redmi-Note-13-Pro-5G.png'), 'brand' => 'Xiaomi'],
-                [ 'name' => 'Xiaomi Redmi Note 13 Pro Plus 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆',  'image' => asset('images/products/Redmi-Note-13-Pro-Plus-5G.png'), 'brand' => 'Xiaomi'],
-                [ 'name' => 'Realme 12 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/realme-12-5G.png'), 'brand' => 'Realme'],
-                [ 'name' => 'Realme 12 Plus 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/realme-12-plus-5g.png'), 'brand' => 'Realme'],
-                [ 'name' => 'Realme 12 Pro Plus 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/12ProRealme.png'), 'brand' => 'Realme'],
-                [ 'name' => 'Realme C30s', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/realme-C30s.png'), 'brand' => 'Realme'],
-                [ 'name' => 'Realme C53', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/realme-C53.png'), 'brand' => 'Realme'],
-                [ 'name' => 'Realme C55', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/realme-C55.png'), 'brand' => 'Realme'],
-                [ 'name' => 'Realme C67', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/realme-C67.png'), 'brand' => 'Realme'],
-                [ 'name' => 'Realme GT Neo 3', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/realme-GT-Neo-3.png'), 'brand' => 'Realme'],
-                [ 'name' => 'Realme Note 50', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/realme-Note-50.png'), 'brand' => 'Realme'],
-                [ 'name' => 'Samsung Galaxy A05', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/Samsung-Galaxy-A05.png'), 'brand' => 'Samsung'],
-                [ 'name' => 'Samsung Galaxy A05s', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-A05s.png'), 'brand' => 'Samsung'],
-                [ 'name' => 'Samsung Galaxy A15 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-A15-5G.png'), 'brand' => 'Samsung'],
-                [ 'name' => 'Samsung Galaxy A25 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-A25-5G.png'), 'brand' => 'Samsung'],
-                [ 'name' => 'Samsung Galaxy A35 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-A35-5G.png'), 'brand' => 'Samsung'],
-                [ 'name' => 'Samsung Galaxy A55 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/Samsung-Galaxy-A55-5G.png'), 'brand' => 'Samsung'],
-                [ 'name' => 'Samsung Galaxy S23 FE', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-S23-FE.png'), 'brand' => 'Samsung'],
-                [ 'name' => 'Samsung Galaxy S24 Plus', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-S24-Plus.png'), 'brand' => 'Samsung'],
-                [ 'name' => 'Samsung Galaxy S24 Ultra', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-S24-Ultra.png'), 'brand' => 'Samsung'],
-                [ 'name' => 'Samsung Galaxy S24', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Samsung-Galaxy-S24.png'), 'brand' => 'Samsung'],
-                [ 'name' => 'Samsung Galaxy Z Flip5', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/Samsung-Galaxy-Z-Flip5.png'), 'brand' => 'Samsung'],
-                [ 'name' => 'Oppo A18', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-A18.png'), 'brand' => 'Oppo'],
-                [ 'name' => 'Oppo A38', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-A38.png'), 'brand' => 'Oppo'],
-                [ 'name' => 'Oppo A58', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-A58.png'), 'brand' => 'Oppo'],
-                [ 'name' => 'Oppo A60', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-A60.png'), 'brand' => 'Oppo'],
-                [ 'name' => 'Oppo A98 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-A98-5G.png'), 'brand' => 'Oppo'],
-                [ 'name' => 'Oppo Find N3 Flip', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-Find-N3-Flip.png'), 'brand' => 'Oppo'],
-                [ 'name' => 'Oppo Reno11 F 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-Reno11-F-5G.png'), 'brand' => 'Oppo'],
-                [ 'name' => 'Oppo Reno11 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/OPPO-Reno11-5G.png'), 'brand' => 'Oppo'],
-                [ 'name' => 'Oppo Reno11 Pro 5G', 'price' => 'Php 1799', 'rating' => '★★★★☆', 'image' => asset('images/products/OPPO-Reno11-Pro-5G.png'), 'brand' => 'Oppo'],
-                [ 'name' => 'Huawei Mate X3', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/HUAWEI-Mate-X3.png'),'brand' => 'Huawei'],
-                [ 'name' => 'Huawei Nova 11 Pro', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/HUAWEI-nova-11-Pro.png'),'brand' => 'Huawei'],
-                [ 'name' => 'Huawei Nova 11', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/HUAWEI-nova-11.png'),'brand' => 'Huawei'],
-                [ 'name' => 'Huawei Nova 11i', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/HUAWEI-nova-11i.png'),'brand' => 'Huawei'],
-                [ 'name' => 'Huawei Nova 12 SE', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Huawei-nova-12-SE.png'),'brand' => 'Huawei'],
-                [ 'name' => 'Huawei Nova 12i', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/Huawei-nova-12i.png'),'brand' => 'Huawei'],
-                [ 'name' => 'Huawei P60 Pro', 'price' => 'Php 1799', 'rating' => '★★★★☆','image' => asset('images/products/HUAWEI-P60-Pro.png'),'brand' => 'Huawei'],
-            ];
+        <?php 
+            foreach($keyphone as $product): 
             ?>
-            @foreach ($products as $product)
             <div class="bg-white p-6 rounded-lg shadow-md product relative flex flex-col" phone-brand="{{ $product['brand'] }}">
                 <a href='/product/{{$product['name']}}'>
                     <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}" class="w-full mb-4">
@@ -196,7 +151,7 @@
                 <div class="flex-grow"></div>
                 <a href="#" class="block bg-custom-darkBlue text-white text-center py-2 rounded-lg hover:bg-custom-blueGray absolute bottom-0 left-0 right-0 mb-6 mx-6">Add to Cart</a>
             </div>
-            @endforeach 
+            <?php endforeach; ?>
         </div>
     </div>
     </section>
@@ -245,40 +200,75 @@
         </div>
     </div>
     </footer>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var searchIcon = document.getElementById('searchIcon');
-    var searchContainer = document.getElementById('searchContainer');
-    var searchBar = document.getElementById('searchBar');
-    var brandList = document.getElementById('brandList');
-    var productGrid = document.getElementById('productGrid');
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const svgLink = document.getElementById('svgLink');
+        const searchContainer = document.getElementById('searchContainer');
+        const searchBar = document.getElementById('searchBar');
+        const searchButton = document.getElementById('searchButton');
+        const brandDropdown = document.getElementById('brandDropdown');
+        const brandItems = document.querySelectorAll('.brandItem');
+        const supportDropdown = document.getElementById('supportDropdown');
+        const supportDropdownContent = document.getElementById('supportDropdownContent');
+        const header = document.querySelector('nav');
 
-    searchIcon.addEventListener('click', function() {
-        searchContainer.classList.toggle('hidden');
-        searchBar.focus();
-    });
+        svgLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            searchContainer.classList.toggle('hidden');
+        });
 
-    brandList.addEventListener('click', function(e) {
-        if (e.target.tagName === 'A') {
-            e.preventDefault();
-            var selectedBrand = e.target.getAttribute('phone-brand');
-            updateProducts(selectedBrand);
-        }
-    });
+        searchBar.addEventListener('focus', function() {
+            brandDropdown.classList.remove('hidden');
+        });
 
-    function updateProducts(brand) {
-        var products = document.querySelectorAll('.product');
-        products.forEach(function(product) {
-            var productBrand = product.getAttribute('phone-brand');
-            if (brand === 'all' || productBrand === brand) {
-                product.style.display = 'block';
-            } else {
-                product.style.display = 'none';
+        searchButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            const searchTerm = searchBar.value;
+            if (searchTerm) {
+                window.location.href = `search?query=${searchTerm}`;
             }
         });
-    }
-    updateProducts('all');
-});
-</script>
+
+        brandItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                const brand = this.textContent.trim();
+                window.location.href = `search?brand=${brand}`;
+            });
+
+            item.addEventListener('mouseover', function() {
+                searchBar.value = this.textContent.trim();
+            });
+        });
+
+        supportDropdown.addEventListener('click', function(event) {
+            event.preventDefault();
+            supportDropdownContent.classList.toggle('hidden');
+        });
+
+        var brandList = document.getElementById('brandList');
+        var productGrid = document.getElementById('productGrid');
+
+        brandList.addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+                e.preventDefault();
+                var selectedBrand = e.target.getAttribute('phone-brand');
+                updateProducts(selectedBrand);
+            }
+        });
+
+        function updateProducts(brand) {
+            var products = document.querySelectorAll('.product');
+            products.forEach(function(product) {
+                var productBrand = product.getAttribute('phone-brand');
+                if (brand === 'all' || productBrand === brand) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+        updateProducts('all');
+    });
+    </script>
 </body>
 </html>

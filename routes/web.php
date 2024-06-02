@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +38,7 @@ Route::get('/login', function () {
     return view('login');
 });
 Route::get('/homepage', [HomeController::class, 'homepage'])->name('homepage');
+Route::get('/storepage', [ProductController::class, 'storepage'])->name('storepage');
 Route::get('/delivery-and-shipping', [Controller::class, 'showDeliveryAndShipping']);
 Route::get('/payment', [Controller::class, 'showPayment']);
 Route::get('/aboutus', [Controller::class, 'showAboutus']);
