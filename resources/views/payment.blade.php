@@ -72,30 +72,30 @@
         </div>
     </nav>
     <section class="Delship py-10 w-full">
-        <section class="FAQheader bg-white shadow-md py-6">
+        <section class="FAQheader bg-custom-gold shadow-md py-6">
             <div class="container mx-auto px-4 flex flex-col justify-center items-center">
-                <h1 class="FAQ__h1 text-6xl font-bold mb-7 text-center text-gray-800 my-5">Payment Options</h1>
-                <p class="FAQ__p text-2xl text-gray-600 text-center mb-5">Learn more about Payment Options</p>
+                <h1 class="FAQ__h1 text-6xl font-bold mb-7 text-center text-white my-5">Payment Options</h1>
+                <p class="FAQ__p text-2xl text-white text-center mb-5">Learn more about Payment Options</p>
             </div>
         </section>
         <section class="FAQcontent mt-8 content-start">
             <div class="container mx-auto items-center flex flex-col justify-center md:w-9/12">
                 <h1 class="FAQcontent__h1 text-4xl font-bold text-gray-800 text-center mb-4">Payment Options</h1><br/><br/>
-                <div class="w-full bg-white shadow-md p-4 mb-2 focus:outline-none">
-                <h1 class="payment w-full text-3xl text-center font-semibold">Credit/Debit Card</h1>
-                    <p class="paymentp text-3xl text-center p-4 mb-4">
+                <div class="hover:border-b-4 hover:border-custom-gold">
+                <h1 class="payment w-full text-3xl text-gray-800 text-center font-semibold ">Credit/Debit Card</h1>
+                    <p class="paymentp text-3xl text-gray-800 text-center p-4 mb-4">
                      Typhone accepts all major credit cards (Visa, Mastercard, and etc.)
                     </p>
                 </div>
-                <div class="w-full bg-white shadow-md p-4 mb-2 focus:outline-none">
-                <h1 class="payment w-full text-3xl text-center font-semibold">e-Wallets</h1>
-                    <p class="paymentp text-3xl text-center p-4 mb-4">
+                <div class="hover:border-b-4 hover:border-custom-gold">
+                <h1 class="payment w-full text-3xl text-gray-800 text-center font-semibold">e-Wallets</h1>
+                    <p class="paymentp text-3xl text-gray-800 text-center p-4 mb-4">
                     Typhone accepts e-Wallet payments such a Paymaya, Gcash, and
                      Coins.ph
                     </p>
                 </div>
-                <div class="w-full bg-white shadow-md p-4 mb-2 focus:outline-none">
-                <h1 class="payment w-full text-3xl text-center font-semibold">Online Banking</h1>
+                <div class="hover:border-b-4 hover:border-custom-gold">
+                <h1 class="payment w-full text-3xl text-gray-800 text-center font-semibold">Online Banking</h1>
                     <p class="paymentp text-3xl text-center p-4 mb-4">
                     </p>
                </div>
