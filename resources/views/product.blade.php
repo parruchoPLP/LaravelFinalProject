@@ -72,7 +72,7 @@
         <div id="supportDropdownContent" class="absolute w-full left-0 bg-custom-darkBlue py-4 px-8 hidden flex justify-center">
             <a href="delivery-and-shipping" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Delivery and Shipping</a>
             <a href="payment" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Payment</a>
-            <a href="#" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">About Us</a>
+            <a href="aboutus" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">About Us</a>
         </div>
     </nav>
     <section class="relative bg-cover bg-center" style="background-image: url('images/phones-bg.jpeg');">
@@ -84,6 +84,19 @@
             </div>
         </div>
     </section>
+    <section class="flex justify-center items-center m-2">
+    <div class="flex items-center rounded">
+        <div class="flex-shrink-0">
+            <img src="{{ asset('images/products/vivo-Y03.png') }}" alt="Vivo Y03" style="width: 50px; height: 520px;">
+        </div>
+        <div class="ml-8">
+            <h2 class="text-3xl font-bold">Vivo Y03</h2>
+            <button class="mt-6 bg-custom-darkBlue text-white px-6 py-3 rounded hover:bg-custom-gold">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+
     <footer class="bg-gray-900 text-white pt-6">
     <div class="container mx-auto md:flex md:justify-between">
         <div class="md:w-1/2 md:mb-0 mb-4 -ml-10">

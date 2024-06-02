@@ -38,6 +38,7 @@ Route::get('/login', function () {
     return view('login');
 });
 Route::get('/homepage', [HomeController::class, 'homepage'])->name('homepage');
+Route::get('/product/{id}', [ProductController::class, 'showProduct'])->name('product.show');
 Route::get('/storepage', [ProductController::class, 'storepage'])->name('storepage');
 Route::get('/delivery-and-shipping', [Controller::class, 'showDeliveryAndShipping']);
 Route::get('/payment', [Controller::class, 'showPayment']);
