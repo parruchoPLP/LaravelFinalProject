@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KeyPhone</title>
     @vite('resources/css/app.css')
+    
 </head>
 <body class="bg-gray-100 overflow-x-hidden">
-    <nav class="bg-custom-darkBlue py-4 fixed top-0 w-full z-50">
+    <nav class="bg-custom-darkBlue py-2 fixed top-0 w-full z-50">
         <div class="w-full container mx-10 flex justify-between items-center">
-            <ul class="flex space-x-6 text-white">
-                <li class="text-white text-2xl font-bold">logo</li>
-                <li><a href="#" class="text-white text-2xl font-bold">KeyPhone</a></li>
+            <ul class="flex items-center space-x-2 text-white">
+                <li><a href="homepage"><img src="{{ asset('images/keyphone.png') }}" style="width: 50px; height: 50px;"></a></li>
+                <li><a href="homepage" class="text-white text-2xl font-bold">KeyPhone</a></li>
             </ul>
             <ul class="flex space-x-6 text-white w-16">
                 <li><a href="homepage" class="hover:border-b hover:border-custom-gold">Home</a></li>
@@ -44,26 +45,26 @@
             </ul>
         </div>
         <div id="searchContainer" class="relative w-full left-0 bg-custom-darkBlue pt-4 pb-2 px-8 hidden">
-        <div class="relative">
-            <div class="flex items-center">
-                <input type="text" id="searchBar" placeholder="Search KeyPhone" class="w-full p-2 rounded mr-2">
-                <a href="#" class="block">
-                    <button id="searchButton" class="bg-custom-blueGray text-white px-4 py-2 rounded hover:bg-blue-500">Search</button>
-                </a>
-            </div>
-            <div id="brandDropdown" class="absolute left-0 w-full bg-white border border-gray-300 rounded mt-2 hidden">
-                <ul>
-                    <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Apple</li>
-                    <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Huawei</li>
-                    <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Oppo</li>
-                    <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Realme</li>
-                    <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Samsung</li>
-                    <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Vivo</li>
-                    <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Xiaomi</li>
-                </ul>
+            <div class="relative">
+                <div class="flex items-center">
+                    <input type="text" id="searchBar" placeholder="Search KeyPhone" class="w-full p-2 rounded mr-2">
+                    <a href="#" class="block">
+                        <button id="searchButton" class="bg-custom-blueGray text-white px-4 py-2 rounded hover:bg-blue-500">Search</button>
+                    </a>
+                </div>
+                <div id="brandDropdown" class="absolute left-0 w-full bg-white border border-gray-300 rounded mt-2 hidden">
+                    <ul>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Apple</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Huawei</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Oppo</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Realme</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Samsung</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Vivo</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Xiaomi</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
         <div id="supportDropdownContent" class="absolute w-full left-0 bg-custom-darkBlue py-4 px-8 hidden flex justify-center">
             <a href="delivery-and-shipping" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Delivery and Shipping</a>
             <a href="payment" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Payment</a>
@@ -125,20 +126,14 @@
     </section>
     <section class="py-12">
     <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center">Best KeyPhone</h2>
+        <h2 class="text-3xl font-bold mb-8 text-center text-custom-darkBlue">Our Top Picks</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <?php 
-            $products = [
-                [ 'name' => 'Apple iPhone 15 Pro Max', 'description' => 'The Apple iPhone 15 Pro Max features a sleek titanium frame and a 6.7-inch Super Retina XDR display with ProMotion technology. Powered by the A17 Bionic chip, it delivers exceptional performance and efficiency. The upgraded 48MP camera system excels in low-light conditions and offers enhanced optical zoom. With iOS 17, 5G connectivity, and a longer-lasting battery, the iPhone 15 Pro Max is a top-tier choice for users seeking a powerful and stylish smartphone.', 'rating' => '★★★★★','image' => asset('images/products/iPhone-15-Pro-Max.png'),'brand' => 'Apple'],
-                [ 'name' => 'Xiaomi 14', 'description' => 'The Xiaomi 14 is a powerhouse smartphone featuring a sleek design and a vibrant 6.5-inch AMOLED display with a high refresh rate for smooth visuals. Equipped with the latest Snapdragon 8 Gen 3 processor, it ensures top-tier performance and efficiency. The camera system includes a 50MP main sensor, ultra-wide, and telephoto lenses, delivering exceptional photography capabilities. Running on MIUI 14 based on Android, it offers a seamless and customizable user experience. With 5G support, fast charging, and a robust battery life, the Xiaomi 14 is designed to meet the demands of modern smartphone users.', 'rating' => '★★★★★',  'image' => asset('images/products/Xiaomi-14.png'), 'brand' => 'Xiaomi'],
-                [ 'name' => 'Realme 12 Pro Plus 5G', 'description' => 'The Realme 12 Pro Plus 5G combines cutting-edge technology with a sleek design, featuring a stunning 6.7-inch Super AMOLED display with a high refresh rate for immersive visuals. Powered by the latest Dimensity 9000 chipset, it ensures fast and efficient performance. Its impressive camera system includes a 108MP main sensor, ultra-wide, and telephoto lenses, delivering exceptional photo and video quality. Running on Realme UI 4.0 based on Android, it provides a smooth and customizable user experience. With 5G connectivity, fast charging, and a long-lasting battery, the Realme 12 Pro Plus 5G is a top-tier choice for those seeking a high-performance smartphone.', 'rating' => '★★★★★','image' => asset('images/products/12ProRealme.png'), 'brand' => 'Realme'],
-                [ 'name' => 'Apple iPhone 15 Pro', 'description' => 'The Apple iPhone 15 Pro features a sophisticated design with a durable titanium frame and a 6.1-inch Super Retina XDR display, enhanced by ProMotion technology for fluid visuals. Powered by the A17 Bionic chip, it offers exceptional speed and efficiency. The advanced camera system, including a 48MP main sensor, excels in various lighting conditions and supports enhanced optical zoom and computational photography. Running on iOS 17, it delivers a seamless user experience with new software features and robust privacy protections. With 5G connectivity and improved battery life, the iPhone 15 Pro stands out as a powerful and stylish choice for discerning users.', 'rating' => '★★★★★','image' => asset('images/products/iPhone-15-Pro.png'),'brand' => 'Apple'],
-            ];
             foreach($products as $product): 
             ?>
             <div class="bg-white p-6 rounded-lg shadow-md product flex flex-col">
                 <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>" class="w-full h-64 object-cover mb-4 rounded">
-                <h3 class="text-xl font-bold mb-2"><?php echo $product['name']; ?></h3>
+                <h3 class="text-xl font-bold mb-2 text-custom-darkBlue"><?php echo $product['name']; ?></h3>
                 <p class="text-yellow-400 font-semibold mb-2"><?php echo $product['rating']; ?></p>
                 <p class="text-gray-700 text-justify"><?php echo $product['description']; ?></p>
             </div>
@@ -191,30 +186,50 @@
         </div>
     </div>
     </footer>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('svgLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        var searchContainer = document.getElementById('searchContainer');
-        searchContainer.classList.toggle('hidden');
-    });
-    document.getElementById('supportDropdown').addEventListener('click', function(event) {
-        event.preventDefault();
-        var supportDropdown = document.getElementById('supportDropdownContent');
-        supportDropdown.classList.toggle('hidden');
-    });
-    const searchBar = document.getElementById('searchBar');
-    const brandDropdown = document.getElementById('brandDropdown');
+    
+    <script>
+        const svgLink = document.getElementById('svgLink');
+        const searchContainer = document.getElementById('searchContainer');
+        const searchBar = document.getElementById('searchBar');
+        const searchButton = document.getElementById('searchButton');
+        const brandDropdown = document.getElementById('brandDropdown');
+        const brandItems = document.querySelectorAll('.brandItem');
+        const supportDropdown = document.getElementById('supportDropdown');
+        const supportDropdownContent = document.getElementById('supportDropdownContent');
+        const header = document.querySelector('nav');
 
-    searchBar.addEventListener('focus', () => {
-        brandDropdown.classList.remove('hidden');
-    });
-    document.addEventListener('click', (event) => {
-        if (!searchBar.contains(event.target) && !brandDropdown.contains(event.target)) {
-            brandDropdown.classList.add('hidden');
-        }
-    });
-});
-</script>
+        svgLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            searchContainer.classList.toggle('hidden');
+        });
+
+        searchBar.addEventListener('focus', function() {
+            brandDropdown.classList.remove('hidden');
+        });
+
+        searchButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            const searchTerm = searchBar.value;
+            if (searchTerm) {
+                window.location.href = `search?query=${searchTerm}`;
+            }
+        });
+
+        brandItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                const brand = this.textContent.trim();
+                window.location.href = `search?brand=${brand}`;
+            });
+
+            item.addEventListener('mouseover', function() {
+                searchBar.value = this.textContent.trim();
+            });
+        });
+
+        supportDropdown.addEventListener('click', function(event) {
+            event.preventDefault();
+            supportDropdownContent.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
