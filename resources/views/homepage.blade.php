@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KeyPhone</title>
+    <link rel="icon" href="{{ asset('images/luguu.png') }}" type="image/png">
     @vite('resources/css/app.css')
-    
 </head>
 <body class="bg-gray-100 overflow-x-hidden">
+    <div class="flex items-center">
+        <img src="{{ asset('images/products/vivo-Y03.png') }}" alt="Website Icon" class="w-8 h-auto mr-2">
+        <h1 class="text-2xl font-bold">KeyPhone Store</h1>
+    </div>
     <nav class="bg-custom-darkBlue py-2 fixed top-0 w-full z-50">
         <div class="w-full container mx-10 flex justify-between items-center">
             <ul class="flex items-center space-x-2 text-white">

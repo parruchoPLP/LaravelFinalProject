@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KeyPhone Store</title>
+    <link rel="icon" href="{{ asset('images/luguu.png') }}" type="image/png">
     @vite('resources/css/app.css')
 </head>
 <body class="bg-gray-100 overflow-x-hidden">
+    <div class="flex items-center">
+        <img src="{{ asset('images/products/vivo-Y03.png') }}" alt="Website Icon" class="w-8 h-auto mr-2">
+        <h1 class="text-2xl font-bold">KeyPhone Store</h1>
+    </div>
     <nav class="bg-custom-darkBlue py-2 fixed top-0 w-full z-50">
         <div class="w-full container mx-10 flex justify-between items-center">
             <ul class="flex items-center space-x-2 text-white">
@@ -53,13 +58,13 @@
                 </div>
                 <div id="brandDropdown" class="absolute left-0 w-full bg-white border border-gray-300 rounded mt-2 hidden">
                     <ul>
-                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Apple</li>
-                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Huawei</li>
-                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Oppo</li>
-                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Realme</li>
-                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Samsung</li>
-                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Vivo</li>
-                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Xiaomi</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer" phone-brand="Apple">Apple</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer" phone-brand="Huawei">Huawei</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer" phone-brand="Oppo">Oppo</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer" phone-brand="Realme">Realme</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer" phone-brand="Samsung">Samsung</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer" phone-brand="Vivo">Vivo</li>
+                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer" phone-brand="Xiaomi">Xiaomi</li>
                     </ul>
                 </div>
             </div>
@@ -201,16 +206,16 @@
     </div>
     </footer>
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const svgLink = document.getElementById('svgLink');
-        const searchContainer = document.getElementById('searchContainer');
-        const searchBar = document.getElementById('searchBar');
-        const searchButton = document.getElementById('searchButton');
-        const brandDropdown = document.getElementById('brandDropdown');
-        const brandItems = document.querySelectorAll('.brandItem');
-        const supportDropdown = document.getElementById('supportDropdown');
-        const supportDropdownContent = document.getElementById('supportDropdownContent');
-        const header = document.querySelector('nav');
+        document.addEventListener('DOMContentLoaded', function() {
+            const svgLink = document.getElementById('svgLink');
+            const searchContainer = document.getElementById('searchContainer');
+            const searchBar = document.getElementById('searchBar');
+            const searchButton = document.getElementById('searchButton');
+            const brandDropdown = document.getElementById('brandDropdown');
+            const brandItems = document.querySelectorAll('.brandItem');
+            const supportDropdown = document.getElementById('supportDropdown');
+            const supportDropdownContent = document.getElementById('supportDropdownContent');
+            const header = document.querySelector('nav');
 
         svgLink.addEventListener('click', function(event) {
             event.preventDefault();
@@ -221,22 +226,47 @@
             brandDropdown.classList.remove('hidden');
         });
 
+        searchBar.addEventListener('input', function() {
+            const searchText = searchBar.value.toLowerCase();
+            let matchFound = false;
+            brandItems.forEach(function(item) {
+                const brandName = item.getAttribute('phone-brand').toLowerCase();
+                if (brandName.includes(searchText)) {
+                    item.style.display = 'block';
+                    matchFound = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            if (!matchFound) {
+                searchButton.disabled = true;
+            } else {
+                searchButton.disabled = false;
+            }
+        });
+
         searchButton.addEventListener('click', function(event) {
             event.preventDefault();
             const searchTerm = searchBar.value;
             if (searchTerm) {
-                window.location.href = `search?query=${searchTerm}`;
+                const matchedBrand = Array.from(brandItems).find(item => item.getAttribute('phone-brand') === searchTerm);
+                if (matchedBrand) {
+                    updateProducts(searchTerm);
+                } else {
+                    window.location.href = `search?query=${searchTerm}`;
+                }
             }
         });
 
         brandItems.forEach(function(item) {
             item.addEventListener('click', function() {
-                const brand = this.textContent.trim();
-                window.location.href = `search?brand=${brand}`;
+                const brand = this.getAttribute('phone-brand');
+                updateProducts(brand);
+                brandDropdown.classList.add('hidden');
             });
 
             item.addEventListener('mouseover', function() {
-                searchBar.value = this.textContent.trim();
+                searchBar.value = this.getAttribute('phone-brand');
             });
         });
 
