@@ -16,18 +16,11 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/homepage', function () {
-    return view('homepage');
-});
-
 Route::get('/storepage', function () {
     return view('storepage');
 });
 Route::get('/checkout', function () {
     return view('checkout');
-});
-Route::get('/product', function () {
-    return view('product');
 });
 
 Route::get('/signup', function () {
@@ -37,9 +30,10 @@ Route::get('/signup', function () {
 Route::get('/login', function () {
     return view('login');
 });
-Route::get('/homepage', [HomeController::class, 'homepage'])->name('homepage');
-Route::get('/product/{id}', [ProductController::class, 'showProduct'])->name('product.show');
+Route::get('/homepage', [ProductController::class, 'homepage'])->name('homepage');
 Route::get('/storepage', [ProductController::class, 'storepage'])->name('storepage');
 Route::get('/delivery-and-shipping', [Controller::class, 'showDeliveryAndShipping']);
 Route::get('/payment', [Controller::class, 'showPayment']);
 Route::get('/aboutus', [Controller::class, 'showAboutus']);
+Route::get('/storepage/{id}', [ProductController::class, 'storesearch'])->name('storepage');
+Route::get('/product/{productID}', [ProductController::class,'showProduct'])->name('product.show');

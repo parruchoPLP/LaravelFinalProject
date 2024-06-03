@@ -1,0 +1,51 @@
+{
+    "display": "6.1-inch FHD+ OLED Display (1179 x 2556 Pixels, 460 ppi) with Ceramic Shield, 120Hz Refresh Rate, HDR, Dolby Vision, 2000nits peak brightness, and Dynamic Island",
+    "os": "iOS17",
+    "chipset": "Apple A17 Pro",
+    "cpu": {
+      "description": "Hexa Core CPU",
+      "cores": {
+        "performance": 2,
+        "efficiency": 4
+      }
+    },
+    "gpu": "Apple 6-core GPU",
+    "ram": "6 GB",
+    "rear_camera": {
+      "main_camera": "48MP (f/1.78 Aperture, Autofocus, OIS)",
+      "ultra_wide": "12MP (f/2.2 Aperture, Autofocus, 120° FoV)",
+      "telephoto": "12MP (f/2.8 Aperture, OIS, 3x optical zoom)",
+      "flash": "Dual-tone LED Flash",
+      "video_recording": "Up to 4K@60fps with EIS, ProRes"
+    },
+    "front_camera": "12 Megapixels (f/1.9 Aperture, Autofocus) - Up to 4K@60fps video recording with EIS",
+    "storage": ["128GB", "256GB", "512GB", "1TB"],
+    "expansion": "None",
+    "sim_card": "Dual SIM (Nano + eSIM)",
+    "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+    "wifi": "Wi-Fi 802.11 b/g/n/ac/6e",
+    "nfc": "Yes",
+    "bluetooth": "Bluetooth 5.3",
+    "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS", "NavIC"],
+    "usb_otg": "Yes with DisplayPort",
+    "usb_port": "USB Type-C",
+    "sound": ["Stereo Speakers", "Dolby Atmos Audio", "USB Type-C Audio Output"],
+    "fm_radio": "No",
+    "biometrics": "FaceID Face Recognition",
+    "sensors": [
+      "Gyroscope",
+      "Compass",
+      "Ambient Light Sensor",
+      "Proximity Sensor",
+      "Accelerometer",
+      "Ultra Wideband (UWB) - AirTags",
+      "Emergency SOS via satellite (not applicable in PH)",
+      "Crash detection"
+    ],
+    "battery": "Li-ion Battery (Non-removable) - 20W Fast Charging (50% in 30 minutes), 15W Wireless Charging",
+    "material": "Glass front and back, Titanium frame (IP68 Water and Dust Resistant)",
+    "dimensions": "146.6 x 70.6 x 8.25 mm",
+    "weight": "187 g",
+    "colors": ["Black Titanium", "White Titanium", "Blue Titanium", "Natural Titanium"]
+  }
+  

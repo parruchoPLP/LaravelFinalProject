@@ -15,12 +15,12 @@
     <nav class="bg-custom-darkBlue py-2 fixed top-0 w-full z-50">
         <div class="w-full container mx-10 flex justify-between items-center">
             <ul class="flex items-center space-x-2 text-white">
-                <li><a href="homepage"><img src="{{ asset('images/keyphone.png') }}" style="width: 50px; height: 50px;"></a></li>
-                <li><a href="homepage" class="text-white text-2xl font-bold">KeyPhone</a></li>
+                <li><a href="/homepage"><img src="{{ asset('images/keyphone.png') }}" style="width: 50px; height: 50px;"></a></li>
+                <li><a href="/homepage" class="text-white text-2xl font-bold">KeyPhone</a></li>
             </ul>
             <ul class="flex space-x-6 text-white w-16">
-                <li><a href="homepage" class="hover:border-b hover:border-custom-gold">Home</a></li>
-                <li><a href="storepage" class="hover:border-b hover:border-custom-gold">Store</a></li>
+                <li><a href="/homepage" class="hover:border-b hover:border-custom-gold">Home</a></li>
+                <li><a href="/storepage" class="hover:border-b hover:border-custom-gold">Store</a></li>
                 <li><a href="#" class="hover:border-b hover:border-custom-gold" id="supportDropdown">Support</a></li>
                 <li><a href="#" class="flex items-center" id="svgLink">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="ml-4" id="searchIcon">
@@ -28,13 +28,13 @@
                     </svg>
                     </a>
                 </li>
-                <li><a href="checkout" class="flex items-center">
+                <li><a href="/checkout" class="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     </a>
                 </li>
-                <li><a href="login" class="flex items-center">
+                <li><a href="/login" class="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 20 20" version="1.1" class="text-white fill-current">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Dribbble-Light-Preview" transform="translate(-380.000000, -2159.000000)" fill="#ffffff">
@@ -48,7 +48,7 @@
                 </li>
             </ul>
         </div>
-        <div id="searchContainer" class="relative w-full left-0 bg-custom-darkBlue pt-4 pb-2 px-8 hidden">
+        <div id="searchContainer" class="relative w-1/2 mx-auto bg-custom-darkBlue pt-4 pb-2 px-4 hidden">
             <div class="relative">
                 <div class="flex items-center">
                     <input type="text" id="searchBar" placeholder="Search KeyPhone" class="w-full p-2 rounded mr-2">
@@ -56,25 +56,25 @@
                         <button id="searchButton" class="bg-custom-blueGray text-white px-4 py-2 rounded hover:bg-blue-500">Search</button>
                     </a>
                 </div>
-                <div id="brandDropdown" class="absolute left-0 w-full bg-white border border-gray-300 rounded mt-2 hidden">
+                <div id="phoneDropdown" class="absolute left-0 w-full bg-white border border-gray-300 rounded mt-2 hidden max-h-80 h-80 overflow-y-auto">
                     <ul>
-                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Apple</li>
-                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Huawei</li>
-                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Oppo</li>
-                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Realme</li>
-                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Samsung</li>
-                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Vivo</li>
-                        <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Xiaomi</li>
+                        <?php foreach ($allkeyphone as $phone): ?>
+                            <li class="phoneItem flex items-center px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer" phone-name="<?= $phone['name'] ?>">
+                                <img src="<?= $phone['image'] ?>" alt="<?= $phone['name'] ?>" class="phone-image w-20 h-auto mr-2">
+                                <span class="phone-name text-lg font-bold"><?= $phone['name'] ?></span>
+                            </li>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
             </div>
         </div>
         <div id="supportDropdownContent" class="absolute w-full left-0 bg-custom-darkBlue py-4 px-8 hidden flex justify-center">
-            <a href="delivery-and-shipping" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Delivery and Shipping</a>
-            <a href="payment" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Payment</a>
-            <a href="aboutus" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">About Us</a>
+            <a href="/delivery-and-shipping" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Delivery and Shipping</a>
+            <a href="/payment" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Payment</a>
+            <a href="/aboutus" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">About Us</a>
         </div>
     </nav>
+
     <section class="relative bg-cover bg-center" style="background-image: url('images/phones-bg.jpeg');">
         <div class="bg-custom-darkBlue bg-opacity-75 text-white py-12 flex flex-wrap items-center justify-center p-10 relative z-20">
             <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">
@@ -84,17 +84,34 @@
             </div>
         </div>
     </section>
-    <section class="flex justify-center items-center m-2">
-    <div class="flex items-center rounded">
-        <div class="flex-shrink-0">
-            <img src="{{ asset('images/products/vivo-Y03.png') }}" alt="Vivo Y03" style="width: 50px; height: 520px;">
-        </div>
-        <div class="ml-8">
-            <h2 class="text-3xl font-bold">Vivo Y03</h2>
-            <button class="mt-6 bg-custom-darkBlue text-white px-6 py-3 rounded hover:bg-custom-gold">Add to Cart</button>
+
+    <div class="card-holder bg-white mt-5 rounded-lg" style="margin: 100px;">
+    <div class="text-right p-10">
+        <img src="{{ $keyphone['image'] }}" alt="15" class="w-100 h-auto mx-auto float-left" style="max-width: 100%; height: auto;">
+    </div>
+    <div class="product-details flex flex-col p-20">
+        <h2 class="text-4xl font-bold mb-4 text-custom-darkBlue">{{ $keyphone['name'] }}</h2>
+        <p class="text-xl font-bold mb-4">{{ $keyphone['price'] }}</p>
+        <p class="text-yellow-400 font-semibold text-xl mb-4">{{ $keyphone['rating'] }}</p>
+        <div class="w-1/5">
+            <p class="text-gray-700 mb-2">Quantity:</p>
+            <select id="quantity" class="mb-4">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="other">Other:</option>
+            </select>
+            <input type="number" id="custom-quantity" class="mb-4" style="display: none;" placeholder="Enter quantity">
+            <button class="bg-custom-darkBlue text-white text-center py-2 px-6 rounded-lg hover:bg-custom-blueGray">Add to Cart</button>
         </div>
     </div>
-</section>
+    <div class="description p-20">
+        <h2 class="text-2xl font-bold mb-4 text-custom-darkBlue">Description</h2>
+        <p class="text-gray-700 mb-6">
+            {!! $formattedSpecifications !!}
+        </p>
+    </div>
+</div>
 
 
     <footer class="bg-gray-900 text-white pt-6">
@@ -144,47 +161,91 @@
     </footer>
     
     <script>
-        const svgLink = document.getElementById('svgLink');
-        const searchContainer = document.getElementById('searchContainer');
-        const searchBar = document.getElementById('searchBar');
-        const searchButton = document.getElementById('searchButton');
-        const brandDropdown = document.getElementById('brandDropdown');
-        const brandItems = document.querySelectorAll('.brandItem');
-        const supportDropdown = document.getElementById('supportDropdown');
-        const supportDropdownContent = document.getElementById('supportDropdownContent');
-        const header = document.querySelector('nav');
+        var allProducts = <?php echo json_encode($allkeyphone) ?>;
 
-        svgLink.addEventListener('click', function(event) {
-            event.preventDefault();
-            searchContainer.classList.toggle('hidden');
-        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const svgLink = document.getElementById('svgLink');
+            const searchContainer = document.getElementById('searchContainer');
+            const searchBar = document.getElementById('searchBar');
+            const searchButton = document.getElementById('searchButton');
+            const brandDropdown = document.getElementById('brandDropdown');
+            const brandItems = document.querySelectorAll('.brandItem');
+            const supportDropdown = document.getElementById('supportDropdown');
+            const supportDropdownContent = document.getElementById('supportDropdownContent');
+            const phoneDropdown = document.getElementById('phoneDropdown');
+            const phoneItems = document.querySelectorAll('.phoneItem');
+            const header = document.querySelector('nav');
 
-        searchBar.addEventListener('focus', function() {
-            brandDropdown.classList.remove('hidden');
-        });
-
-        searchButton.addEventListener('click', function(event) {
-            event.preventDefault();
-            const searchTerm = searchBar.value;
-            if (searchTerm) {
-                window.location.href = `search?query=${searchTerm}`;
-            }
-        });
-
-        brandItems.forEach(function(item) {
-            item.addEventListener('click', function() {
-                const brand = this.textContent.trim();
-                window.location.href = `search?brand=${brand}`;
+            svgLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                searchContainer.classList.toggle('hidden');
             });
 
-            item.addEventListener('mouseover', function() {
-                searchBar.value = this.textContent.trim();
+            searchBar.addEventListener('focus', function() {
+                phoneDropdown.classList.remove('hidden');
             });
-        });
 
-        supportDropdown.addEventListener('click', function(event) {
-            event.preventDefault();
-            supportDropdownContent.classList.toggle('hidden');
+            supportDropdown.addEventListener('click', function(event) {
+                event.preventDefault();
+                supportDropdownContent.classList.toggle('hidden');
+            });
+
+            searchBar.addEventListener('input', function() {
+                const searchText = searchBar.value.toLowerCase();
+                let matchFound = false;
+                let count = 0;
+                phoneItems.forEach(function(item) {
+                    const phoneName = item.getAttribute('phone-name').toLowerCase();
+                    if (phoneName.includes(searchText) && count < 10) {
+                        item.style.display = 'flex block';
+                        matchFound = true;
+                        count++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                if (!matchFound) {
+                    searchButton.disabled = true;
+                } else {
+                    searchButton.disabled = false;
+                }
+            });
+
+            document.getElementById('quantity').addEventListener('change', function () {
+                var customQuantityInput = document.getElementById('custom-quantity');
+                if (this.value === 'other') {
+                    customQuantityInput.style.display = 'block';
+                } else {
+                    customQuantityInput.style.display = 'none';
+                }
+            });
+
+            searchButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                const searchTerm = searchBar.value;
+                if (searchTerm) {
+                    const matchedName = Array.from(phoneItems).find(item => item.getAttribute('phone-name') === searchTerm);
+                    if (matchedName) {
+                        searchTerm = searchTerm.replace(/\s/g, '').toLowerCase();
+                        window.location.href = `/product/${searchTerm}`;
+                    } else {
+                        window.location.href = `search?query=${searchTerm}`;
+                    }
+                }
+            });
+
+            phoneItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    let name = this.getAttribute('phone-name');
+                    name = name.replace(/\s/g, '').toLowerCase();
+                    window.location.href = `/product/${name}`;
+                    phoneDropdown.classList.add('hidden');
+                });
+    
+                item.addEventListener('mouseover', function() {
+                    searchBar.value = this.getAttribute('phone-name');
+                });
+            });
         });
     </script>
 </body>
