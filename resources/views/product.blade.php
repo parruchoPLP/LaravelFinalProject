@@ -76,7 +76,16 @@
         </div>
     </nav>
 
-    
+    <section class="relative bg-cover bg-center" style="background-image: url('images/phones-bg.jpeg');">
+        <div class="bg-custom-darkBlue bg-opacity-75 text-white py-12 flex flex-wrap items-center justify-center p-10 relative z-20">
+            <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">
+                <div class="text-center">
+                    <h1 class="text-5xl font-bold mt-5">Buy KeyPhone Now!</h1>
+                     </div>
+            </div>
+        </div>
+    </section>
+
     <div class="card-holder bg-white mt-5 mx-auto rounded-lg" style="height:500px; margin:100px;">
             <div class="text-right">
                 <img src="{{ asset('images/products/iPhone-15-Pro-Max.png') }}" alt="15" class="w-100 h-auto mx-auto float-left" style="max-width: 100%; height: auto;">
@@ -97,15 +106,6 @@
         </div>
     </div>
 
-    <section class="relative bg-cover bg-center" style="background-image: url('images/phones-bg.jpeg');">
-        <div class="bg-custom-darkBlue bg-opacity-75 text-white py-12 flex flex-wrap items-center justify-center p-10 relative z-20">
-            <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">
-                <div class="text-center">
-                    <h1 class="text-5xl font-bold mt-5">Buy KeyPhone Now!</h1>
-                     </div>
-            </div>
-        </div>
-    </section>
     <section class="flex justify-center items-center m-2">
     <div class="flex items-center rounded">
         <div class="flex-shrink-0">
@@ -116,7 +116,7 @@
             <button class="mt-6 bg-custom-darkBlue text-white px-6 py-3 rounded hover:bg-custom-gold">Add to Cart</button>
         </div>
     </div>
-</section>
+    </section>
 
 
     <footer class="bg-gray-900 text-white pt-6">
