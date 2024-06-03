@@ -42,3 +42,4 @@ Route::get('/storepage', [ProductController::class, 'storepage'])->name('storepa
 Route::get('/delivery-and-shipping', [Controller::class, 'showDeliveryAndShipping']);
 Route::get('/payment', [Controller::class, 'showPayment']);
 Route::get('/aboutus', [Controller::class, 'showAboutus']);
+

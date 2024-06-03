@@ -138,21 +138,20 @@
     </aside>
     <div class="w-3/4 container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="productGrid">
-        <?php 
-            foreach($keyphone as $product): 
-            ?>
-            <div class="bg-white p-6 rounded-lg shadow-md product relative flex flex-col" phone-brand="{{ $product['brand'] }}">
-                <a href='/product/{{$product['name']}}'>
-                    <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}" class="w-full mb-4">
-                </a>
-                <h3 class="text-xl font-semibold mb-2">{{ $product['name'] }}</h3>
-                <p class="text-yellow-400 font-semibold text-lg">{{ $product['rating'] }}</p>
-                <p class="text-lg font-bold mb-4 pt-1 py-10">{{ $product['price'] }}</p>
-                <div class="flex-grow"></div>
-                <a href="#" class="block bg-custom-darkBlue text-white text-center py-2 rounded-lg hover:bg-custom-blueGray absolute bottom-0 left-0 right-0 mb-6 mx-6">Add to Cart</a>
-            </div>
-            <?php endforeach; ?>
+            @foreach($keyphone as $product)
+                <div id="{{ Str::slug($product['name'], '-') }}" class="bg-white p-6 rounded-lg shadow-md product relative flex flex-col" phone-brand="{{ $product['brand'] }}">
+                    <a href="{{ url('/product/' . Str::slug($product['name'], '-')) }}">
+                        <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}" class="w-full mb-4">
+                    </a>
+                    <h3 class="text-xl font-semibold mb-2">{{ $product['name'] }}</h3>
+                    <p class="text-yellow-400 font-semibold text-lg">{{ $product['rating'] }}</p>
+                    <p class="text-lg font-bold mb-4 pt-1 py-10">{{ $product['price'] }}</p>
+                    <div class="flex-grow"></div>
+                    <a href="#" class="block bg-custom-darkBlue text-white text-center py-2 rounded-lg hover:bg-custom-blueGray absolute bottom-0 left-0 right-0 mb-6 mx-6">Add to Cart</a>
+                </div>
+            @endforeach
         </div>
+    </div>
     </div>
     </section>
     <footer class="bg-gray-900 text-white pt-6">
