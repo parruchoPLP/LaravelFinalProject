@@ -1,0 +1,83 @@
+{
+    "DISPLAY": {
+      "Size": "6.7-inch",
+      "Type": "FHD+ OLED",
+      "Resolution": "1080 x 2412 Pixels",
+      "PPI": 394,
+      "Dragontrail": "AGC Dragontrail Star 2",
+      "Aspect Ratio": "20:9",
+      "Refresh Rate": "120Hz",
+      "Brightness": "950 nits",
+      "HDR": "HDR10+",
+      "Other": "Punch-hole"
+    },
+    "OS": "Android 14 with ColorOS 14",
+    "CHIPSET": "MediaTek Dimensity 7050 (6 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A78": "2x @ 2.6GHz",
+        "Cortex-A55": "6x @ 2.0GHz"
+      }
+    },
+    "GPU": "Mali-G68 MC4",
+    "RAM": "12 GB",
+    "REAR_CAMERA": {
+      "Type": "Triple Cameras",
+      "Main_Camera": {
+        "Resolution": "50MP",
+        "Aperture": "f/1.8",
+        "Features": ["Autofocus", "OIS"]
+      },
+      "Telephoto": {
+        "Resolution": "32MP",
+        "Aperture": "f/2.0",
+        "Features": ["Autofocus"],
+        "Zoom": "2x Optical"
+      },
+      "Ultra-wide": {
+        "Resolution": "8MP",
+        "Aperture": "f/2.2",
+        "FoV": "112°"
+      },
+      "LED_Flash": true,
+      "Video_Recording": "Up to 4K@30fps with EIS"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "32 Megapixels",
+      "Aperture": "f/2.4",
+      "Video_Recording": "Up to 4K@30fps"
+    },
+    "STORAGE": "256GB",
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.3",
+    "INFRARED": true,
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Speakers": "Stereo Dual Speakers",
+      "Volume": "Up to 300%"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Fingerprint Sensor (under-display)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-Po",
+      "Removable": false,
+      "Charging": "67W Fast Charging (SUPERVOOC, 100% in 45 minutes)"
+    },
+    "MATERIAL": "Glass front, Polycarbonate back",
+    "DIMENSIONS": {
+      "Width": "162.4 mm",
+      "Height": "74.3 mm",
+      "Thickness": "7.99 mm"
+    },
+    "WEIGHT": "182 g",
+    "COLORS": ["Rock Gray", "Wave Green"]
+  }
+  

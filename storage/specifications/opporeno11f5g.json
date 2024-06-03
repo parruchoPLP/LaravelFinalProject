@@ -1,0 +1,84 @@
+{
+    "DISPLAY": {
+      "Size": "6.7-inch",
+      "Type": "FHD+ OLED",
+      "Resolution": "1080 x 2412 Pixels",
+      "PPI": 394,
+      "Aspect Ratio": "20:9",
+      "Refresh Rate": "120Hz",
+      "Brightness": "1100 nits",
+      "HDR": "HDR10+",
+      "Other": "Punch-hole"
+    },
+    "OS": "Android 14 with ColorOS 14",
+    "CHIPSET": "MediaTek Dimensity 7050 (6 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A78": "2x @ 2.6GHz",
+        "Cortex-A55": "6x @ 2.0GHz"
+      }
+    },
+    "GPU": "Mali-G68 MC4",
+    "RAM": "8 GB",
+    "REAR_CAMERA": {
+      "Type": "Triple Cameras",
+      "Main_Camera": {
+        "Resolution": "64MP",
+        "Sensor": "Omnivision OV64B",
+        "Aperture": "f/1.7",
+        "Features": ["Autofocus"]
+      },
+      "Ultra-wide": {
+        "Resolution": "8MP",
+        "Sensor": "Sony IMX355",
+        "Aperture": "f/2.2",
+        "FoV": "112°"
+      },
+      "Macro": {
+        "Resolution": "2MP",
+        "Aperture": "f/2.4"
+      },
+      "LED_Flash": true,
+      "Video_Recording": "Up to 4K@30fps or 1080p@60fps with EIS"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "32 Megapixels",
+      "Sensor": "Sony IMX615",
+      "Aperture": "f/2.4",
+      "FoV": "90°",
+      "Video_Recording": "Up to 4K@30fps"
+    },
+    "STORAGE": "256GB",
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac/6",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.2",
+    "INFRARED": true,
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Volume": "Up to 300% loudspeaker volume",
+      "Audio_Output": "USB Type-C"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (under-display)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-Po",
+      "Removable": false,
+      "Charging": "67W Fast Charging (SUPERVOOC, 100% in 48 minutes)"
+    },
+    "MATERIAL": "Glass front, Polycarbonate back (IP65 dust and water resistant)",
+    "DIMENSIONS": {
+      "Width": "161.6 mm",
+      "Height": "74.7 mm",
+      "Thickness": "7.54 mm"
+    },
+    "WEIGHT": "177 g",
+    "COLORS": ["Ocean Blue", "Palm Green", "Coral Purple"]
+  }
+  

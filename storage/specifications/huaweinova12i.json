@@ -1,0 +1,69 @@
+{
+    "DISPLAY": {
+      "Size": "6.7-inch",
+      "Type": "FHD+ IPS LCD",
+      "Resolution": "1080 x 2388 Pixels",
+      "PPI": 391,
+      "Refresh Rate": "90Hz",
+      "Cutout": "Punch-hole"
+    },
+    "OS": "EMUI 14",
+    "CHIPSET": "Qualcomm Snapdragon 680 (6 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A73": "4x @ 2.4GHz",
+        "Cortex-A53": "4x @ 1.9GHz"
+      }
+    },
+    "GPU": "Adreno 610",
+    "RAM": "8 GB",
+    "REAR_CAMERA": {
+      "Type": "Dual Cameras",
+      "Main_Camera": {
+        "Resolution": "108MP",
+        "Aperture": "f/1.9",
+        "Features": ["Autofocus"]
+      },
+      "Depth_Sensor": {
+        "Resolution": "2MP",
+        "Features": ["LED Flash"]
+      },
+      "Video_Recording": "Up to 1080p"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "8 Megapixels",
+      "Aperture": "f/2.0",
+      "Video_Recording": "Up to 1080p"
+    },
+    "STORAGE": "256GB",
+    "EXPANSION": "None",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.0",
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio_Output": "USB Type-C"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
+    "SENSORS": ["Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-ion",
+      "Removable": false,
+      "Charging": "40W Fast Charging (HUAWEI SuperCharge, 62% in 30 minutes)"
+    },
+    "MATERIAL": "Glass front, Plastic back",
+    "DIMENSIONS": {
+      "Width": "163.3 mm",
+      "Height": "74.7 mm",
+      "Thickness": "8.4 mm"
+    },
+    "WEIGHT": "199 g",
+    "COLORS": ["Black", "Green"]
+  }
+  

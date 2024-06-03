@@ -1,0 +1,69 @@
+{
+    "DISPLAY": {
+      "Size": "6.72-inch",
+      "Type": "FHD+ LTPS LCD",
+      "Resolution": "1080 x 2400 Pixels",
+      "PPI": 391,
+      "Refresh Rate": "60Hz",
+      "Brightness": "680 nits",
+      "Aspect Ratio": "20:9",
+      "Notch": true
+    },
+    "OS": "Android 13 with ColorOS 13.1",
+    "CHIPSET": "MediaTek Helio G85",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A75": "2x @ 2.0GHz",
+        "Cortex-A55": "6x @ 1.8GHz"
+      }
+    },
+    "GPU": "Mali-G52 MC2",
+    "RAM": "6 GB",
+    "REAR_CAMERA": {
+      "Type": "Dual Cameras",
+      "Main_Camera": {
+        "Resolution": "50MP",
+        "Aperture": "f/1.8",
+        "Features": ["Autofocus"],
+        "Video_Recording": "Up to 1080p"
+      },
+      "Monochrome": {
+        "Resolution": "2MP",
+        "Aperture": "f/2.4"
+      },
+      "LED_Flash": true
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "8 Megapixels",
+      "Aperture": "f/2.0",
+      "Video_Recording": "Up to 1080p"
+    },
+    "STORAGE": "128GB",
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.3",
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Speakers": "Stereo Dual Speakers with up to 300% volume",
+      "Audio_Jack": "3.5mm"
+    },
+    "FM_RADIO": true,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
+    "SENSORS": ["Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-Po",
+      "Removable": false,
+      "Charging": "33W Fast Charging (SUPERVOOC, 52% in 30 minutes)"
+    },
+    "MATERIAL": "Glass front, Plastic back (IPX4 splash resistance)",
+    "DIMENSIONS": "165.65 x 75.98 x 7.99 mm",
+    "WEIGHT": "192 g",
+    "COLORS": ["Glowing Black", "Dazzling Green"]
+  }
+  

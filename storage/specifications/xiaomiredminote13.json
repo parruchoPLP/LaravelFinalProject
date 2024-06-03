@@ -1,0 +1,73 @@
+{
+    "DISPLAY": {
+      "Size": "6.67-inch",
+      "Type": "FHD+ AMOLED",
+      "Resolution": "1080 x 2400 Pixels",
+      "PPI": 395,
+      "Refresh Rate": "120Hz",
+      "Brightness": "1800 nits",
+      "Protection": "Corning Gorilla Glass 3",
+      "Notch": false
+    },
+    "OS": "Android 13 with MIUI 14",
+    "CHIPSET": "Qualcomm Snapdragon 685 (6 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A73": "4x @ 2.8GHz",
+        "Cortex-A53": "4x @ 1.9GHz"
+      }
+    },
+    "GPU": "Adreno 610",
+    "RAM": ["6GB", "8GB"],
+    "REAR_CAMERA": {
+      "Type": "Triple Cameras",
+      "Main_Camera": {
+        "Resolution": "108MP",
+        "Aperture": "f/1.75",
+        "Features": ["Autofocus"],
+        "Video_Recording": "Up to 1080p"
+      },
+      "Ultra_wide": {
+        "Resolution": "8MP",
+        "Aperture": "f/2.2"
+      },
+      "Macro": {
+        "Resolution": "2MP",
+        "Aperture": "f/2.4"
+      }
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "16 Megapixels",
+      "Aperture": "f/2.4",
+      "Video_Recording": "Up to 1080p"
+    },
+    "STORAGE": ["128GB", "256GB"],
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.1",
+    "INFRARED": true,
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio": "Dolby ATMOS, Dual Speakers",
+      "Audio_Jack": "3.5mm"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (under-display)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-Po",
+      "Removable": false,
+      "Charging": "33W Fast Charging (100% in 70 minutes)"
+    },
+    "MATERIAL": "Glass front, Polycarbonate back (IP54 dust and splash resistant)",
+    "DIMENSIONS": "162.24 x 75.55 x 7.97 mm",
+    "WEIGHT": "188.5 g",
+    "COLORS": ["Midnight Black", "Mint Green", "Ice Blue", "Ocean Sunset"]
+  }
+  

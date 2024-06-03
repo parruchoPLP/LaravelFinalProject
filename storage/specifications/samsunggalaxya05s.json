@@ -1,0 +1,82 @@
+{
+    "DISPLAY": {
+      "Size": "6.7-inch",
+      "Type": "FHD+ PLS LCD",
+      "Resolution": "1080 x 2400 Pixels",
+      "PPI": 393,
+      "Aspect Ratio": "20:9",
+      "Refresh Rate": "90Hz",
+      "Notch": true
+    },
+    "OS": "Android 13 with One UI",
+    "CHIPSET": "Qualcomm Snapdragon 680 (6 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Kryo 265 Gold": "4x @ 2.4GHz",
+        "Kryo 265 Silver": "4x @ 1.9GHz"
+      }
+    },
+    "GPU": "Adreno 610",
+    "RAM": "4 GB",
+    "REAR_CAMERA": {
+      "Triple Cameras": [
+        {
+          "Main Camera": {
+            "Resolution": "50MP",
+            "Aperture": "f/1.8",
+            "Features": ["Autofocus"]
+          }
+        },
+        {
+          "Macro": {
+            "Resolution": "2MP",
+            "Aperture": "f/2.4"
+          }
+        },
+        {
+          "Depth Sensor": {
+            "Resolution": "2MP"
+          }
+        }
+      ],
+      "Flash": "LED",
+      "Video Recording": "Up to 1080p@60fps"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "13 Megapixels",
+      "Aperture": "f/2.0",
+      "Features": ["LED Flash"],
+      "Video Recording": "Up to 1080p@60fps"
+    },
+    "STORAGE": "128GB",
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": false,
+    "BLUETOOTH": "Bluetooth 5.1",
+    "POSITIONING": "GPS, GLONASS, GALILEO, BeiDou",
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Technology": "Dolby ATMOS",
+      "Audio_Jack": "3.5mm"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": {
+      "Face_Recognition": true,
+      "Fingerprint_Sensor": "Side-mounted"
+    },
+    "SENSORS": ["Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-Po",
+      "Removable": false,
+      "Charging": "25W Fast Charging"
+    },
+    "MATERIAL": "Glass front, Plastic back",
+    "DIMENSIONS": "168.0 x 77.8 x 8.8 mm",
+    "WEIGHT": "194 g",
+    "COLORS": ["Black", "Light Green"]
+  }
+  

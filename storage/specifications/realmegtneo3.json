@@ -1,0 +1,76 @@
+{
+    "DISPLAY": {
+      "Size": "6.7-inch",
+      "Type": "FHD+ AMOLED",
+      "Resolution": "1080 x 2412 Pixels",
+      "PPI": 394,
+      "Aspect Ratio": "20:9",
+      "Refresh Rate": "120Hz",
+      "HDR": "HDR10+",
+      "Protection": "Corning Gorilla Glass 5",
+      "Notch": true
+    },
+    "OS": "Android 12 with realme UI 3.0",
+    "CHIPSET": "MediaTek Dimensity 8100",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A78": "4x @ 2.85GHz",
+        "Cortex-A55": "4x @ 2.0GHz"
+      }
+    },
+    "GPU": "Mali-G610 MC6",
+    "RAM": "8 GB",
+    "REAR_CAMERA": {
+      "Type": "Triple Cameras",
+      "Main_Camera": {
+        "Resolution": "50MP",
+        "Sensor": "Sony IMX766",
+        "Aperture": "f/1.88",
+        "Features": ["OIS", "Autofocus"],
+        "Video_Recording": "Up to 4K@60fps"
+      },
+      "Ultra_wide": {
+        "Resolution": "8MP",
+        "Aperture": "f/2.3",
+        "Field_of_View": "120˚"
+      },
+      "Macro": {
+        "Resolution": "2MP",
+        "Aperture": "f/2.4"
+      },
+      "Flash": "Dual-tone LED"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "16 Megapixels",
+      "Aperture": "f/2.5",
+      "Video_Recording": "Up to 1080p@30fps"
+    },
+    "STORAGE": "256GB",
+    "EXPANSION": "None",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 6",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.3",
+    "POSITIONING": "GPS with A-GPS (dual band), GLONASS, GALILEO, BeiDou, QZSS",
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio": "Hi-Res Audio with Dolby ATMOS and Stereo Dual Speakers",
+      "Output": "USB Type-C"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Scanner (under display)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-Po",
+      "Removable": false,
+      "Charging": "80W Fast Charging (SuperDart, 50% in 12 minutes, 100% in 32 minutes)"
+    },
+    "MATERIAL": "Glass front and back",
+    "DIMENSIONS": "163.3 x 75.6 x 8.2 mm",
+    "WEIGHT": "188 g",
+    "COLORS": ["Asphalt Black", "Sprint White", "Nitro Blue"]
+  }
+  

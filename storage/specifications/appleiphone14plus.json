@@ -1,0 +1,80 @@
+{
+    "display": {
+      "size": "6.7-inch",
+      "type": "QHD+ Super Retina XDR OLED",
+      "resolution": "1284 x 2778 Pixels",
+      "ppi": 458,
+      "protection": "Ceramic Shield",
+      "aspect_ratio": "19.5:9",
+      "refresh_rate": "60Hz",
+      "features": ["HDR", "Dolby Vision", "notch"]
+    },
+    "os": "iOS16",
+    "chipset": "Apple A15 Bionic",
+    "cpu": {
+      "type": "Hexa Core",
+      "cores": {
+        "performance": 2,
+        "efficiency": 4
+      },
+      "clock_speeds": {
+        "performance": "3.23GHz",
+        "efficiency": "1.82GHz"
+      }
+    },
+    "gpu": "5-core Apple GPU",
+    "ram": "6 GB",
+    "rear_camera": {
+      "dual_cameras": [
+        {
+          "megapixels": "12MP",
+          "features": ["f/1.5 Aperture", "all-pixel Autofocus", "sensor-shift OIS"]
+        },
+        {
+          "megapixels": "12MP",
+          "features": ["f/2.4 Aperture", "120˚ FoV"]
+        }
+      ],
+      "flash": "Dual-tone LED Flash",
+      "video_recording": ["Up to 4K@60fps", "ProRes", "EIS"]
+    },
+    "front_camera": {
+      "megapixels": "12MP",
+      "features": ["f/1.9 Aperture", "Autofocus"]
+    },
+    "storage": ["128GB", "256GB", "512GB"],
+    "expansion": "None",
+    "sim_card": "Dual SIM (Nano + eSIM)",
+    "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+    "wifi": "Wi-Fi 802.11 b/g/n/ac/ax/6 (dual band)",
+    "nfc": "Yes",
+    "bluetooth": "Bluetooth 5.3",
+    "positioning": ["GPS with A-GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "usb_port": "Lightning Port",
+    "sound": {
+      "speakers": "Stereo Dual Speakers",
+      "audio_output": "Lightning Port Audio Output",
+      "features": ["Dolby Atmos"]
+    },
+    "fm_radio": "No",
+    "biometrics": "FaceID Face Recognition",
+    "sensors": ["Barometer", "Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer", "Ultra Wideband (UWB) - AirTags", "Emergency SOS via satellite (US & Canada only)", "Crash detection"],
+    "battery": {
+      "capacity": "4323 mAh",
+      "type": "Li-ion (Non-removable)",
+      "charging": {
+        "wired": "20W Fast Charging (50% in 30 minutes, charger sold separately)",
+        "wireless": ["15W MagSafe", "7.5W Qi"]
+      }
+    },
+    "material": {
+      "front": "Glass",
+      "back": "Glass",
+      "frame": "Aluminum",
+      "protection": "IP68 Water & Dust Resistance"
+    },
+    "dimensions": "160.8 x 78.1 x 7.8 mm",
+    "weight": "203 g",
+    "colors": ["Midnight", "Purple", "Starlight", "Product RED", "Blue"]
+  }
+  

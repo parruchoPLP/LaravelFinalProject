@@ -1,0 +1,79 @@
+{
+    "display": {
+      "size": "6.1-inch",
+      "type": "FHD+ OLED",
+      "resolution": "1170 x 2532 Pixels",
+      "ppi": 460,
+      "protection": "Scratch Resistant Ceramic Glass",
+      "aspect_ratio": "19.5:9",
+      "features": ["HDR10", "Dolby Vision", "Notch"]
+    },
+    "os": "iOS15",
+    "chipset": "Apple A15 Bionic",
+    "cpu": {
+      "type": "Hexa Core",
+      "cores": {
+        "performance": 2,
+        "efficiency": 4
+      },
+      "clock_speeds": {
+        "performance": "3.2GHz",
+        "efficiency": "2.0GHz"
+      }
+    },
+    "gpu": "4-core Apple GPU",
+    "ram": "6 GB",
+    "rear_camera": {
+      "dual_cameras": [
+        {
+          "megapixels": "12MP",
+          "features": ["f/1.6 Aperture", "dual-pixel PD Autofocus", "sensor-shift OIS"]
+        },
+        {
+          "megapixels": "12MP",
+          "features": ["f/2.4 Aperture", "120° FoV"]
+        }
+      ],
+      "flash": "Dual-tone LED Flash",
+      "video_recording": "Up to 4K@60fps"
+    },
+    "front_camera": {
+      "megapixels": "12MP",
+      "features": ["f/2.2 Aperture"],
+      "video_recording": "Up to 4K@24fps"
+    },
+    "storage": ["128GB", "256GB", "512GB"],
+    "expansion": "None",
+    "sim_card": "Dual SIM (Nano + eSIM)",
+    "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+    "wifi": "Wi-Fi 6",
+    "nfc": "Yes",
+    "bluetooth": "Bluetooth 5.0",
+    "positioning": ["GPS with A-GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "usb_port": "Lightning Port",
+    "sound": {
+      "speakers": "Stereo Speakers",
+      "audio_output": "Lightning Port Audio Output",
+      "features": ["Dolby Atmos"]
+    },
+    "fm_radio": "No",
+    "biometrics": "Face Recognition",
+    "sensors": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "battery": {
+      "type": "Li-ion (Non-removable)",
+      "charging": {
+        "wired": "20W Fast Charging (50% in 30 minutes)",
+        "wireless": "15W MagSafe"
+      }
+    },
+    "material": {
+      "front": "Glass",
+      "back": "Glass",
+      "frame": "Aluminum",
+      "protection": "IP68 Water & Dust Resistance"
+    },
+    "dimensions": "146.7 x 71.5 x 7.65 mm",
+    "weight": "173 g",
+    "colors": ["Midnight", "Starlight", "Blue", "Pink", "(Product) RED"]
+  }
+  

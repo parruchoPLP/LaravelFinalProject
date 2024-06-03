@@ -1,0 +1,74 @@
+{
+    "DISPLAY": {
+      "Size": "6.72-inch",
+      "Type": "FHD+ IPS LCD",
+      "Resolution": "1080 x 2400 Pixels",
+      "PPI": 392,
+      "Aspect Ratio": "20:9",
+      "Refresh Rate": "90Hz",
+      "Brightness": "680 nits",
+      "Punch-hole": true
+    },
+    "OS": "Android 13 with realme UI 4.0",
+    "CHIPSET": "MediaTek Helio G88",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A75": "2x @ 2.0GHz",
+        "Cortex-A55": "6x @ 1.8GHz"
+      }
+    },
+    "GPU": "Mali-G52 MC2",
+    "RAM": ["6GB", "8GB"],
+    "REAR_CAMERA": {
+      "Dual Cameras": [
+        {
+          "Main Camera": {
+            "Resolution": "64MP",
+            "Aperture": "f/1.79",
+            "Features": ["Autofocus"]
+          }
+        },
+        {
+          "Depth Sensor": {
+            "Resolution": "2MP",
+            "Aperture": "Not specified"
+          }
+        }
+      ],
+      "Flash": "LED",
+      "Video Recording": "Up to 1080p"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "8 Megapixels",
+      "Aperture": "f/2.0",
+      "Video Recording": "Up to 1080p"
+    },
+    "STORAGE": ["128GB", "256GB"],
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": false,
+    "BLUETOOTH": "Bluetooth 5.2",
+    "POSITIONING": ["GPS with A-GPS", "GLONASS", "GALILEO", "BeiDou"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio": "Dirac Audio with up to 200% loudspeaker volume",
+      "Audio Jack": "3.5mm"
+    },
+    "FM_RADIO": true,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
+    "SENSORS": ["Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-Po",
+      "Removable": false,
+      "Charging": "33W Fast Charging (SUPERVOOC, 100% in 63 minutes)"
+    },
+    "MATERIAL": "Glass front, Plastic back",
+    "DIMENSIONS": "165.6 x 75.9 x 7.89 mm",
+    "WEIGHT": "189.5 g",
+    "COLORS": ["Rainy Night", "Sunshower"]
+  }
+  

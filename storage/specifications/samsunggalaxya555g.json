@@ -1,0 +1,85 @@
+{
+    "DISPLAY": {
+      "Size": "6.6-inch",
+      "Type": "FHD+ Super AMOLED",
+      "Resolution": "1080 x 2340 Pixels",
+      "PPI": 390,
+      "Aspect Ratio": "19.5:9",
+      "Refresh Rate": "120Hz",
+      "HDR": "HDR10+",
+      "Protection": "Corning Gorilla Glass Victus",
+      "Notch": "Punch-hole"
+    },
+    "OS": "Android 14 with One UI 6.1",
+    "CHIPSET": "Exynos 1480",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A78": "4x @ 2.7GHz",
+        "Cortex-A55": "4x @ 2.0GHz"
+      }
+    },
+    "GPU": "Xclipse 530",
+    "RAM": "8 GB",
+    "REAR_CAMERA": {
+      "Triple Cameras": [
+        {
+          "Main Camera": {
+            "Resolution": "50MP",
+            "Aperture": "f/1.8",
+            "Features": ["Autofocus", "OIS"]
+          }
+        },
+        {
+          "Ultra-wide": {
+            "Resolution": "12MP",
+            "Aperture": "f/2.2",
+            "Field of View": "123˚"
+          }
+        },
+        {
+          "Macro": {
+            "Resolution": "5MP",
+            "Aperture": "f/2.4"
+          }
+        }
+      ],
+      "Flash": "LED",
+      "Video Recording": "Up to 4K with EIS"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "32 Megapixels",
+      "Aperture": "f/2.2",
+      "Video Recording": "Up to 4K"
+    },
+    "STORAGE": "256GB",
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac/6",
+    "NFC": "No",
+    "BLUETOOTH": "Bluetooth 5.3",
+    "POSITIONING": "GPS, GLONASS, GALILEO, BeiDou, QZSS",
+    "USB_OTG": "Yes",
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Speakers": "Stereo Dual Speakers",
+      "Audio_Output": "USB Type-C"
+    },
+    "FM_RADIO": "No",
+    "BIOMETRICS": {
+      "Face_Recognition": true,
+      "Fingerprint_Sensor": "Under-display"
+    },
+    "SENSORS": ["Barometer", "Gyroscope", "Compass", "Ambient Light Sensor", "Virtual Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-ion",
+      "Removable": false,
+      "Charging": "25W Fast Charging"
+    },
+    "MATERIAL": "Glass front and back with Aluminum frame (IP67 dust and water resistant)",
+    "DIMENSIONS": "161.1 x 77.4 x 8.2 mm",
+    "WEIGHT": "213 g",
+    "COLORS": ["Awesome Navy", "Awesome Iceblue", "Awesome Lilac"]
+  }
+  

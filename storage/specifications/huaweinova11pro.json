@@ -1,0 +1,83 @@
+{
+    "DISPLAY": {
+      "Size": "6.78-inch",
+      "Type": "FHD+ OLED",
+      "Resolution": "1200 x 2640 Pixels",
+      "PPI": 429,
+      "Refresh Rate": "120Hz",
+      "HDR": true,
+      "Cutout": "Pill-shaped"
+    },
+    "OS": "EMUI 13",
+    "CHIPSET": "Qualcomm Snapdragon 778G",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Kryo 670 Gold": "4x @ 2.4GHz",
+        "Kryo 670 Silver": "4x @ 1.8GHz"
+      }
+    },
+    "GPU": "Adreno 642L",
+    "RAM": "8 GB",
+    "REAR_CAMERA": {
+      "Type": "Dual Cameras",
+      "Main_Camera": {
+        "Resolution": "50MP",
+        "Aperture": "f/1.9",
+        "Features": ["Laser Autofocus"]
+      },
+      "Ultra-wide": {
+        "Resolution": "8MP",
+        "Aperture": "f/2.2",
+        "Field_of_View": "112˚"
+      },
+      "LED_Flash": true,
+      "Video_Recording": "Up to 4K with EIS"
+    },
+    "FRONT_CAMERA": {
+      "Type": "Dual Cameras",
+      "Ultra-wide": {
+        "Resolution": "60MP",
+        "Aperture": "f/2.4",
+        "Features": ["Autofocus"],
+        "Field_of_View": "100˚"
+      },
+      "Portrait_Camera": {
+        "Resolution": "8MP",
+        "Aperture": "f/2.2",
+        "Features": ["Autofocus"]
+      },
+      "Video_Recording": "Up to 4K with EIS"
+    },
+    "STORAGE": "256GB",
+    "EXPANSION": "None",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac/6",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.2",
+    "POSITIONING": ["GPS (dual-band)", "GLONASS", "GALILEO", "QZSS", "NavIC"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Speakers": "Stereo Dual Speakers",
+      "Audio_Output": "USB Type-C"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (under-display)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Virtual Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "4500 mAh Li-Po",
+      "Removable": false,
+      "Charging": "100W Fast Charging (HUAWEI SuperCharge Turbo, 3% to 50% in 15 minutes)"
+    },
+    "MATERIAL": "Glass front and Vegan Leather back",
+    "DIMENSIONS": {
+      "Width": "164.24 mm",
+      "Height": "74.35 mm",
+      "Thickness": "7.88 mm"
+    },
+    "WEIGHT": "188 g",
+    "COLORS": ["Black", "Green"]
+  }
+  

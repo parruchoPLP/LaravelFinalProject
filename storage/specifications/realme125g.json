@@ -1,0 +1,75 @@
+{
+    "DISPLAY": {
+      "Size": "6.72-inch",
+      "Type": "FHD+ IPS LCD",
+      "Resolution": "1080 x 2400 Pixels",
+      "PPI": 392,
+      "Aspect Ratio": "20:9",
+      "Refresh Rate": "120Hz",
+      "Brightness": "950 nits",
+      "Notch": false
+    },
+    "OS": "Android 14 with realme UI 5.0",
+    "CHIPSET": "MediaTek Dimensity 6100+ (6 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A76": "2x @ 2.2GHz",
+        "Cortex-A55": "6x @ 2.0GHz"
+      }
+    },
+    "GPU": "Mali-G57 MC2",
+    "RAM": "8 GB",
+    "REAR_CAMERA": {
+      "Dual Cameras": [
+        {
+          "Main Camera": {
+            "Resolution": "108MP",
+            "Aperture": "f/1.8",
+            "Features": ["Autofocus"]
+          }
+        },
+        {
+          "Depth Sensor": {
+            "Resolution": "2MP",
+            "Aperture": "Not specified"
+          }
+        }
+      ],
+      "Flash": "LED",
+      "Video Recording": "Up to 1080p"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "8 Megapixels",
+      "Aperture": "f/2.0",
+      "Video Recording": "Up to 1080p"
+    },
+    "STORAGE": "256GB",
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": false,
+    "BLUETOOTH": "Bluetooth 5.2",
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio": "Hi-Res Audio",
+      "Speakers": "Stereo Speakers",
+      "Audio_Jack": "3.5mm"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-ion",
+      "Removable": false,
+      "Charging": "45W Fast Charging (SUPERVOOC, 50% in 30 minutes)"
+    },
+    "MATERIAL": "Glass front, Polycarbonate back (IP54 dust and splash resistant)",
+    "DIMENSIONS": "165.6 x 76.1 x 7.69 mm",
+    "WEIGHT": "188 g",
+    "COLORS": ["Twilight Purple", "Woodland Green"]
+  }
+  

@@ -1,0 +1,75 @@
+{
+    "DISPLAY": {
+      "Type": "IPS LCD",
+      "Size": "6.56 inches",
+      "Resolution": "720 x 1612 Pixels",
+      "PPI": 269,
+      "Aspect Ratio": "20:9",
+      "Refresh Rate": "90Hz",
+      "Notch": true
+    },
+    "OS": "Android 14 with Funtouch OS 14",
+    "CHIPSET": "MediaTek Helio G85",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A75": {
+          "2x": "2.0GHz"
+        },
+        "Cortex-A55": {
+          "6x": "1.8GHz"
+        }
+      }
+    },
+    "GPU": "Mali-G52 MC2",
+    "RAM": "4 GB",
+    "REAR_CAMERA": {
+      "Type": "Dual Cameras",
+      "Main_Camera": {
+        "Resolution": "13MP",
+        "Aperture": "f/2.2",
+        "Features": ["Autofocus"]
+      },
+      "Secondary_Camera": {
+        "Resolution": "0.08MP"
+      },
+      "Flash": "LED",
+      "Video_Recording": "Up to 1080p"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "5 Megapixels",
+      "Aperture": "f/2.2"
+    },
+    "STORAGE": "128GB",
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": false,
+    "BLUETOOTH": "Bluetooth 5.0",
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Speakers": "Stereo",
+      "Speaker_Volume": "Up to 150%",
+      "Audio_Jack": "3.5mm"
+    },
+    "FM_RADIO": true,
+    "BIOMETRICS": "Face Recognition",
+    "SENSORS": ["Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-ion",
+      "Removable": false,
+      "Charging_Rate": "15W"
+    },
+    "MATERIAL": "Glass front, Plastic back (IP54 dust and splash resistant)",
+    "DIMENSIONS": {
+      "Width": "163.63 mm",
+      "Height": "75.58 mm",
+      "Thickness": "8.39 mm"
+    },
+    "WEIGHT": "185 g",
+    "COLORS": ["Space Black", "Gem Green"]
+  }
+  

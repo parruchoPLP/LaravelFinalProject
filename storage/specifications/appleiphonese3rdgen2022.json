@@ -1,0 +1,70 @@
+{
+    "display": {
+      "size": "4.7-inch",
+      "type": "HD IPS LCD",
+      "resolution": "750 x 1334 Pixels",
+      "ppi": 326,
+      "protection": "Scratch Resistant Glass",
+      "aspect_ratio": "16:9"
+    },
+    "os": "iOS15",
+    "chipset": "Apple A15 Bionic",
+    "cpu": {
+      "type": "Hexa Core",
+      "cores": {
+        "performance": {
+          "count": 2,
+          "speed": "3.2GHz"
+        },
+        "efficiency": {
+          "count": 4,
+          "speed": "2.0GHz"
+        }
+      }
+    },
+    "gpu": "4-core Apple GPU",
+    "ram": "3 GB",
+    "rear_camera": {
+      "resolution": "12 Megapixels",
+      "aperture": "f/1.8",
+      "features": ["Autofocus", "OIS"],
+      "flash": "Quad LED",
+      "video_recording": "Up to 4K@60fps"
+    },
+    "front_camera": {
+      "resolution": "7 Megapixels",
+      "aperture": "f/2.2",
+      "video_recording": "Up to 1080p"
+    },
+    "storage": ["64GB", "128GB", "256GB"],
+    "expansion": "None",
+    "sim_card": "Dual SIM (Nano + eSIM)",
+    "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+    "wi_fi": "Wi-Fi 6",
+    "nfc": "Yes",
+    "bluetooth": "Bluetooth 5.0",
+    "positioning": ["GPS", "A-GPS", "GLONASS", "GALILEO", "QZSS", "BeiDou"],
+    "usb_otg": "Yes",
+    "usb_port": "Lightning Port",
+    "sound": {
+      "features": ["Dolby Atmos", "Stereo Speakers"],
+      "audio_output": "Lightning Port"
+    },
+    "fm_radio": "No",
+    "biometrics": "Touch ID",
+    "sensors": ["Barometer", "Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "battery": {
+      "type": "Li-ion (Non-removable)",
+      "capacity": "20W Fast Charging (50% in 30 minutes), Wireless Charging"
+    },
+    "material": {
+      "front": "Glass",
+      "back": "Glass",
+      "frame": "Aluminum",
+      "protection": "IP67 Water and Dust Resistance"
+    },
+    "dimensions": "138.4 x 67.3 x 7.3 mm",
+    "weight": "144 g",
+    "colors": ["Midnight", "Starlight", "(PRODUCT) RED"]
+  }
+  

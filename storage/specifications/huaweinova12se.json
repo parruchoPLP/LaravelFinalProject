@@ -1,0 +1,76 @@
+{
+    "DISPLAY": {
+      "Size": "6.67-inch",
+      "Type": "FHD+ OLED",
+      "Resolution": "1080 x 2400 Pixels",
+      "PPI": 395,
+      "Aspect Ratio": "20:9",
+      "Refresh Rate": "90Hz",
+      "Cutout": "Punch-hole"
+    },
+    "OS": "EMUI 14",
+    "CHIPSET": "Qualcomm Snapdragon 680 (6 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A73": "4x @ 2.4GHz",
+        "Cortex-A53": "4x @ 1.9GHz"
+      }
+    },
+    "GPU": "Adreno 610",
+    "RAM": "8 GB",
+    "REAR_CAMERA": {
+      "Type": "Triple Cameras",
+      "Main_Camera": {
+        "Resolution": "108MP",
+        "Aperture": "f/1.9",
+        "Features": ["Autofocus"]
+      },
+      "Ultra-wide": {
+        "Resolution": "8MP",
+        "Aperture": "f/2.2",
+        "Field of View": "112˚"
+      },
+      "Macro": {
+        "Resolution": "2MP",
+        "Aperture": "f/2.4"
+      },
+      "Flash": "LED",
+      "Video_Recording": "Up to 1080p with EIS"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "32 Megapixels",
+      "Aperture": "f/2.5",
+      "Video_Recording": "Up to 1080p"
+    },
+    "STORAGE": "256GB",
+    "EXPANSION": "None",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.0",
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio_Output": "USB Type-C"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "4500 mAh Li-Po",
+      "Removable": false,
+      "Charging": "66W Fast Charging (HUAWEI SuperCharge, 100% in 32 minutes)"
+    },
+    "MATERIAL": "Glass front, Polycarbonate back",
+    "DIMENSIONS": {
+      "Width": "162.39 mm",
+      "Height": "75.47 mm",
+      "Thickness": "7.39 mm"
+    },
+    "WEIGHT": "186 g",
+    "COLORS": ["Black", "Green"]
+  }
+  
