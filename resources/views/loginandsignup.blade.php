@@ -9,7 +9,7 @@
 </head>
 <body class="bg-custom-lightGray flex justify-center items-center min-h-screen">
     @if(Request::is('login'))
-    <section class="bg-white p-10 rounded-2xl shadow-md mx-auto max-w-4xl text-custom-darkBlue flex text-lg">
+    <section class="bg-white p-14 rounded-2xl shadow-md mx-auto max-w-4xl text-custom-darkBlue flex text-lg">
         <div class="w-2/5 flex items-center justify-center border-r-2 border-custom-lightGray pr-5">
             <img src="{{ asset('images/loginpic.png') }}" class="rounded-lg">
         </div>
@@ -56,7 +56,7 @@
     @endif
 
     @if(Request::is('signup'))
-    <section class="bg-white p-10 rounded-2xl shadow-md mx-auto max-w-4xl text-custom-darkBlue flex text-lg">
+    <section class="bg-white p-14 rounded-2xl shadow-md mx-auto max-w-4xl text-custom-darkBlue flex text-lg">
         <div class="w-2/5 flex items-center justify-center border-r-2 border-custom-lightGray p-5"> 
             <img src="{{ asset('images/signuppic.png') }}" class="rounded-lg">
         </div>
