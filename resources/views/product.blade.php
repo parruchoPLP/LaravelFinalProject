@@ -86,26 +86,126 @@
         </div>
     </section>
 
-    <div class="card-holder bg-white mt-5 mx-auto rounded-lg" style="height:500px; margin:100px;">
-    <div class="text-right">
+    <div class="card-holder bg-white mt-5 rounded-lg" style="margin: 100px;">
+    <div class="text-right p-10">
         <img src="{{ asset('images/products/iPhone-15-Pro-Max.png') }}" alt="15" class="w-100 h-auto mx-auto float-left" style="max-width: 100%; height: auto;">
     </div>
-    <div class="product-details p-20">
+    <div class="product-details flex flex-col p-20">
         <h2 class="text-4xl font-bold mb-4 text-custom-darkBlue">iPhone 15 Pro Max</h2>
         <p class="text-xl font-bold mb-4">$999</p>
         <p class="text-yellow-400 font-semibold text-xl mb-4">★★★★★</p>
-        <p class="text-gray-700 mb-2">Quantity:</p>
-        <select id="quantity" class="mb-4">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="other">Other:</option>
-        </select>
-        <input type="number" id="custom-quantity" class="mb-4" style="display: none;" placeholder="Enter quantity">
-        <p class="text-gray-700 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan ipsum. Integer quis metus eget ligula tincidunt ultrices.</p>
-        <button class="bg-custom-darkBlue text-white text-center py-2 px-6 rounded-lg hover:bg-custom-blueGray">Add to Cart</button>
+        <div class="w-1/5">
+            <p class="text-gray-700 mb-2">Quantity:</p>
+            <select id="quantity" class="mb-4">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="other">Other:</option>
+            </select>
+            <input type="number" id="custom-quantity" class="mb-4" style="display: none;" placeholder="Enter quantity">
+            <button class="bg-custom-darkBlue text-white text-center py-2 px-6 rounded-lg hover:bg-custom-blueGray">Add to Cart</button>
+        </div>
+    </div>
+    <div class="description p-20">
+        <h2 class="text-2xl font-bold mb-4 text-custom-darkBlue">Description</h2>
+        <p class="text-gray-700 mb-6">
+            DISPLAY
+            6.7-inch WUXGA+ OLED Display (1290 x 2796 Pixels, 460 ppi) with Ceramic Shield, 120Hz Refresh Rate, HDR, Dolby Vision, 2000nits peak brightness, and Dynamic Island
+            <br><br>
+            OS
+            iOS17
+            <br><br>
+            CHIPSET
+            Apple A17 Pro (3 nm)
+            <br><br>
+            CPU
+            Hexa Core CPU
+            2x Performance Cores & 4x Efficiency Cores
+            <br><br>
+            GPU
+            Apple 6-core GPU
+            <br><br>
+            RAM
+            6 GB
+            <br><br>
+            REAR CAMERA
+            Triple Cameras:
+            48MP Main Camera (f/1.78 Aperture, Autofocus, OIS)
+            12MP Ultra-wide (f/2.2 Aperture, Autofocus, 120° FoV)
+            12MP Telephoto (f/2.8 Aperture, OIS, 5x optical zoom)
+            -Dual-tone LED Flash
+            -Up to 4K@60fps video recording with EIS, ProRes
+            <br><br>
+            FRONT CAMERA
+            12 Megapixels (f/1.9 Aperture, Autofocus)
+            - Up to 4K@60fps video recording with EIS
+            <br><br>
+            STORAGE
+            256GB, 512GB, 1TB
+            <br><br>
+            EXPANSION
+            None
+            <br><br>
+            SIM CARD
+            Dual SIM (Nano + eSIM)
+            <br><br>
+            CELLULAR
+            5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks
+            <br><br>
+            WI-FI
+            Wi-Fi 802.11 b/g/n/ac/6e
+            <br><br>
+            NFC
+            Yes
+            <br><br>
+            BLUETOOTH
+            Bluetooth 5.3
+            <br><br>
+            POSITIONING
+            GPS, GLONASS, GALILEO, BeiDou, QZSS, NavIC
+            <br><br>
+            USB OTG
+            Yes with DisplayPort
+            <br><br>
+            USB PORT
+            USB Type-C
+            <br><br>
+            SOUND
+            Stereo Speakers, Dolby Atmos Audio
+            USB Type-C Audio Output
+            <br><br>
+            FM RADIO
+            No
+            <br><br>
+            BIOMETRICS
+            FaceID Face Recognition
+            <br><br>
+            SENSORS
+            Gyroscope, Compass, Ambient Light Sensor, Proximity Sensor, Accelerometer
+            Ultra Wideband (UWB) - AirTags
+            Emergency SOS via satellite (not applicable in PH)
+            Crash detection
+            <br><br>
+            BATTERY
+            Li-ion Battery (Non-removable)
+            20W Fast Charging (50% in 30 minutes), 15W Wireless Charging
+            <br><br>
+            MATERIAL
+            Glass front and back, Titanium frame (IP68 Water and Dust Resistant)
+            <br><br>
+            DIMENSIONS
+            159.9 x 76.7 x 8.25 mm
+            <br><br>
+            WEIGHT
+            221 g
+            <br><br>
+            COLORS
+            Black Titanium, White Titanium, Blue Titanium, Natural Titanium
+        </p>
     </div>
 </div>
+
+
     <footer class="bg-gray-900 text-white pt-6">
     <div class="container mx-auto md:flex md:justify-between">
         <div class="md:w-1/2 md:mb-0 mb-4 -ml-10">
