@@ -8,7 +8,7 @@
     <title>Profile Information</title>
 </head>
 <body class="bg-custom-lightGray flex justify-center items-center min-h-screen">
-    <section class="bg-white flex-col p-10 rounded-2xl shadow-md mx-auto text-custom-darkBlue flex" style="min-width: 30%;">
+    <section class="bg-white flex-col p-14 rounded-2xl shadow-md mx-auto text-custom-darkBlue flex" style="min-width: 30%;">
         <h2 class="text-6xl text-sky-950 font-bold mb-6">Profile</h2>
         <hr class="border-custom-darkBlue rounded-full mb-10">
         <form id="profileForm" class="text-lg">
