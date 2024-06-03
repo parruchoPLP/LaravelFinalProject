@@ -87,38 +87,25 @@
     </section>
 
     <div class="card-holder bg-white mt-5 mx-auto rounded-lg" style="height:500px; margin:100px;">
-            <div class="text-right">
-                <img src="{{ asset('images/products/iPhone-15-Pro-Max.png') }}" alt="15" class="w-100 h-auto mx-auto float-left" style="max-width: 100%; height: auto;">
-            </div>
-        <div class="product-details p-20">
-            <h2 class="text-4xl font-bold mb-4 text-custom-darkBlue">iPhone 15 Pro Max</h2>
-            <p class="text-xl font-bold mb-4">$999</p>
-            <p class="text-yellow-400 font-semibold text-xl mb-4">★★★★★</p>
-            <p class="text-gray-700 mb-2">Quantity:</p>
-            <select id="quantity" class="mb-4">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="Other">Other:</option>
-            </select>
-            <p class="text-gray-700 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan ipsum. Integer quis metus eget ligula tincidunt ultrices.</p>
-            <button class="bg-custom-darkBlue text-white text-center py-2 px-6 rounded-lg hover:bg-custom-blueGray">Add to Cart</button>
-        </div>
+    <div class="text-right">
+        <img src="{{ asset('images/products/iPhone-15-Pro-Max.png') }}" alt="15" class="w-100 h-auto mx-auto float-left" style="max-width: 100%; height: auto;">
     </div>
-
-    <section class="flex justify-center items-center m-2">
-    <div class="flex items-center rounded">
-        <div class="flex-shrink-0">
-            <img src="{{ asset('images/products/vivo-Y03.png') }}" alt="Vivo Y03" style="width: 50px; height: 520px;">
-        </div>
-        <div class="ml-8">
-            <h2 class="text-3xl font-bold">Vivo Y03</h2>
-            <button class="mt-6 bg-custom-darkBlue text-white px-6 py-3 rounded hover:bg-custom-gold">Add to Cart</button>
-        </div>
+    <div class="product-details p-20">
+        <h2 class="text-4xl font-bold mb-4 text-custom-darkBlue">iPhone 15 Pro Max</h2>
+        <p class="text-xl font-bold mb-4">$999</p>
+        <p class="text-yellow-400 font-semibold text-xl mb-4">★★★★★</p>
+        <p class="text-gray-700 mb-2">Quantity:</p>
+        <select id="quantity" class="mb-4">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="other">Other:</option>
+        </select>
+        <input type="number" id="custom-quantity" class="mb-4" style="display: none;" placeholder="Enter quantity">
+        <p class="text-gray-700 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan ipsum. Integer quis metus eget ligula tincidunt ultrices.</p>
+        <button class="bg-custom-darkBlue text-white text-center py-2 px-6 rounded-lg hover:bg-custom-blueGray">Add to Cart</button>
     </div>
-    </section>
-
-
+</div>
     <footer class="bg-gray-900 text-white pt-6">
     <div class="container mx-auto md:flex md:justify-between">
         <div class="md:w-1/2 md:mb-0 mb-4 -ml-10">
@@ -166,6 +153,14 @@
     </footer>
     
     <script>
+        document.getElementById('quantity').addEventListener('change', function () {
+            var customQuantityInput = document.getElementById('custom-quantity');
+            if (this.value === 'other') {
+                customQuantityInput.style.display = 'block';
+            } else {
+                customQuantityInput.style.display = 'none';
+            }
+        });
         const svgLink = document.getElementById('svgLink');
         const searchContainer = document.getElementById('searchContainer');
         const searchBar = document.getElementById('searchBar');
