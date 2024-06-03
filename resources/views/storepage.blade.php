@@ -136,6 +136,7 @@
         </div>
         </div>
     </aside>
+
     <div class="w-3/4 container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="productGrid">
             @foreach($keyphone as $product)

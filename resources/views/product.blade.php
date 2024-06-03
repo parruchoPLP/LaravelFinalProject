@@ -75,6 +75,28 @@
             <a href="aboutus" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">About Us</a>
         </div>
     </nav>
+
+    
+    <div class="card-holder bg-white mt-5 mx-auto rounded-lg" style="height:500px; margin:100px;">
+            <div class="text-right">
+                <img src="{{ asset('images/products/iPhone-15-Pro-Max.png') }}" alt="15" class="w-100 h-auto mx-auto float-left" style="max-width: 100%; height: auto;">
+            </div>
+        <div class="product-details p-20">
+            <h2 class="text-4xl font-bold mb-4 text-custom-darkBlue">iPhone 15 Pro Max</h2>
+            <p class="text-xl font-bold mb-4">$999</p>
+            <p class="text-yellow-400 font-semibold text-xl mb-4">★★★★★</p>
+            <p class="text-gray-700 mb-2">Quantity:</p>
+            <select id="quantity" class="mb-4">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="Other">Other:</option>
+            </select>
+            <p class="text-gray-700 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan ipsum. Integer quis metus eget ligula tincidunt ultrices.</p>
+            <button class="bg-custom-darkBlue text-white text-center py-2 px-6 rounded-lg hover:bg-custom-blueGray">Add to Cart</button>
+        </div>
+    </div>
+
     <section class="relative bg-cover bg-center" style="background-image: url('images/phones-bg.jpeg');">
         <div class="bg-custom-darkBlue bg-opacity-75 text-white py-12 flex flex-wrap items-center justify-center p-10 relative z-20">
             <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">

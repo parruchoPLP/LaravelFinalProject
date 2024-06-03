@@ -43,3 +43,4 @@ Route::get('/delivery-and-shipping', [Controller::class, 'showDeliveryAndShippin
 Route::get('/payment', [Controller::class, 'showPayment']);
 Route::get('/aboutus', [Controller::class, 'showAboutus']);
 
+
