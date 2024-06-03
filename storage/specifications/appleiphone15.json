@@ -1,15 +1,15 @@
 {
     "display": {
-      "size": "6.7-inch",
-      "type": "WUXGA+ OLED",
-      "resolution": "1290 x 2796 Pixels",
+      "size": "6.1-inch",
+      "type": "FHD+ OLED",
+      "resolution": "1179 x 2556 Pixels",
       "ppi": 460,
       "protection": "Ceramic Shield",
-      "refresh_rate": "120Hz",
+      "refresh_rate": "60Hz",
       "features": ["HDR", "Dolby Vision", "2000nits peak brightness", "Dynamic Island"]
     },
     "os": "iOS17",
-    "chipset": "Apple A17 Pro (3 nm)",
+    "chipset": "Apple A16 Bionic",
     "cpu": {
       "type": "Hexa Core",
       "cores": {
@@ -17,45 +17,41 @@
         "efficiency": 4
       }
     },
-    "gpu": "Apple 6-core GPU",
+    "gpu": "5-core Apple GPU",
     "ram": "6 GB",
     "rear_camera": {
-      "triple_cameras": [
+      "dual_cameras": [
         {
           "megapixels": "48MP",
-          "features": ["f/1.78 Aperture", "Autofocus", "OIS"]
+          "features": ["f/1.6 Aperture", "Autofocus", "OIS"]
         },
         {
           "megapixels": "12MP",
-          "features": ["f/2.2 Aperture", "Autofocus", "120° FoV"]
-        },
-        {
-          "megapixels": "12MP",
-          "features": ["f/2.8 Aperture", "OIS", "5x optical zoom"]
+          "features": ["f/2.2 Aperture", "120˚ FoV"]
         }
       ],
       "flash": "Dual-tone LED Flash",
-      "video_recording": "Up to 4K@60fps with EIS, ProRes"
+      "video_recording": "Up to 4K@60fps with EIS"
     },
     "front_camera": {
       "megapixels": "12MP",
       "features": ["f/1.9 Aperture", "Autofocus"],
       "video_recording": "Up to 4K@60fps with EIS"
     },
-    "storage": ["256GB", "512GB", "1TB"],
+    "storage": ["128GB", "256GB", "512GB"],
     "expansion": "None",
     "sim_card": "Dual SIM (Nano + eSIM)",
     "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
-    "wifi": "Wi-Fi 802.11 b/g/n/ac/6e",
+    "wifi": "Wi-Fi 802.11 b/g/n/ac/6",
     "nfc": "Yes",
     "bluetooth": "Bluetooth 5.3",
-    "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS", "NavIC"],
+    "positioning": ["GPS with A-GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
     "usb_otg": "Yes with DisplayPort",
     "usb_port": "USB Type-C",
     "sound": {
-      "speakers": "Stereo Speakers",
+      "speakers": "Stereo Dual Speakers",
       "audio_output": "USB Type-C Audio Output",
-      "features": ["Dolby Atmos Audio"]
+      "features": ["Dolby Atmos"]
     },
     "fm_radio": "No",
     "biometrics": "FaceID Face Recognition",
@@ -64,17 +60,17 @@
       "type": "Li-ion (Non-removable)",
       "charging": {
         "wired": "20W Fast Charging (50% in 30 minutes)",
-        "wireless": "15W Wireless Charging"
+        "wireless": "15W Wireless Charging (MagSafe)"
       }
     },
     "material": {
       "front": "Glass",
       "back": "Glass",
-      "frame": "Titanium",
-      "protection": "IP68 Water and Dust Resistant"
+      "frame": "Aluminum",
+      "protection": "IP68 Water & Dust Resistance"
     },
-    "dimensions": "159.9 x 76.7 x 8.25 mm",
-    "weight": "221 g",
-    "colors": ["Black Titanium", "White Titanium", "Blue Titanium", "Natural Titanium"]
+    "dimensions": "147.6 x 71.6 x 7.8 mm",
+    "weight": "171 g",
+    "colors": ["Black", "Blue", "Green", "Yellow", "Pink"]
   }
   
