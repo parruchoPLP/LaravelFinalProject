@@ -25,7 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const phoneName = item.getAttribute('phone-name').toLowerCase();
             if (phoneName.includes(searchText) && count < 10) {
                 item.style.display = 'flex block';
-                matchFound = true;
+                if (searchText === phoneName){
+                    matchFound = true;
+                }
                 count++;
             } else {
                 item.style.display = 'none';
@@ -40,14 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     searchButton.addEventListener('click', function(event) {
         event.preventDefault();
-        const searchTerm = searchBar.value;
+        let searchTerm = searchBar.value;
         if (searchTerm) {
             const matchedName = Array.from(phoneItems).find(item => item.getAttribute('phone-name') === searchTerm);
             if (matchedName) {
                 searchTerm = searchTerm.replace(/\s/g, '').toLowerCase();
                 window.location.href = `/product/${searchTerm}`;
-            } else {
-                window.location.href = `search?query=${searchTerm}`;
             }
         }
     });

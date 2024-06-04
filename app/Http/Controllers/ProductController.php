@@ -82,7 +82,7 @@ class ProductController extends Controller
 
     public function storepage(Request $request)
     {
-        $perPage = 6; // Number of items per page
+        $perPage = 9; // Number of items per page
         $page = $request->input('page', 1); // Get current page from request, default is 1
         $offset = ($page - 1) * $perPage;
 
@@ -138,7 +138,7 @@ class ProductController extends Controller
             }
         }
         $searchCollection = collect($searcharray);
-        $perPage = 6; // Number of items per page
+        $perPage = 9; // Number of items per page
         $page = $request->input('page', 1); // Get current page from request, default is 1
         $offset = ($page - 1) * $perPage;
 
