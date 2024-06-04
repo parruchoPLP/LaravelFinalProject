@@ -37,8 +37,8 @@ Route::get('/profile', function () {
 Route::get('/', [ProductController::class, 'homepage'])->name('homepage');
 Route::get('/homepage', [ProductController::class, 'homepage'])->name('homepage');
 Route::get('/storepage', [ProductController::class, 'storepage'])->name('storepage');
-Route::get('/delivery-and-shipping', [Controller::class, 'showDeliveryAndShipping']);
+Route::get('/delivery-and-shipping', [ProductController::class, 'deliveryandshipping'])->name('deliveryandshipping');
 Route::get('/payment', [Controller::class, 'showPayment']);
-Route::get('/aboutus', [Controller::class, 'showAboutus']);
+Route::get('/aboutus', [ProductController::class, 'aboutus'])->name('aboutus');
 Route::get('/storepage/{id}', [ProductController::class, 'storesearch'])->name('storepage');
 Route::get('/product/{productID}', [ProductController::class,'showProduct'])->name('product.show');

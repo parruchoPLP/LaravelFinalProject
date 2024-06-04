@@ -6,9 +6,9 @@
     <title>@yield('title', 'Default Title')</title>
     <link rel="icon" href="{{ asset('images/luguu.png') }}" type="image/png">
     <script src="{{ asset('js/NavigationBar.js') }}" defer></script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
     @vite('resources/css/app.css')
     @stack('scripts')
+    @yield('styles')
 </head>
 <body class="bg-gray-100 overflow-x-hidden">
     <div class="flex items-center">
@@ -20,16 +20,18 @@
         <x-navigation-bar
             :allkeyphone="$allkeyphone"
         />
-
-        <section class="relative bg-cover bg-center" style="background-image: url('{{ asset('images/phones-bg.jpeg') }}');">
-            <div class="bg-custom-darkBlue bg-opacity-75 text-white py-32 flex flex-wrap items-center justify-center p-10 relative z-20">
-                <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">
-                    <div class="text-center m-8">
-                        <h1 class="text-5xl font-bold mb-7">@yield('pageTitle','Default Title')</h1>
+        
+        @if(!Request::is('aboutus') && !Request::is('delivery-and-shipping'))
+            <section class="relative bg-cover bg-center" style="background-image: url('{{ asset('images/phones-bg.jpeg') }}');">
+                <div class="bg-custom-darkBlue bg-opacity-75 text-white py-32 flex flex-wrap items-center justify-center p-10 relative z-20">
+                    <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">
+                        <div class="text-center m-8">
+                            <h1 class="text-5xl font-bold mb-7">@yield('pageTitle','Default Title')</h1>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        @endif
     </header>
 
     <main>

@@ -114,6 +114,20 @@ class ProductController extends Controller
         ]);
     }
 
+    public function aboutus()
+    {
+        return view('aboutus', [
+            'allkeyphone'=>$this->keyphone
+        ]);
+    }
+
+    public function deliveryandshipping()
+    {
+        return view('delivery-and-shipping', [
+            'allkeyphone'=>$this->keyphone
+        ]);
+    }
+
     public function storesearch(Request $request,$id)
     {
         $searcharray = [];

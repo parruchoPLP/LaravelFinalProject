@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const phoneItems = document.querySelectorAll('.phoneItem');
     const supportDropdown = document.getElementById('supportDropdown');
     const supportDropdownContent = document.getElementById('supportDropdownContent');
-    const header = document.querySelector('nav');
 
     svgLink.addEventListener('click', function(event) {
         event.preventDefault();
