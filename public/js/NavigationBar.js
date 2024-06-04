@@ -21,7 +21,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     svgLink.addEventListener('click', function(event) {
         event.preventDefault();
-        searchContainer.classList.toggle('hidden');
+        if(searchContainer.classList.contains('hidden')){
+            searchContainer.classList.toggle('hidden');   
+        }
+    });
+
+    svgLink.addEventListener('mouseover', function(event) {
+        event.preventDefault();
+        searchContainer.classList.remove('hidden');
     });
 
     searchBar.addEventListener('focus', function() {

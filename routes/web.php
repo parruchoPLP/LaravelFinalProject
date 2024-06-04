@@ -16,19 +16,8 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/storepage', function () {
-    return view('storepage');
-});
 Route::get('/checkout', function () {
     return view('checkout');
-});
-
-Route::get('/signup', function () {
-    return view('loginandsignup');
-});
-
-Route::get('/login', function () {
-    return view('loginandsignup');
 });
 
 Route::get('/profile', function () {
@@ -42,3 +31,5 @@ Route::get('/payment', [Controller::class, 'showPayment']);
 Route::get('/aboutus', [ProductController::class, 'aboutus'])->name('aboutus');
 Route::get('/storepage/{id}', [ProductController::class, 'storesearch'])->name('storepage');
 Route::get('/product/{productID}', [ProductController::class,'showProduct'])->name('product.show');
+Route::get('/login', [ProductController::class, 'login'])->name('login');
+Route::get('/signup', [ProductController::class, 'signup'])->name('signup');

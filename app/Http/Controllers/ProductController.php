@@ -128,6 +128,20 @@ class ProductController extends Controller
         ]);
     }
 
+    public function login()
+    {
+        return view('loginandsignup', [
+            'allkeyphone'=>$this->keyphone
+        ]);
+    }
+
+    public function signup()
+    {
+        return view('loginandsignup', [
+            'allkeyphone'=>$this->keyphone
+        ]);
+    }
+
     public function storesearch(Request $request,$id)
     {
         $searcharray = [];
