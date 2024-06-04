@@ -1,0 +1,70 @@
+{
+    "DISPLAY": {
+      "Size": "6.7-inch",
+      "Type": "HD+ TFT LCD",
+      "Resolution": "720 x 1600 Pixels",
+      "PPI": 262,
+      "Aspect Ratio": "20:9",
+      "Notch": true
+    },
+    "OS": "Android 13 with One UI",
+    "CHIPSET": "MediaTek Helio G85 (12 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A75": "2x @ 2.0GHz",
+        "Cortex-A55": "6x @ 1.8GHz"
+      }
+    },
+    "GPU": "Mali-G52 MC2",
+    "RAM": "4 GB",
+    "REAR_CAMERA": {
+      "Dual Cameras": [
+        {
+          "Main Camera": {
+            "Resolution": "50MP",
+            "Aperture": "f/1.8",
+            "Features": ["Autofocus"]
+          }
+        },
+        {
+          "Depth Sensor": {
+            "Resolution": "2MP"
+          }
+        }
+      ],
+      "Flash": "LED",
+      "Video Recording": "Up to 1080p"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "8 Megapixels",
+      "Aperture": "f/2.0"
+    },
+    "STORAGE": "64GB or 128GB",
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": false,
+    "BLUETOOTH": "Bluetooth 5.3",
+    "POSITIONING": "GPS, GLONASS, GALILEO, BeiDou",
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Technology": "Dolby ATMOS",
+      "Audio_Jack": "3.5mm"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "None",
+    "SENSORS": ["Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-Po",
+      "Removable": false,
+      "Charging": "25W Fast Charging"
+    },
+    "MATERIAL": "Glass front, Plastic back",
+    "DIMENSIONS": "168.8 x 78.2 x 8.8 mm",
+    "WEIGHT": "195 g",
+    "COLORS": ["Black", "Silver"]
+  }
+  

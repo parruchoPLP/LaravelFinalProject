@@ -1,0 +1,83 @@
+{
+    "DISPLAY": {
+      "Size": "6.36-inch",
+      "Type": "1.5K OLED",
+      "Resolution": "1200 x 2670 Pixels",
+      "PPI": 460,
+      "Refresh Rate": "120Hz",
+      "Brightness": "3000 nits",
+      "HDR10+": true,
+      "Dolby Atmos": true,
+      "Protection": "Corning Gorilla Glass Victus",
+      "Notch": false
+    },
+    "OS": "Android 14 with HyperOS",
+    "CHIPSET": "Qualcomm Snapdragon 8 Gen 3 (4 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-X4": "1x @ 3.3GHz",
+        "Cortex-A720": "3x @ 3.2GHz + 2x @ 3.0GHz",
+        "Cortex-A520": "2x @ 2.3GHz"
+      }
+    },
+    "GPU": "Adreno 750",
+    "RAM": "12 GB",
+    "REAR_CAMERA": {
+      "Type": "Triple Cameras",
+      "Main_Camera": {
+        "Resolution": "50MP",
+        "Aperture": "f/1.6",
+        "Features": ["Laser Autofocus", "OIS"],
+        "Video_Recording": "Up to 8K@24fps or 4K@60fps with EIS and HDR (LEICA Optics)"
+      },
+      "Telephoto": {
+        "Resolution": "50MP",
+        "Aperture": "f/2.0",
+        "Features": ["Autofocus", "OIS", "3.2x Optical Zoom"]
+      },
+      "Ultra_wide": {
+        "Resolution": "50MP",
+        "Aperture": "f/2.2",
+        "Field_of_View": "115˚"
+      },
+      "LED_Flash": true
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "32 Megapixels",
+      "Aperture": "f/2.0",
+      "Video_Recording": "Up to 4K@60fps with EIS"
+    },
+    "STORAGE": "256GB or 512GB",
+    "EXPANSION": "None",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac/6/7",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.3",
+    "INFRARED": true,
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS", "NavIC"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio": "Hi-Res Wired & Wireless Audio, Stereo Dual Speakers",
+      "Audio_Output": "USB Type-C"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (under-display)",
+    "SENSORS": ["Barometer", "Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "4610 mAh Li-Po",
+      "Removable": false,
+      "Charging": {
+        "Wired": "90W Fast Charging (100% in 31 minutes)",
+        "Wireless": "50W Fast Charging (100% in 46 minutes)",
+        "Reverse_Wireless": "10W"
+      }
+    },
+    "MATERIAL": "Glass front and back, Aluminum frame (IP68 Dust and Water Resistant)",
+    "DIMENSIONS": "152.8 x 71.5 x 8.2 mm",
+    "WEIGHT": "193 g",
+    "COLORS": ["Black", "White", "Jade Green"]
+  }
+  

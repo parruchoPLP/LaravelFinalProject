@@ -1,0 +1,64 @@
+{
+    "display": {
+      "size": "6.6-inch",
+      "type": "FHD+ Super AMOLED",
+      "resolution": "1080 x 2340 Pixels",
+      "ppi": 390,
+      "aspect_ratio": "19.5:9",
+      "refresh_rate": "120Hz",
+      "notch": true
+    },
+    "os": "Android 14 with One UI 6.1",
+    "chipset": "Exynos 1380",
+    "cpu": {
+      "type": "Octa Core",
+      "cores": {
+        "high_performance": {"count": 4, "type": "Cortex-A78", "speed": "2.4GHz"},
+        "efficiency": {"count": 4, "type": "Cortex-A55", "speed": "2.0GHz"}
+      }
+    },
+    "gpu": "Mali-G68 MP5",
+    "ram": "8 GB",
+    "rear_camera": {
+      "type": "Triple Cameras",
+      "sensors": [
+        {"resolution": "50MP", "aperture": "f/1.8", "features": ["Autofocus", "OIS"]},
+        {"resolution": "8MP", "aperture": "f/2.2", "features": ["Ultra-wide", "123˚ FoV"]},
+        {"resolution": "5MP", "aperture": "f/2.4", "features": ["Macro"]}
+      ],
+      "flash": "LED",
+      "video_recording": "Up to 4K with EIS"
+    },
+    "front_camera": {
+      "resolution": "13 Megapixels",
+      "aperture": "f/2.2",
+      "video_recording": "Up to 4K"
+    },
+    "storage": "256GB",
+    "expansion": "Expandable up to 1TB via microSD",
+    "sim_card": "Dual SIM (Nano-SIM)",
+    "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+    "wi_fi": "Wi-Fi 802.11 b/g/n/ac/6",
+    "nfc": true,
+    "bluetooth": "Bluetooth 5.3",
+    "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "usb_otg": true,
+    "usb_port": "USB Type-C",
+    "sound": {
+      "speakers": "Stereo Dual Speakers",
+      "audio_output": "USB Type-C"
+    },
+    "fm_radio": false,
+    "biometrics": ["Face Recognition", "Fingerprint Sensor (under-display)"],
+    "sensors": ["Gyroscope", "Compass", "Ambient Light Sensor", "Virtual Proximity Sensor", "Accelerometer"],
+    "battery": {
+      "type": "Li-ion (Non-removable)",
+      "capacity": "5000 mAh",
+      "charging": "25W Fast Charging"
+    },
+    "material": "Glass front and back (IP67 dust & water resistant)",
+    "dimensions": "161.7 x 78.0 x 8.2 mm",
+    "weight": "209 g",
+    "colors": ["Awesome Navy", "Awesome Iceblue", "Awesome Lilac"]
+  }
+  

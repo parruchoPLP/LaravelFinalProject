@@ -1,0 +1,76 @@
+{
+    "DISPLAY": {
+      "Type": "IPS LCD",
+      "Size": "6.64 inches",
+      "Resolution": "1080 x 2388 Pixels",
+      "PPI": 394,
+      "Aspect Ratio": "19.9:9",
+      "Refresh Rate": "90Hz",
+      "Max Brightness": "650 nits",
+      "Notch": true
+    },
+    "OS": "Android 13 with Funtouch OS 13",
+    "CHIPSET": "Qualcomm Snapdragon 680 (6 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Kryo 265 Gold": {
+          "2x": "2.4GHz"
+        },
+        "Kryo 265 Silver": {
+          "2x": "1.9GHz"
+        }
+      }
+    },
+    "GPU": "Adreno 610",
+    "RAM": "8 GB",
+    "REAR_CAMERA": {
+      "Type": "Dual Cameras",
+      "Main_Camera": {
+        "Resolution": "50MP",
+        "Aperture": "f/1.8",
+        "Features": ["Autofocus"]
+      },
+      "Depth_Sensor": {
+        "Resolution": "2MP"
+      },
+      "Flash": "LED",
+      "Video_Recording": "Up to 1080p"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "8 Megapixels",
+      "Aperture": "f/2.0",
+      "Video_Recording": "Up to 1080p"
+    },
+    "STORAGE": "256GB",
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": false,
+    "BLUETOOTH": "Bluetooth 5.0",
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio_Jack": "3.5mm",
+      "Speaker_Volume": "Up to 200%"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-Po",
+      "Removable": false,
+      "Charging_Speed": "44W Fast Charging (30% in 15 minutes)"
+    },
+    "MATERIAL": "Glass front, Plastic back (IP54 dust and splash resistant)",
+    "DIMENSIONS": {
+      "Width": "164.06 mm",
+      "Height": "76.17 mm",
+      "Thickness": "8.17 mm"
+    },
+    "WEIGHT": "192 g",
+    "COLORS": ["Burgundy Black", "Garden Green"]
+  }
+  

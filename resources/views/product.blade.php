@@ -74,76 +74,46 @@
             <a href="/aboutus" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">About Us</a>
         </div>
     </nav>
+
     <section class="relative bg-cover bg-center" style="background-image: url('images/phones-bg.jpeg');">
-        <div class="bg-custom-darkBlue bg-opacity-75 text-white py-52 flex flex-wrap items-center justify-center p-12 relative z-20">
+        <div class="bg-custom-darkBlue bg-opacity-75 text-white py-12 flex flex-wrap items-center justify-center p-10 relative z-20">
             <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">
-                <div class="text-center m-8">
-                    <h1 class="text-5xl font-bold mb-7">Welcome to KeyPhone</h1>
-                    <p class="text-xl">Welcome to KeyPhone, your premier destination for the latest and greatest in mobile technology. Discover our extensive selection of cutting-edge smartphones, designed to keep you connected and ahead of the curve. At KeyPhone, we combine quality with affordability, ensuring you get the best value for your money. Join our community of tech enthusiasts today and experience the future of mobile communication. Shop now and unlock the power of innovation with KeyPhone!</p>
-                    <a href="/storepage" class="mt-6 inline-block bg-custom-blueGray hover:bg-blue-500 text-white font-bold py-3 px-8 rounded">Shop Now</a>
-                </div>
+                <div class="text-center">
+                    <h1 class="text-5xl font-bold mt-5">Buy KeyPhone Now!</h1>
+                     </div>
             </div>
         </div>
     </section>
-    <section class="bg-white py-4">
-        <div class="container mx-auto">
-            <div class="flex justify-center items-center space-x-8">
-                <img src="{{ asset('images/apple.png') }}" alt="Apple" style="width: 180px; height: 150px;">
-                <img src="{{ asset('images/realme.png') }}" alt="Realme" style="width: 320px; height: 150px;">
-                <img src="{{ asset('images/xiaomi.png') }}" alt="Xiaomi" style="width: 200px; height: 150px;">
-                <img src="{{ asset('images/oppo.png') }}" alt="Oppo" style="width: 200px; height: 150px;">
-                <img src="{{ asset('images/samsunglogo.png') }}" alt="Samsung" style="width: 240px; height: 150px;">
-                <img src="{{ asset('images/huawei.png') }}" alt="Huawei" style="width: 180px; height: 150px;">
-                <img src="{{ asset('images/vivo.png') }}" alt="Vivo" style="width: 200px; height: 150px;">
-            </div>
-        </div>
-    </section>
-    <section class="relative">
-    <div class="bg-gray-900  text-white py-52 flex flex-wrap items-center justify-center p-12 relative z-20">
-        <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">
-            <div class="text-center">
-                <h1 class="text-5xl font-bold mb-7">KeyPhone: Your Future in Your Pocket.</h1>
-                <div class="flex justify-center mb-10">
-                    <div class="w-1/4 lg:w-1/6 h-auto mx-4 rounded-lg overflow-hidden relative">
-                        <img src="{{ asset('images/iphones.jpg') }}" alt="Apple" class="h-full w-full object-cover">
-                        <img src="{{ asset('images/applelogo.png') }}" alt="Apple Hover" class="h-full w-full object-cover absolute inset-0 opacity-0 hover:opacity-100 transition duration-300 ease-in-out">
-                    </div>
-                    <div class="w-1/4 lg:w-1/6 h-auto mx-4 rounded-lg overflow-hidden relative">
-                        <img src="{{ asset('images/xiaomiphones.jpg') }}" alt="Xiaomi" class="h-full w-full object-cover">
-                        <img src="{{ asset('images/xiaomilogo.png') }}" alt="Xiaomi Hover" class="h-full w-full object-cover absolute inset-0 opacity-0 hover:opacity-100 transition duration-300 ease-in-out">
-                    </div>
-                    <div class="w-1/4 lg:w-1/6 h-auto mx-4 rounded-lg overflow-hidden relative">
-                        <img src="{{ asset('images/huaweiphones.png') }}" alt="Huawei" class="h-full w-full object-cover">
-                        <img src="{{ asset('images/huaweilogo.jpg') }}" alt="Huawei Hover" class="h-full w-full object-cover absolute inset-0 opacity-0 hover:opacity-100 transition duration-300 ease-in-out">
-                    </div>
-                    <div class="w-1/4 lg:w-1/6 h-auto mx-4 rounded-lg overflow-hidden relative">
-                        <img src="{{ asset('images/realmephones.jpg') }}" alt="Realme" class="h-full w-full object-cover">
-                        <img src="{{ asset('images/realmelogo.png') }}" alt="Realme Hover" class="h-full w-full object-cover absolute inset-0 opacity-0 hover:opacity-100 transition duration-300 ease-in-out">
-                    </div>
-                </div>
-                <p class="text-xl">Looking to elevate your mobile experience? Look no further! At KeyPhone, we've got what you're looking for. Dive into our range of sleek and stylish smartphones, each packed with features tailored to suit every lifestyle. Whether you crave seamless connectivity or crave stunning camera capabilities, KeyPhone delivers it all. Don't settle for less when you can have the best. Shop now and make every call, text, and selfie count with KeyPhone - Your Future in Your Pocket.</p>
-                <a href="/storepage" class="mt-6 inline-block bg-custom-blueGray hover:bg-blue-500 text-white font-bold py-3 px-8 rounded">Shop Now</a>
-            </div>
+
+    <div class="card-holder bg-white mt-5 rounded-lg" style="margin: 100px;">
+    <div class="text-right p-10">
+        <img src="{{ $keyphone['image'] }}" alt="15" class="w-100 h-auto mx-auto float-left" style="max-width: 100%; height: auto;">
+    </div>
+    <div class="product-details flex flex-col p-20">
+        <h2 class="text-4xl font-bold mb-4 text-custom-darkBlue">{{ $keyphone['name'] }}</h2>
+        <p class="text-xl font-bold mb-4">{{ $keyphone['price'] }}</p>
+        <p class="text-yellow-400 font-semibold text-xl mb-4">{{ $keyphone['rating'] }}</p>
+        <div class="w-1/5">
+            <p class="text-gray-700 mb-2">Quantity:</p>
+            <select id="quantity" class="mb-4">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="other">Other:</option>
+            </select>
+            <input type="number" id="custom-quantity" class="mb-4" style="display: none;" placeholder="Enter quantity">
+            <button class="bg-custom-darkBlue text-white text-center py-2 px-6 rounded-lg hover:bg-custom-blueGray">Add to Cart</button>
         </div>
     </div>
-    </section>
-    <section class="py-12">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center text-custom-darkBlue">Our Top Picks</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <?php 
-            foreach($products as $product): 
-            ?>
-            <div class="bg-white p-6 rounded-lg shadow-md product flex flex-col">
-                <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>" class="w-full h-64 object-cover mb-4 rounded">
-                <h3 class="text-xl font-bold mb-2 text-custom-darkBlue"><?php echo $product['name']; ?></h3>
-                <p class="text-yellow-400 font-semibold mb-2"><?php echo $product['rating']; ?></p>
-                <p class="text-gray-700 text-justify"><?php echo $product['description']; ?></p>
-            </div>
-            <?php endforeach; ?>
-        </div>
+    <div class="description p-20">
+        <h2 class="text-2xl font-bold mb-4 text-custom-darkBlue">Description</h2>
+        <p class="text-gray-700 mb-6">
+            {!! $formattedSpecifications !!}
+        </p>
     </div>
-    </section>
+</div>
+
+
     <footer class="bg-gray-900 text-white pt-6">
     <div class="container mx-auto md:flex md:justify-between">
         <div class="md:w-1/2 md:mb-0 mb-4 -ml-10">
@@ -193,15 +163,17 @@
     <script>
         var allProducts = <?php echo json_encode($allkeyphone) ?>;
 
-        document.addEventListener('DOMContentLoaded', function(){
+        document.addEventListener('DOMContentLoaded', function() {
             const svgLink = document.getElementById('svgLink');
             const searchContainer = document.getElementById('searchContainer');
             const searchBar = document.getElementById('searchBar');
             const searchButton = document.getElementById('searchButton');
-            const phoneDropdown = document.getElementById('phoneDropdown');
-            const phoneItems = document.querySelectorAll('.phoneItem');
+            const brandDropdown = document.getElementById('brandDropdown');
+            const brandItems = document.querySelectorAll('.brandItem');
             const supportDropdown = document.getElementById('supportDropdown');
             const supportDropdownContent = document.getElementById('supportDropdownContent');
+            const phoneDropdown = document.getElementById('phoneDropdown');
+            const phoneItems = document.querySelectorAll('.phoneItem');
             const header = document.querySelector('nav');
 
             svgLink.addEventListener('click', function(event) {
@@ -211,6 +183,41 @@
 
             searchBar.addEventListener('focus', function() {
                 phoneDropdown.classList.remove('hidden');
+            });
+
+            supportDropdown.addEventListener('click', function(event) {
+                event.preventDefault();
+                supportDropdownContent.classList.toggle('hidden');
+            });
+
+            searchBar.addEventListener('input', function() {
+                const searchText = searchBar.value.toLowerCase();
+                let matchFound = false;
+                let count = 0;
+                phoneItems.forEach(function(item) {
+                    const phoneName = item.getAttribute('phone-name').toLowerCase();
+                    if (phoneName.includes(searchText) && count < 10) {
+                        item.style.display = 'flex block';
+                        matchFound = true;
+                        count++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                if (!matchFound) {
+                    searchButton.disabled = true;
+                } else {
+                    searchButton.disabled = false;
+                }
+            });
+
+            document.getElementById('quantity').addEventListener('change', function () {
+                var customQuantityInput = document.getElementById('custom-quantity');
+                if (this.value === 'other') {
+                    customQuantityInput.style.display = 'block';
+                } else {
+                    customQuantityInput.style.display = 'none';
+                }
             });
 
             searchButton.addEventListener('click', function(event) {
@@ -225,11 +232,6 @@
                         window.location.href = `search?query=${searchTerm}`;
                     }
                 }
-            });
-
-            supportDropdown.addEventListener('click', function(event) {
-                event.preventDefault();
-                supportDropdownContent.classList.toggle('hidden');
             });
 
             phoneItems.forEach(function(item) {

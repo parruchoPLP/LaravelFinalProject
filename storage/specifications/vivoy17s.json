@@ -1,0 +1,75 @@
+{
+    "DISPLAY": {
+      "Type": "IPS LCD",
+      "Size": "6.56 inches",
+      "Resolution": "720 x 1612 Pixels",
+      "PPI": 269,
+      "Aspect Ratio": "20:9",
+      "Refresh Rate": "60Hz",
+      "Max Brightness": "840 nits",
+      "Notch": true
+    },
+    "OS": "Android 13 with Funtouch OS 13",
+    "CHIPSET": "MediaTek Helio G85",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A75": {
+          "2x": "2.0GHz"
+        },
+        "Cortex-A55": {
+          "6x": "1.8GHz"
+        }
+      }
+    },
+    "GPU": "Mali-G52 MC2",
+    "RAM": "4 GB",
+    "REAR_CAMERA": {
+      "Type": "Dual Cameras",
+      "Main_Camera": {
+        "Resolution": "50MP",
+        "Aperture": "f/1.8",
+        "Features": ["Autofocus"]
+      },
+      "Depth_Sensor": {
+        "Resolution": "2MP"
+      },
+      "Flash": "LED",
+      "Video_Recording": "Up to 1080p"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "8 Megapixels",
+      "Aperture": "f/2.0",
+      "Video_Recording": "Up to 1080p"
+    },
+    "STORAGE": "128GB",
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": false,
+    "BLUETOOTH": "Bluetooth 5.0",
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio_Jack": "3.5mm"
+    },
+    "FM_RADIO": true,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
+    "SENSORS": ["Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-Po",
+      "Removable": false,
+      "Charging_Rate": "15W"
+    },
+    "MATERIAL": "Glass front, Plastic back (IP54 Dust & Splash Resistant)",
+    "DIMENSIONS": {
+      "Width": "163.74 mm",
+      "Height": "75.43 mm",
+      "Thickness": "8.09 mm"
+    },
+    "WEIGHT": "186 g",
+    "COLORS": ["Forest Green", "Glitter Purple"]
+  }
+  

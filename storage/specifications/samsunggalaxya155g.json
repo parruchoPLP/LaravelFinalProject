@@ -1,0 +1,67 @@
+{
+    "display": {
+      "size": "6.5-inch",
+      "type": "FHD+ Super AMOLED",
+      "resolution": "1080 x 2340 Pixels",
+      "ppi": 396,
+      "aspect_ratio": "19.5:9",
+      "refresh_rate": "90Hz",
+      "brightness": "800nits max",
+      "notch": true
+    },
+    "os": "Android 14 with One UI 6",
+    "chipset": "MediaTek Dimensity 6100+ (6 nm)",
+    "cpu": {
+      "type": "Octa Core",
+      "cores": {
+        "high_performance": {"count": 2, "type": "Cortex-A76", "speed": "2.2GHz"},
+        "efficiency": {"count": 6, "type": "Cortex-A55", "speed": "2.0GHz"}
+      }
+    },
+    "gpu": "Mali-G57 MC2",
+    "ram": ["4GB", "8GB"],
+    "rear_camera": {
+      "type": "Triple Cameras",
+      "sensors": [
+        {"resolution": "50MP", "aperture": "f/1.8", "features": ["Autofocus"]},
+        {"resolution": "5MP", "aperture": "f/2.2", "features": ["Ultra-wide"]},
+        {"resolution": "2MP", "aperture": "f/2.4", "features": ["Macro"]}
+      ],
+      "flash": "LED",
+      "video_recording": "Up to 1080p"
+    },
+    "front_camera": {
+      "resolution": "13 Megapixels",
+      "aperture": "f/2.0",
+      "video_recording": "Up to 1080p"
+    },
+    "storage": ["128GB", "256GB"],
+    "expansion": "Expandable up to 1TB via microSD",
+    "sim_card": "Dual SIM (Nano-SIM)",
+    "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+    "wi_fi": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "nfc": true,
+    "bluetooth": "Bluetooth 5.3",
+    "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "usb_otg": true,
+    "usb_port": "USB Type-C",
+    "sound": {
+      "audio_jack": true
+    },
+    "fm_radio": true,
+    "biometrics": ["Face Recognition", "Fingerprint Sensor (side-mounted)"],
+    "sensors": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "battery": {
+      "type": "Li-Po (Non-removable)",
+      "capacity": "5000 mAh",
+      "charging": "25W Fast Charging"
+    },
+    "material": {
+      "front": "Glass",
+      "back": "Polycarbonate"
+    },
+    "dimensions": "160.1 x 76.8 x 8.4 mm",
+    "weight": "200 g",
+    "colors": ["Blue Black", "Blue"]
+  }
+  

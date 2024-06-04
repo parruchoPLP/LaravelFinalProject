@@ -1,0 +1,69 @@
+{
+    "DISPLAY": {
+      "Size": "6.74-inch",
+      "Type": "HD+ IPS LCD",
+      "Resolution": "720 x 1600 Pixels",
+      "PPI": 260,
+      "Aspect Ratio": "20:9",
+      "Refresh Rate": "90Hz",
+      "Notch": true
+    },
+    "OS": "Android 13 with realme UI T Edition",
+    "CHIPSET": "UNISOC Tiger T612",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A75": "2x @ 1.8GHz",
+        "Cortex-A55": "6x @ 1.8GHz"
+      }
+    },
+    "GPU": "Mali-G57",
+    "RAM": ["6GB", "8GB"],
+    "REAR_CAMERA": {
+      "Dual Cameras": [
+        {
+          "Main Camera": {
+            "Resolution": "50MP",
+            "Aperture": "f/1.8",
+            "Features": ["Autofocus"]
+          }
+        },
+        {
+          "AI Lens": {}
+        }
+      ],
+      "Flash": "LED",
+      "Video Recording": "Up to 1080p"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "8 Megapixels",
+      "Aperture": "f/2.0",
+      "Video Recording": "Up to 720p"
+    },
+    "STORAGE": ["128GB", "256GB"],
+    "EXPANSION": "Expandable up to 2TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": false,
+    "BLUETOOTH": "Bluetooth 5.0",
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio Jack": "3.5mm"
+    },
+    "FM_RADIO": true,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-Po",
+      "Removable": false,
+      "Charging": "33W Fast Charging (SUPERVOOC, 50% in 31 minutes)"
+    },
+    "MATERIAL": "Glass front, Polycarbonate back",
+    "DIMENSIONS": "167.3 x 76.7 x 7.49 mm",
+    "WEIGHT": "182 g",
+    "COLORS": ["Mighty Black", "Champion Gold"]
+  }
+  

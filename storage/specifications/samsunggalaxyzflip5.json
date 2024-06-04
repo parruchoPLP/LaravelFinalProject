@@ -1,0 +1,94 @@
+{
+    "DISPLAY": {
+      "Main Display": {
+        "Size": "6.7-inch",
+        "Type": "Foldable FHD+ Dynamic AMOLED 2X",
+        "Resolution": "1080 x 2640 Pixels",
+        "PPI": 426,
+        "Aspect Ratio": "22:9",
+        "Refresh Rate": "120Hz",
+        "HDR": "HDR10+",
+        "Peak Brightness": "1200 nits",
+        "Notch": true
+      },
+      "Secondary Display": {
+        "Size": "3.4-inch",
+        "Type": "HD Super AMOLED",
+        "Resolution": "720 x 748 Pixels",
+        "PPI": 306
+      }
+    },
+    "OS": "Android 13 with One UI 5.1.1",
+    "CHIPSET": "Qualcomm Snapdragon 8 Gen 2 (4 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-X3": "1x @ 3.36GHz",
+        "Cortex-A715": "2x @ 2.8GHz",
+        "Cortex-A710": "2x @ 2.8GHz",
+        "Cortex-A510": "3x @ 2.0GHz"
+      }
+    },
+    "GPU": "Adreno 740",
+    "RAM": "8 GB",
+    "REAR_CAMERA": {
+      "Dual Cameras": [
+        {
+          "Main Camera": {
+            "Resolution": "12MP",
+            "Aperture": "f/1.8",
+            "Features": ["Dual-Pixel Autofocus", "OIS"]
+          }
+        },
+        {
+          "Ultra-wide": {
+            "Resolution": "12MP",
+            "Aperture": "f/2.2",
+            "FOV": "123˚"
+          }
+        }
+      ],
+      "Flash": "LED",
+      "Video Recording": "Up to 4K@60fps"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "10 Megapixels",
+      "Aperture": "f/2.2",
+      "Video Recording": "Up to 4K@30fps"
+    },
+    "STORAGE": "256GB or 512GB",
+    "EXPANSION": "None",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac/6e",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.3",
+    "POSITIONING": "GPS, GLONASS, GALILEO, BeiDou",
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio": "Hi-Res Audio",
+      "Speakers": "Stereo Dual Speaker tuned by AKG",
+      "Audio_Output": "USB Type-C"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
+    "SENSORS": ["Barometer", "Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "3700 mAh Li-Po",
+      "Removable": false,
+      "Charging": {
+        "Fast Charging": "25W (50% in 30 minutes)",
+        "Wireless Charging": "15W",
+        "Reverse Wireless Charging": "4.5W"
+      }
+    },
+    "MATERIAL": "Glass back (including outer screen), Plastic inner screen, and Aluminum frame (IPX8 water resistant)",
+    "DIMENSIONS": {
+      "Folded": "71.9 x 85.1 x 15.1 mm",
+      "Unfolded": "71.9 x 165.1 x 6.9 mm"
+    },
+    "WEIGHT": "187 g",
+    "COLORS": ["Mint", "Graphite", "Cream", "Lavender", "Gray", "Blue", "Green", "Yellow"]
+  }
+  
