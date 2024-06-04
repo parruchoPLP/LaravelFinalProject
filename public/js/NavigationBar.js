@@ -8,6 +8,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const supportDropdown = document.getElementById('supportDropdown');
     const supportDropdownContent = document.getElementById('supportDropdownContent');
 
+    document.addEventListener('click', function(event) {
+        if(!svgLink.contains(event.target) && !searchContainer.contains(event.target)){
+            searchContainer.classList.add('hidden');
+            phoneDropdown.classList.add('hidden');
+            searchBar.value = '';
+        }
+        if(!svgLink.contains(event.target) && !supportDropdown.contains(event.target)){
+            supportDropdownContent.classList.add('hidden');
+        }
+    });
+
     svgLink.addEventListener('click', function(event) {
         event.preventDefault();
         searchContainer.classList.toggle('hidden');
