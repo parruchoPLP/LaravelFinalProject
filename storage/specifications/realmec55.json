@@ -1,0 +1,40 @@
+{
+  "display": "6.72-inch FHD+ IPS LCD Display (1080 x 2400 Pixels, 392 ppi) with 20:9 Aspect Ratio, 90Hz Refresh Rate, 680nits peak brightness, and punch-hole",
+  "os": "Android 13 with realme UI 4.0",
+  "chipset": "MediaTek Helio G88",
+  "cpu": {
+    "description": "Octa Core CPU",
+    "cores": {
+      "Cortex-A75": "2.0GHz",
+      "Cortex-A55": "1.8GHz"
+    }
+  },
+  "gpu": "Mali-G52 MC2",
+  "ram": ["6GB", "8GB"],
+  "rear_camera": {
+    "main_camera": "64MP Main Camera (f/1.79 Aperture, Autofocus)",
+    "depth_sensor": "2MP Depth Sensor",
+    "flash": "LED Flash",
+    "video_recording": "Up to 1080p video recording"
+  },
+  "front_camera": "8 Megapixels (f/2.0 Aperture) - Up to 1080p video recording",
+  "storage": ["128GB", "256GB"],
+  "expansion": "Expandable up to 1TB via microSD",
+  "sim_card": "Dual SIM (Nano-SIM)",
+  "cellular": ["4G LTE", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+  "nfc": "No",
+  "bluetooth": "Bluetooth 5.2",
+  "positioning": ["GPS with A-GPS", "GLONASS", "GALILEO", "BeiDou"],
+  "usb_otg": "Yes",
+  "usb_port": "USB Type-C",
+  "sound": ["Dirac Audio with up to 200% loudspeaker volume", "3.5mm Audio Jack"],
+  "fm_radio": "Yes",
+  "biometrics": ["Face Recognition", "Fingerprint Sensor (side-mounted)"],
+  "sensors": ["Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+  "battery": "5000 mAh Li-Po Battery (Non-removable) - 33W Fast Charging (SUPERVOOC, 100% in 63 minutes)",
+  "material": "Glass front, Plastic back",
+  "dimensions": "165.6 x 75.9 x 7.89 mm",
+  "weight": "189.5 g",
+  "colors": ["Rainy Night", "Sunshower"]
+}

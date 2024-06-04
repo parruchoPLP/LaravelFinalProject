@@ -1,0 +1,45 @@
+{
+  "display": "6.7-inch QHD+ Dynamic AMOLED 2X Display (1440 x 3120 Pixels, 509 ppi) with Corning Gorilla Glass Victus 2, 19.3:9 Aspect Ratio, 120Hz Refresh Rate, 2,600nits peak brightness, HDR10+, and punch-hole",
+  "os": "Android 14 with One UI 6.1 and Galaxy AI",
+  "chipset": "Exynos 2400",
+  "cpu": {
+    "description": "Deca Core CPU",
+    "cores": {
+      "Cortex-X4": "3.2GHz",
+      "Cortex-A720": {
+        "2x Core": "2.9GHz",
+        "3x Core": "2.6GHz"
+      },
+      "Cortex-A520": "2.0GHz"
+    }
+  },
+  "gpu": "Xclipse 940",
+  "ram": "12 GB",
+  "rear_camera": {
+    "main_camera": "50MP Main Camera (f/1.8 Aperture, Autofocus, OIS)",
+    "ultra_wide": "12MP Ultra-wide (f/2.2 Aperture, 120˚ FoV)",
+    "telephoto": "10MP Telephoto (f/2.4 Aperture, Autofocus, OIS, 3x Optical Zoom)",
+    "flash": "LED Flash",
+    "video_recording": "Up to 8K@30fps or 4K@60fps video recording with EIS"
+  },
+  "front_camera": "12 Megapixels (f/2.2 Aperture, Autofocus) - Up to 4K@60fps video recording",
+  "storage": ["256GB", "512GB"],
+  "expansion": "None",
+  "sim_card": "Dual SIM (Nano-SIM)",
+  "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac/6e",
+  "nfc": "Yes",
+  "bluetooth": "Bluetooth 5.3",
+  "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+  "usb_otg": "Yes with Samsung DeX and Samsung Wireless DeX",
+  "usb_port": "USB Type-C",
+  "sound": ["Hi-Res Audio", "Stereo Speakers tuned by AKG", "USB Type-C Audio Output"],
+  "fm_radio": "No",
+  "biometrics": ["Face Recognition", "Fingerprint Sensor (under-display)"],
+  "sensors": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer", "Ultra-Wideband (UWB)"],
+  "battery": "4900 mAh Li-ion Battery (Non-removable) - 45W Fast Charging (65% in 30 minutes), 15W Wireless Charging, Reverse Wireless Charging",
+  "material": "Glass front and back with Aluminum frame (IP68 dust and water resistant)",
+  "dimensions": "158.5 x 75.9 x 7.7 mm",
+  "weight": "196 g",
+  "colors": ["Onyx Black", "Marble Gray", "Cobalt Violet", "Amber Yellow", "(Online Exclusive: Sapphire Blue, Jade Green, Sandstone Orange)"]
+}

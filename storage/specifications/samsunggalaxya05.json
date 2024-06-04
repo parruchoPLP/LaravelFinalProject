@@ -1,0 +1,43 @@
+{
+  "display": "6.7-inch HD+ TFT LCD Display (720 x 1600 Pixels, 262 ppi) with 20:9 Aspect Ratio and notch",
+  "os": "Android 13 with One UI",
+  "chipset": "MediaTek Helio G85 (12 nm)",
+  "cpu": {
+    "description": "Octa Core CPU",
+    "cores": {
+      "Cortex-A75": "2.0GHz",
+      "Cortex-A55": "1.8GHz"
+    }
+  },
+  "gpu": "Mali-G52 MC2",
+  "ram": "4 GB",
+  "rear_camera": {
+    "main_camera": "50MP Main Camera (f/1.8 Aperture, Autofocus)",
+    "depth_sensor": "2MP Depth Sensor",
+    "flash": "LED Flash",
+    "video_recording": "Up to 1080p video recording"
+  },
+  "front_camera": {
+    "megapixels": 8,
+    "aperture": "f/2.0"
+  },
+  "storage": "64GB or 128GB",
+  "expansion": "Expandable up to 1TB via microSD",
+  "sim_card": "Dual SIM (Nano-SIM)",
+  "cellular": ["4G LTE", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+  "nfc": "No",
+  "bluetooth": "Bluetooth 5.3",
+  "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou"],
+  "usb_otg": "Yes",
+  "usb_port": "USB Type-C",
+  "sound": "Dolby ATMOS, 3.5mm Audio Jack",
+  "fm_radio": "No",
+  "biometrics": "None",
+  "sensors": ["Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+  "battery": "5000 mAh Li-Po Battery (Non-removable) - 25W Fast Charging",
+  "material": "Glass front, Plastic back",
+  "dimensions": "168.8 x 78.2 x 8.8 mm",
+  "weight": "195 g",
+  "colors": ["Black", "Silver"]
+}

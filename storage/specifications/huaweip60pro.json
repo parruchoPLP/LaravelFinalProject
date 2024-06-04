@@ -1,0 +1,81 @@
+{
+    "DISPLAY": {
+      "Size": "6.67-inch",
+      "Type": "FHD+ OLED",
+      "Resolution": "1200 x 2700 Pixels",
+      "PPI": 443,
+      "Aspect Ratio": "20.25:9",
+      "Refresh Rate": "120Hz",
+      "Glass": "Huawei Kunlun Glass",
+      "Cutout": "Punch-hole"
+    },
+    "OS": "EMUI 13.1",
+    "CHIPSET": "Qualcomm Snapdragon 8+ Gen 1",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-X2": "1x @ 3.19GHz",
+        "Cortex-A710": "3x @ 2.75GHz",
+        "Cortex-A510": "4x @ 2.0GHz"
+      }
+    },
+    "GPU": "Adreno 730",
+    "RAM": ["8GB", "12GB"],
+    "REAR_CAMERA": {
+      "Type": "Triple Cameras",
+      "Main_Camera": {
+        "Resolution": "48MP",
+        "Aperture": "f/1.4~f/4.0",
+        "Features": ["Laser Autofocus", "OIS"]
+      },
+      "Telephoto": {
+        "Resolution": "48MP",
+        "Aperture": "f/2.1",
+        "Features": ["OIS", "3.5x Optical Zoom"]
+      },
+      "Ultra-wide": {
+        "Resolution": "13MP",
+        "Aperture": "f/2.2",
+        "Features": ["Autofocus"]
+      },
+      "Flash": "Dual LED",
+      "Video_Recording": "Up to 4K@60fps with EIS"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "13 Megapixels",
+      "Aperture": "f/2.4",
+      "Video_Recording": "Up to 4K@60fps"
+    },
+    "STORAGE": ["256GB", "512GB"],
+    "EXPANSION": "None",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac/6",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.2",
+    "INFRARED": true,
+    "POSITIONING": ["GPS (dual-band)", "GLONASS", "GALILEO", "BeiDou", "QZSS", "NavIC"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Speakers": "Stereo Loudspeakers",
+      "Audio_Output": "USB Type-C"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (under-display)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "4815 mAh Li-Po",
+      "Removable": false,
+      "Charging": "88W Fast Charging (HUAWEI SuperCharge), 50W Fast Wireless Charging"
+    },
+    "MATERIAL": "Glass front and back (IP68 Water and Dust Resistance)",
+    "DIMENSIONS": {
+      "Width": "161 mm",
+      "Height": "74.5 mm",
+      "Thickness": "8.3 mm"
+    },
+    "WEIGHT": "200 g",
+    "COLORS": ["Rococo Pearl", "Black"]
+  }
+  

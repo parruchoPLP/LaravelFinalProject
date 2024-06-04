@@ -1,0 +1,69 @@
+{
+  "display": {
+    "main_display": {
+      "type": "Foldable UHD+ OLED Display",
+      "size": "7.85 inches",
+      "resolution": "2224 x 2496 Pixels",
+      "ppi": 426,
+      "glass_type": "Ultra Thin Glass",
+      "refresh_rate": "120Hz",
+      "punch_hole": true
+    },
+    "secondary_display": {
+      "type": "FHD+ OLED Display",
+      "size": "6.4 inches",
+      "resolution": "1080 x 2504 Pixels",
+      "ppi": 426,
+      "glass_type": "Kunlun Glass",
+      "refresh_rate": "120Hz",
+      "punch_hole": true
+    }
+  },
+  "os": "EMUI 13.1",
+  "chipset": "Qualcomm Snapdragon 8+ Gen 1",
+  "cpu": {
+    "description": "Octa Core CPU",
+    "cores": {
+      "Cortex-X2": "3.19GHz",
+      "Cortex-A710": "2.75GHz",
+      "Cortex-A510": "2.0GHz"
+    }
+  },
+  "gpu": "Adreno 730",
+  "ram": "12 GB",
+  "rear_camera": {
+    "main_camera": "50MP Main Camera (f/1.8 Aperture, Laser Autofocus, OIS)",
+    "ultra_wide": "13MP Ultra-wide (f/2.2 Aperture, Autofocus)",
+    "telephoto": "12MP Periscope Telephoto (f/3.4 Aperture, Autofocus, OIS, 5x Optical Zoom)",
+    "flash": "LED Flash",
+    "video_recording": "Up to 4K@60fps video recording with EIS"
+  },
+  "front_camera": {
+    "main_camera": "8MP Main Camera (f/2.4 Aperture)",
+    "cover_camera": "8MP Cover Camera (f/2.4 Aperture)",
+    "video_recording": "Up to 4K@60fps video recording"
+  },
+  "storage": "512GB",
+  "expansion": "None",
+  "sim_card": "Dual SIM (Nano-SIM)",
+  "cellular": ["4G LTE", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac/6",
+  "nfc": "Yes",
+  "bluetooth": "Bluetooth 5.2",
+  "infrared": "Yes",
+  "positioning": ["GPS (dual-band)", "GLONASS", "GALILEO", "BeiDou", "QZSS", "NavIC"],
+  "usb_otg": "USB OTG, DisplayPort",
+  "usb_port": "USB Type-C",
+  "sound": "Stereo Dual Speakers, USB Type-C Audio Output",
+  "fm_radio": "No",
+  "biometrics": "Face Recognition & Fingerprint Sensor (side-mounted)",
+  "sensors": ["Barometer", "Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer", "Altimeter"],
+  "battery": "4800 mAh Li-Po Battery (Non-removable) - 66W Fast Charging (HUAWEI SuperCharge), 50W Fast Wireless Charging, 7.5W Reverse Wireless Charging",
+  "material": "Glass Front, Glass or Vegan Leather Back, Metal Frame, and UTG Foldable Display (IPX8 Water Resistance)",
+  "dimensions": {
+    "folded": "156.9 x 72.4 x 11.08 mm",
+    "unfolded": "156.9 x 141.5 x 5.3 mm"
+  },
+  "weight": "239 g (Vegan Leather) or 241 g (Glass)",
+  "colors": ["Black (Glass)", "Dark Green (Vegan Leather)"]
+}

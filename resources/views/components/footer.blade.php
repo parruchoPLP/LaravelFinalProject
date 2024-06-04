@@ -1,63 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KeyPhone</title>
-    <link rel="icon" href="{{ asset('images/luguu.png') }}" type="image/png">
-    <script src="{{ asset('js/NavigationBar.js') }}"></script>
-    @vite('resources/css/app.css')
-</head>
-<body class="bg-gray-100 overflow-x-hidden">
-    <div class="flex items-center">
-        <img src="{{ asset('images/products/vivo-Y03.png') }}" alt="Website Icon" class="w-8 h-auto mr-2">
-        <h1 class="text-2xl font-bold">KeyPhone Store</h1>
-    </div>
-    
-    <x-navigation-bar
-        :allkeyphone="$allkeyphone"
-    />
-
-    <section class="relative bg-cover bg-center" style="background-image: url('{{ asset('images/phones-bg.jpeg') }}');">
-        <div class="bg-custom-darkBlue bg-opacity-75 text-white py-12 flex flex-wrap items-center justify-center p-10 relative z-20">
-            <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">
-                <div class="text-center">
-                    <h1 class="text-5xl font-bold mt-5">Buy KeyPhone Now!</h1>
-                     </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="card-holder bg-white mt-5 rounded-lg" style="margin: 100px;">
-    <div class="text-right p-10">
-        <img src="{{ $keyphone['image'] }}" alt="15" class="w-100 h-auto mx-auto float-left" style="max-width: 100%; height: auto;">
-    </div>
-    <div class="product-details flex flex-col p-20">
-        <h2 class="text-4xl font-bold mb-4 text-custom-darkBlue">{{ $keyphone['name'] }}</h2>
-        <p class="text-xl font-bold mb-4">{{ $keyphone['price'] }}</p>
-        <p class="text-yellow-400 font-semibold text-xl mb-4">{{ $keyphone['rating'] }}</p>
-        <div class="w-1/5">
-            <p class="text-gray-700 mb-2">Quantity:</p>
-            <select id="quantity" class="mb-4">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="other">Other:</option>
-            </select>
-            <input type="number" id="custom-quantity" class="mb-4" style="display: none;" placeholder="Enter quantity">
-            <button class="bg-custom-darkBlue text-white text-center py-2 px-6 rounded-lg hover:bg-custom-blueGray">Add to Cart</button>
-        </div>
-    </div>
-    <div class="description p-20">
-        <h2 class="text-2xl font-bold mb-4 text-custom-darkBlue">Description</h2>
-        <p class="text-gray-700 mb-6">
-            {!! $formattedSpecifications !!}
-        </p>
-    </div>
-</div>
-
-
-    <footer class="bg-gray-900 text-white pt-6">
+<footer class="bg-gray-900 text-white pt-6">
     <div class="container mx-auto md:flex md:justify-between">
         <div class="md:w-1/2 md:mb-0 mb-4 -ml-10">
             <h2 class="text-xl font-bold">Contact Us</h2>
@@ -101,21 +42,4 @@
             <p>&copy; 2024 KeyPhone. All rights reserved.</p>
         </div>
     </div>
-    </footer>
-    
-    <script>
-        var allProducts = <?php echo json_encode($allkeyphone) ?>;
-
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('quantity').addEventListener('change', function () {
-                var customQuantityInput = document.getElementById('custom-quantity');
-                if (this.value === 'other') {
-                    customQuantityInput.style.display = 'block';
-                } else {
-                    customQuantityInput.style.display = 'none';
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+</footer>

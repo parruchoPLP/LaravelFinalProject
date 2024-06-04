@@ -1,0 +1,76 @@
+{
+    "DISPLAY": {
+      "Size": "6.67-inch",
+      "Type": "WFHD+ AMOLED",
+      "Resolution": "1220 x 2712 Pixels",
+      "PPI": 446,
+      "Aspect Ratio": "20:9",
+      "Refresh Rate": "120Hz",
+      "Peak Brightness": "2400nits",
+      "Protection": "Corning Gorilla Glass Victus",
+      "HDR": ["Dolby Vision", "HDR10+"],
+      "Notch": true
+    },
+    "OS": "Android 14 with Xiaomi HyperOS",
+    "CHIPSET": "Qualcomm Snapdragon 8s Gen 3 (4 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-X4": "1x @ 3.0GHz",
+        "Cortex-A720": "4x @ 2.8GHz",
+        "Cortex-A520": "3x @ 2.0GHz"
+      }
+    },
+    "GPU": "Adreno 735",
+    "RAM": ["8GB", "12GB"],
+    "REAR_CAMERA": {
+      "Type": "Dual Cameras",
+      "Main_Camera": {
+        "Resolution": "50MP",
+        "Sensor": "Sony IMX882",
+        "Aperture": "f/1.59",
+        "Features": ["Autofocus", "OIS"],
+        "Video_Recording": "Up to 4K@60fps"
+      },
+      "Ultra_wide": {
+        "Resolution": "8MP",
+        "Sensor": "Sony IMX355"
+      },
+      "Flash": "Dual LED"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "20 Megapixels",
+      "Sensor": "OmniVision OV20B",
+      "Aperture": "f/2.2",
+      "Video_Recording": "Up to 1080p@60fps"
+    },
+    "STORAGE": ["256GB", "512GB"],
+    "EXPANSION": "None",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac/ax (dual band)",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.4",
+    "INFRARED": true,
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio": ["Hi-Res Audio", "Dolby ATMOS"],
+      "Speaker": "Stereo Dual Speakers",
+      "Output": "USB Type-C"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (under-display)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-ion",
+      "Removable": false,
+      "Charging": "90W Fast Charging (2%-100% in 35 minutes)"
+    },
+    "MATERIAL": "Glass front, Polycarbonate back (IP64 dust and splash resistant)",
+    "DIMENSIONS": "160.5 x 74.4 x 7.8 mm",
+    "WEIGHT": "179 g",
+    "COLORS": ["Black", "Green", "Gold"]
+  }
+  

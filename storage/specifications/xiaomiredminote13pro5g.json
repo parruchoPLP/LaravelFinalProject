@@ -1,0 +1,75 @@
+{
+    "DISPLAY": {
+      "Size": "6.67-inch",
+      "Type": "WFHD+ AMOLED",
+      "Resolution": "1220 x 2712 Pixels",
+      "PPI": 446,
+      "Refresh Rate": "120Hz",
+      "Brightness": "1800 nits",
+      "Protection": "Corning Gorilla Glass Victus",
+      "Dolby Vision": true,
+      "Notch": false
+    },
+    "OS": "Android 13 with MIUI 14",
+    "CHIPSET": "Qualcomm Snapdragon 7s Gen 2 (4 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A78": "4x @ 2.4GHz",
+        "Cortex-A55": "4x @ 1.95GHz"
+      }
+    },
+    "GPU": "Adreno 710",
+    "RAM": ["8GB", "12GB"],
+    "REAR_CAMERA": {
+      "Type": "Triple Cameras",
+      "Main_Camera": {
+        "Resolution": "200MP",
+        "Aperture": "f/1.65",
+        "Features": ["Autofocus", "OIS"],
+        "Video_Recording": ["Up to 4K@30fps", "1080p@60fps"]
+      },
+      "Ultra_wide": {
+        "Resolution": "8MP",
+        "Aperture": "f/2.2"
+      },
+      "Macro": {
+        "Resolution": "2MP",
+        "Aperture": "f/2.4"
+      },
+      "LED_Flash": true
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "16 Megapixels",
+      "Aperture": "f/2.4",
+      "Video_Recording": "Up to 1080p@60fps"
+    },
+    "STORAGE": ["256GB", "512GB"],
+    "EXPANSION": "None",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.2",
+    "INFRARED": true,
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio": "Dolby ATMOS, Dual Speakers",
+      "Audio_Jack": "3.5mm"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (under-display)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5100 mAh Li-Po",
+      "Removable": false,
+      "Charging": "67W Fast Charging (100% in 44 minutes)"
+    },
+    "MATERIAL": "Glass front and back (IP54 dust and splash resistant)",
+    "DIMENSIONS": "161.15 x 74.24 x 7.98 mm",
+    "WEIGHT": "187 g",
+    "COLORS": ["Midnight Black", "Aurora Purple", "Ocean Teal"]
+  }
+  

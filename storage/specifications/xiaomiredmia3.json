@@ -1,0 +1,65 @@
+{
+    "DISPLAY": {
+      "Size": "6.71-inch",
+      "Type": "HD+ IPS LCD",
+      "Resolution": "720 x 1650 Pixels",
+      "PPI": 268,
+      "Refresh Rate": "90Hz",
+      "Brightness": "500 nits",
+      "Protection": "Corning Gorilla Glass 3",
+      "Notch": true
+    },
+    "OS": "Android 14",
+    "CHIPSET": "MediaTek Helio G36 (12 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A53": "4x @ 2.2GHz, 4x @ 1.6GHz"
+      }
+    },
+    "GPU": "PowerVR GE8320",
+    "RAM": ["3GB", "4GB"],
+    "REAR_CAMERA": {
+      "Type": "Dual Cameras",
+      "Main_Camera": {
+        "Resolution": "8MP",
+        "Aperture": "f/2.0",
+        "Features": ["LED Flash"],
+        "Video_Recording": "Up to 1080p"
+      },
+      "Auxiliary_Lens": {
+        "Resolution": "QVGA"
+      }
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "5 Megapixels",
+      "Aperture": "f/2.2",
+      "Video_Recording": "Up to 1080p"
+    },
+    "STORAGE": ["64GB", "128GB"],
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": false,
+    "BLUETOOTH": "Bluetooth 5.4",
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio": "3.5mm Audio Jack"
+    },
+    "FM_RADIO": true,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
+    "SENSORS": ["Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-ion",
+      "Removable": false,
+      "Charging": "10W"
+    },
+    "MATERIAL": "Glass front, Glass or Eco-leather back",
+    "DIMENSIONS": "168.4 x 76.3 x 8.3 mm",
+    "WEIGHT": "193 g",
+    "COLORS": ["Midnight Black", "Star Blue", "Forest Green"]
+  }
+  

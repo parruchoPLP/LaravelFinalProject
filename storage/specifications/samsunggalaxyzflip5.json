@@ -1,0 +1,67 @@
+{
+  "display": {
+    "main_display": {
+      "type": "Foldable FHD+ Dynamic AMOLED 2X Display",
+      "size": "6.7 inches",
+      "resolution": "1080 x 2640 Pixels",
+      "ppi": 426,
+      "aspect_ratio": "22:9",
+      "refresh_rate": "120Hz",
+      "brightness": "1200 nits (peak)",
+      "hdr": "HDR10+",
+      "punch_hole": true
+    },
+    "secondary_display": {
+      "type": "HD Super AMOLED Display",
+      "size": "3.4 inches",
+      "resolution": "720 x 748 Pixels",
+      "ppi": 306
+    }
+  },
+  "os": "Android 13 with One UI 5.1.1",
+  "chipset": "Qualcomm Snapdragon 8 Gen 2 (4 nm)",
+  "cpu": {
+    "description": "Octa Core CPU",
+    "cores": {
+      "Cortex-X3": "3.36GHz",
+      "Cortex-A715": "2.8GHz",
+      "Cortex-A710": "2.8GHz",
+      "Cortex-A510": "2.0GHz"
+    }
+  },
+  "gpu": "Adreno 740",
+  "ram": "8 GB",
+  "rear_camera": {
+    "main_camera": "12MP Main Camera (f/1.8 Aperture, Dual-Pixel Autofocus, OIS)",
+    "ultra_wide": "12MP Ultra-wide (f/2.2 Aperture, 123˚ FoV)",
+    "flash": "LED Flash",
+    "video_recording": "Up to 4K@60fps video recording"
+  },
+  "front_camera": {
+    "megapixels": 10,
+    "aperture": "f/2.2",
+    "video_recording": "Up to 4K@30fps video recording"
+  },
+  "storage": "256GB or 512GB",
+  "expansion": "None",
+  "sim_card": "Dual SIM (Nano-SIM)",
+  "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac/6e",
+  "nfc": "Yes",
+  "bluetooth": "Bluetooth 5.3",
+  "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou"],
+  "usb_otg": "Yes",
+  "usb_port": "USB Type-C",
+  "sound": "Hi-Res Audio, Stereo Dual Speaker tuned by AKG, USB Type-C Audio Output",
+  "fm_radio": "No",
+  "biometrics": "Face Recognition & Fingerprint Sensor (side-mounted)",
+  "sensors": ["Barometer", "Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+  "battery": "3700 mAh Li-Po Battery (Non-removable) - 25W Fast Charging (50% in 30 minutes), 15W Wireless Charging, 4.5W Reverse Wireless Charging",
+  "material": "Glass back (including outer screen), Plastic inner screen, and Aluminum frame (IPX8 water resistant)",
+  "dimensions": {
+    "folded": "71.9 x 85.1 x 15.1 mm",
+    "unfolded": "71.9 x 165.1 x 6.9 mm"
+  },
+  "weight": "187 g",
+  "colors": ["Mint", "Graphite", "Cream", "Lavender", "Gray", "Blue", "Green", "Yellow"]
+}

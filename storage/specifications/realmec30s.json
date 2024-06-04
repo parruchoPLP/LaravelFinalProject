@@ -1,0 +1,59 @@
+{
+    "DISPLAY": {
+      "Size": "6.5-inch",
+      "Type": "HD+ IPS LCD",
+      "Resolution": "720 x 1600 Pixels",
+      "PPI": 270,
+      "Aspect Ratio": "20:9",
+      "Notch": true
+    },
+    "OS": "Android 12 with realme UI Go Edition",
+    "CHIPSET": "UNISOC SC9863A",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A55": "4x @ 1.6GHz, 4x @ 1.2GHz"
+      }
+    },
+    "GPU": "PowerVR GE8322",
+    "RAM": ["2GB", "3GB", "4GB"],
+    "REAR_CAMERA": {
+      "Resolution": "8 Megapixels",
+      "Aperture": "f/2.0",
+      "Features": ["Autofocus"],
+      "Flash": "LED",
+      "Video Recording": "Up to 1080p"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "5 Megapixels",
+      "Aperture": "f/2.2",
+      "Video Recording": "Up to 720p"
+    },
+    "STORAGE": ["32GB", "64GB"],
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n",
+    "NFC": false,
+    "BLUETOOTH": "Bluetooth 4.2",
+    "POSITIONING": "GPS",
+    "USB_OTG": true,
+    "USB_PORT": "MicroUSB 2.0",
+    "SOUND": {
+      "Technology": "Dirac 3.0",
+      "Audio Jack": "3.5mm"
+    },
+    "FM_RADIO": true,
+    "BIOMETRICS": "Fingerprint Sensor (side-mounted)",
+    "SENSORS": ["Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-Po",
+      "Removable": false,
+      "Charging Rate": "10W"
+    },
+    "MATERIAL": "Glass front, Plastic back",
+    "DIMENSIONS": "164.2 x 75.7 x 8.5 mm",
+    "WEIGHT": "186 g",
+    "COLORS": ["Stripe Black", "Stripe Blue"]
+  }
+  

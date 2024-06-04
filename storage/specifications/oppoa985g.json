@@ -1,0 +1,74 @@
+{
+    "DISPLAY": {
+      "Size": "6.72-inch",
+      "Type": "FHD+ LTPS LCD",
+      "Resolution": "1080 x 2400 Pixels",
+      "PPI": 392,
+      "Refresh Rate": "120Hz",
+      "Brightness": "680 nits",
+      "Aspect Ratio": "20:9",
+      "Notch": true
+    },
+    "OS": "Android 13 with ColorOS 13.1",
+    "CHIPSET": "Qualcomm Snapdragon 695",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Kryo 660 Gold": "2x @ 2.2GHz",
+        "Kryo 660 Silver": "6x @ 1.7GHz"
+      }
+    },
+    "GPU": "Adreno 619",
+    "RAM": "8 GB",
+    "REAR_CAMERA": {
+      "Type": "Triple Cameras",
+      "Main_Camera": {
+        "Resolution": "64MP",
+        "Aperture": "f/1.7",
+        "Features": ["Autofocus"],
+        "Video_Recording": "Up to 1080p with EIS"
+      },
+      "Microscope": {
+        "Resolution": "2MP",
+        "Aperture": "f/3.3",
+        "Magnification": "40x @ 5.5mm"
+      },
+      "Monochrome": {
+        "Resolution": "2MP",
+        "Aperture": "f/2.4"
+      },
+      "LED_Flash": true
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "32 Megapixels",
+      "Aperture": "f/2.4",
+      "Video_Recording": "Up to 1080p"
+    },
+    "STORAGE": "256GB",
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.2",
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Speakers": "Stereo Dual Speakers with up to 200% volume",
+      "Audio_Jack": "3.5mm"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-Po",
+      "Removable": false,
+      "Charging": "67W Fast Charging (SUPERVOOC, 100% in 44 minutes)"
+    },
+    "MATERIAL": "Glass front, Polycarbonate back",
+    "DIMENSIONS": "165.6 x 76.1 x 8.2 mm",
+    "WEIGHT": "192 g",
+    "COLORS": ["Cool Black", "Dreamy Blue"]
+  }
+  

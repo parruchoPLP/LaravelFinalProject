@@ -1,0 +1,41 @@
+{
+  "display": "6.67-inch FHD+ OLED Display (1080 x 2400 Pixels, 395 ppi) with 20:9 Aspect Ratio, 120Hz Refresh Rate, 2000nits peak brightness, HDR10+, and punch-hole",
+  "os": "Android 14 with realme UI 5.0",
+  "chipset": "MediaTek Dimensity 7050 (6 nm)",
+  "cpu": {
+    "description": "Octa Core CPU",
+    "cores": {
+      "Cortex-A78": "2.6GHz",
+      "Cortex-A55": "2.0GHz"
+    }
+  },
+  "gpu": "Mali-G68 MC4",
+  "ram": "8 GB",
+  "rear_camera": {
+    "main_camera": "50MP Main Camera (Sony LYT600, f/1.88 Aperture, Autofocus, OIS)",
+    "ultra_wide": "8MP Ultra-wide (f/2.2 Aperture, 112° FoV)",
+    "macro": "2MP Macro (f/2.4 Aperture)",
+    "flash": "Dual-tone LED Flash",
+    "video_recording": "Up to 4K video recording with OIS"
+  },
+  "front_camera": "16 Megapixels (f/2.45 Aperture) - Up to 1080p video recording",
+  "storage": "256GB",
+  "expansion": "None",
+  "sim_card": "Dual SIM (Nano-SIM)",
+  "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac/6",
+  "nfc": "Yes",
+  "bluetooth": "Bluetooth 5.2",
+  "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+  "usb_otg": "Yes",
+  "usb_port": "USB Type-C",
+  "sound": ["Hi-Res Audio", "Stereo Dual Speakers", "USB Type-C Audio Output"],
+  "fm_radio": "No",
+  "biometrics": ["Face Recognition", "Fingerprint Sensor (under-display)"],
+  "sensors": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+  "battery": "5000 mAh Li-Po Battery (Non-removable) - 67W Fast Charging (50% in 19 minutes)",
+  "material": "Glass front, Eco Leather back (IP54 Dust & Splash Resistant)",
+  "dimensions": "162.95 x 75.45 x 7.87 mm",
+  "weight": "190 g",
+  "colors": ["Pioneer Green", "Navigator Beige"]
+}

@@ -1,0 +1,40 @@
+{
+  "display": "6.74-inch HD+ IPS LCD Display (720 x 1600 Pixels, 260 ppi) with 20:9 Aspect Ratio, 90Hz Refresh Rate and notch",
+  "os": "Android 13 with realme UI T Edition",
+  "chipset": "UNISOC Tiger T612",
+  "cpu": {
+    "description": "Octa Core CPU",
+    "cores": {
+      "Cortex-A75": "1.8GHz",
+      "Cortex-A55": "1.8GHz"
+    }
+  },
+  "gpu": "Mali-G57",
+  "ram": ["6GB", "8GB"],
+  "rear_camera": {
+    "main_camera": "50MP Main Camera (f/1.8 Aperture, Autofocus)",
+    "ai_lens": "AI Lens",
+    "flash": "LED Flash",
+    "video_recording": "Up to 1080p video recording"
+  },
+  "front_camera": "8 Megapixels (f/2.0 Aperture) - Up to 720p video recording",
+  "storage": ["128GB", "256GB"],
+  "expansion": "Expandable up to 2TB via microSD",
+  "sim_card": "Dual SIM (Nano-SIM)",
+  "cellular": ["4G LTE", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+  "nfc": "No",
+  "bluetooth": "Bluetooth 5.0",
+  "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou"],
+  "usb_otg": "Yes",
+  "usb_port": "USB Type-C",
+  "sound": "3.5mm Audio Jack",
+  "fm_radio": "Yes",
+  "biometrics": ["Face Recognition", "Fingerprint Sensor (side-mounted)"],
+  "sensors": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+  "battery": "5000 mAh Li-Po Battery (Non-removable) - 33W Fast Charging (SUPERVOOC, 50% in 31 minutes)",
+  "material": "Glass front, Polycarbonate back",
+  "dimensions": "167.3 x 76.7 x 7.49 mm",
+  "weight": "182 g",
+  "colors": ["Mighty Black", "Champion Gold"]
+}

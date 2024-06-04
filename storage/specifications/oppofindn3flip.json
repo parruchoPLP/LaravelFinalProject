@@ -1,0 +1,92 @@
+{
+    "DISPLAY": {
+      "Main_Display": {
+        "Size": "6.8-inch",
+        "Type": "Foldable FHD+ AMOLED",
+        "Resolution": "1080 x 2520 Pixels",
+        "PPI": 403,
+        "Refresh Rate": "120Hz",
+        "Brightness": "1600 nits",
+        "HDR": "HDR10+",
+        "Other": "Ultra Thin Glass, Punch-hole"
+      },
+      "Secondary_Display": {
+        "Size": "3.26-inch",
+        "Type": "VGA+ AMOLED",
+        "Resolution": "382 x 720 Pixels",
+        "PPI": 250,
+        "Refresh Rate": "60Hz",
+        "Brightness": "900 nits"
+      }
+    },
+    "OS": "Android 13 with ColorOS 13.2",
+    "CHIPSET": "MediaTek Dimensity 9200 (4 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-X3": "1x @ 3.05GHz",
+        "Cortex-A715": "3x @ 2.85GHz",
+        "Cortex-A510": "4x @ 1.8GHz"
+      }
+    },
+    "GPU": "Immortalis-G715 MC11",
+    "RAM": "12 GB",
+    "REAR_CAMERA": {
+      "Type": "Triple Cameras",
+      "Main_Camera": {
+        "Resolution": "50MP",
+        "Aperture": "f/1.8",
+        "Features": ["Autofocus", "OIS"],
+        "Video_Recording": "Up to 4K with EIS"
+      },
+      "Ultra-wide": {
+        "Resolution": "48MP",
+        "Aperture": "f/2.2",
+        "Features": ["Autofocus"],
+        "FoV": "114°"
+      },
+      "Telephoto": {
+        "Resolution": "32MP",
+        "Aperture": "f/2.0",
+        "Features": ["Autofocus"],
+        "Zoom": "2x Optical"
+      },
+      "LED_Flash": true
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "32 Megapixels",
+      "Aperture": "f/2.4",
+      "Features": ["Autofocus"],
+      "Video_Recording": "Up to 4K with EIS"
+    },
+    "STORAGE": "256GB or 512GB",
+    "EXPANSION": "None",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac/6/7",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.3",
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Speakers": "Stereo Dual Speakers",
+      "Audio_Output": "USB Type-C"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "4300 mAh Li-Po",
+      "Removable": false,
+      "Charging": "44W Fast Charging"
+    },
+    "MATERIAL": "Polycarbonate front and back with Metal frame",
+    "DIMENSIONS": {
+      "Open": "166.4 x 75.8 x 7.79 mm",
+      "Closed": "85.5 x 75.8 x 16.45 mm"
+    },
+    "WEIGHT": "198 g",
+    "COLORS": ["Black", "Pink", "Gold"]
+  }
+  

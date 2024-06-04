@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KeyPhone</title>
+    <title>KeyPhone Store</title>
     <link rel="icon" href="{{ asset('images/luguu.png') }}" type="image/png">
     <script src="{{ asset('js/NavigationBar.js') }}"></script>
     @vite('resources/css/app.css')
@@ -19,44 +19,89 @@
     />
 
     <section class="relative bg-cover bg-center" style="background-image: url('{{ asset('images/phones-bg.jpeg') }}');">
-        <div class="bg-custom-darkBlue bg-opacity-75 text-white py-12 flex flex-wrap items-center justify-center p-10 relative z-20">
+        <div class="bg-custom-darkBlue bg-opacity-75 text-white py-32 flex flex-wrap items-center justify-center p-10 relative z-20">
             <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">
-                <div class="text-center">
-                    <h1 class="text-5xl font-bold mt-5">Buy KeyPhone Now!</h1>
+                <div class="text-center m-8">
+                    <h1 class="text-5xl font-bold mb-7">KeyPhone Products</h1>
                      </div>
             </div>
         </div>
     </section>
-
-    <div class="card-holder bg-white mt-5 rounded-lg" style="margin: 100px;">
-    <div class="text-right p-10">
-        <img src="{{ $keyphone['image'] }}" alt="15" class="w-100 h-auto mx-auto float-left" style="max-width: 100%; height: auto;">
-    </div>
-    <div class="product-details flex flex-col p-20">
-        <h2 class="text-4xl font-bold mb-4 text-custom-darkBlue">{{ $keyphone['name'] }}</h2>
-        <p class="text-xl font-bold mb-4">{{ $keyphone['price'] }}</p>
-        <p class="text-yellow-400 font-semibold text-xl mb-4">{{ $keyphone['rating'] }}</p>
-        <div class="w-1/5">
-            <p class="text-gray-700 mb-2">Quantity:</p>
-            <select id="quantity" class="mb-4">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="other">Other:</option>
-            </select>
-            <input type="number" id="custom-quantity" class="mb-4" style="display: none;" placeholder="Enter quantity">
-            <button class="bg-custom-darkBlue text-white text-center py-2 px-6 rounded-lg hover:bg-custom-blueGray">Add to Cart</button>
+    <section class="py-6 flex ">
+    <aside class="w-1/4 p-6 bg-white h-full rounded">
+        <h2 class="text-2xl font-bold mb-4 text-custom-darkBlue">KeyPhone Brands</h2>
+        <ul class="space-y-4" id="brandList">
+            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="all">All KeyPhone</a></li>
+            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Apple">Apple</a></li>
+            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Huawei">Huawei</a></li>
+            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Oppo">Oppo</a></li>
+            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Realme">Realme</a></li>
+            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Samsung">Samsung</a></li>
+            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Vivo">Vivo</a></li>
+            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Xiaomi">Xiaomi</a></li>
+        </ul>
+        <div class="w-full mt-6">
+            <h2 class="text-2xl font-bold mb-4 text-custom-darkBlue">Latest KeyPhones</h2>
+        <div class="flex mb-8">
+            <img src="{{ asset('images/products/Xiaomi-14.png') }}" alt="14" class="w-64 h-auto">
+            <div class="flex flex-col">
+                <h3 class="text-xl font-semibold mb-2 text-custom-darkBlue hover:border-b hover:border-custom-gold">Xiaomi 14</h3>
+                <p class="text-yellow-400 mb-2">★★★★★</p>
+                <p class="text-lg font-bold mb-2">Php 1231233r4</p>
+            </div>
+        </div>
+        <div class="flex mb-8">
+            <img src="{{ asset('images/products/vivo-Y03.png') }}" alt="Y03" class="w-64 h-auto">
+            <div class="flex flex-col">
+                <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">Vivo Y03</h3>
+                <p class="text-yellow-400 mb-2">★★★★☆</p>
+                <p class="text-lg font-bold mb-2">$999</p>
+            </div>
+        </div>
+        <div class="flex mb-8">
+            <img src="{{ asset('images/products/SAMSUNG-Galaxy-Z-Flip5.png') }}" alt="Flip5" class="w-64 h-auto">
+            <div class="flex flex-col">
+                <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">Samsung Galaxy Z Flip 5</h3>
+                <p class="text-yellow-400 mb-2">★★★★★</p>
+                <p class="text-lg font-bold mb-2">$999</p>
+            </div>
+        </div>
+        <div class="flex mb-8">
+            <img src="{{ asset('images/products/iPhone-15-Pro-Max.png') }}" alt="15" class="w-64 h-auto">
+            <div class="flex flex-col">
+                <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">iPhone 15 Pro Max</h3>
+                <p class="text-yellow-400 mb-2">★★★★★</p>
+                <p class="text-lg font-bold mb-2">$999</p>
+            </div>
+        </div>
+        <div class="flex">
+            <img src="{{ asset('images/products/OPPO-Reno11-Pro-5G.png') }}" alt="15" class="w-64 h-auto">
+            <div class="flex flex-col">
+                <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">Oppo Reno 11 Pro 5G</h3>
+                <p class="text-yellow-400 mb-2">★★★★★</p>
+                <p class="text-lg font-bold mb-2">$999</p>
+            </div>
+        </div>
+        </div>
+    </aside>
+    <div class="w-3/4 container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="productGrid">
+            @foreach($keyphone as $product)
+                <div id="{{ Str::slug($product['name'], '-') }}" class="bg-white p-6 rounded-lg shadow-md product relative flex flex-col" phone-brand="{{ $product['brand'] }}">
+                    <a href="{{ url('/product/' . Str::slug(str_replace(' ', '', strtolower($product['name'])), '-')) }}">
+                        <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}" class="w-full mb-4">
+                    </a>
+                    <h3 class="text-xl font-semibold mb-2">{{ $product['name'] }}</h3>
+                    <p class="text-yellow-400 font-semibold text-lg">{{ $product['rating'] }}</p>
+                    <p class="text-lg font-bold mb-4 pt-1 py-10">{{ $product['price'] }}</p>
+                    <div class="flex-grow"></div>
+                    <a href="#" class="block bg-custom-darkBlue text-white text-center py-2 rounded-lg hover:bg-custom-blueGray absolute bottom-0 left-0 right-0 mb-6 mx-6">Add to Cart</a>
+                </div>
+            @endforeach
         </div>
     </div>
-    <div class="description p-20">
-        <h2 class="text-2xl font-bold mb-4 text-custom-darkBlue">Description</h2>
-        <p class="text-gray-700 mb-6">
-            {!! $formattedSpecifications !!}
-        </p>
     </div>
-</div>
-
-
+    </section>
     <footer class="bg-gray-900 text-white pt-6">
     <div class="container mx-auto md:flex md:justify-between">
         <div class="md:w-1/2 md:mb-0 mb-4 -ml-10">
@@ -102,20 +147,22 @@
         </div>
     </div>
     </footer>
-    
     <script>
         var allProducts = <?php echo json_encode($allkeyphone) ?>;
-
+    
         document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('quantity').addEventListener('change', function () {
-                var customQuantityInput = document.getElementById('custom-quantity');
-                if (this.value === 'other') {
-                    customQuantityInput.style.display = 'block';
-                } else {
-                    customQuantityInput.style.display = 'none';
+            var brandList = document.getElementById('brandList');
+            var productGrid = document.getElementById('productGrid');
+    
+            brandList.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    e.preventDefault();
+                    var selectedBrand = e.target.getAttribute('phone-brand');
+                    window.location.href = `/storepage/${selectedBrand}`;
                 }
             });
         });
     </script>
+    
 </body>
 </html>

@@ -1,0 +1,82 @@
+{
+    "DISPLAY": {
+      "Type": "AMOLED",
+      "Size": "6.78 inches",
+      "Resolution": "1260 x 2800 Pixels",
+      "PPI": 453,
+      "Aspect Ratio": "20:9",
+      "Refresh Rate": "120Hz",
+      "Peak Brightness": "2800nits",
+      "HDR": "HDR10+",
+      "Cutout": "Punch-hole",
+      "Glass": "SCHOTT Xensation α"
+    },
+    "OS": "Android 14 with Funtouch OS 14",
+    "CHIPSET": "Qualcomm Snapdragon 7 Gen 3 (4 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Cortex-A715": {
+          "1x": "2.63GHz",
+          "3x": "2.4GHz"
+        },
+        "Cortex-A510": {
+          "4x": "1.8GHz"
+        }
+      }
+    },
+    "GPU": "Adreno 720",
+    "RAM": "12 GB",
+    "REAR_CAMERA": {
+      "Type": "Dual Cameras",
+      "Main_Camera": {
+        "Resolution": "50MP",
+        "Aperture": "f/1.88",
+        "Features": ["Autofocus", "OIS"]
+      },
+      "Ultra-wide": {
+        "Resolution": "50MP",
+        "Aperture": "f/2.0",
+        "FoV": "119°"
+      },
+      "Flash": ["Dual-tone LED", "Multi-tone Fill Light (Aura Light 3.0)"],
+      "Video_Recording": "Up to 4K with EIS"
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "50 Megapixels",
+      "Aperture": "f/2.0",
+      "FoV": "92°",
+      "Video_Recording": "Up to 4K"
+    },
+    "STORAGE": "256GB or 512GB",
+    "EXPANSION": "None",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac/6",
+    "NFC": true,
+    "BLUETOOTH": "Bluetooth 5.4",
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Audio": "Hi-Res Audio",
+      "Audio_Output": "USB Type-C"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (under-display)",
+    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-ion",
+      "Removable": false,
+      "Charging": "80W Fast Charging (vivo FlashCharge, 100% in 48 minutes)"
+    },
+    "MATERIAL": "Glass front and back (IP54 dust & splash resistant)",
+    "DIMENSIONS": {
+      "Width": "164.36 mm",
+      "Height": "75.1 mm",
+      "Thickness": "7.45 mm"
+    },
+    "WEIGHT": "186 g",
+    "COLORS": ["Green Sea", "Petals White"]
+  }
+  

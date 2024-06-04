@@ -1,0 +1,41 @@
+{
+  "display": "6.5-inch FHD+ Super AMOLED Display (1080 x 2340 Pixels, 396 ppi) with 19.5:9 Aspect Ratio, 90Hz Refresh Rate, 800nits max brightness, and notch",
+  "os": "Android 14 with One UI 6",
+  "chipset": "MediaTek Dimensity 6100+ (6 nm)",
+  "cpu": {
+    "description": "Octa Core CPU",
+    "cores": {
+      "Cortex-A76": "2.2GHz",
+      "Cortex-A55": "2.0GHz"
+    }
+  },
+  "gpu": "Mali-G57 MC2",
+  "ram": ["4GB", "8GB"],
+  "rear_camera": {
+    "main_camera": "50MP Main Camera (f/1.8 Aperture, Autofocus)",
+    "ultra_wide": "5MP Ultra-wide (f/2.2 Aperture)",
+    "macro": "2MP Macro (f/2.4 Aperture)",
+    "flash": "LED Flash",
+    "video_recording": "Up to 1080p video recording"
+  },
+  "front_camera": "13 Megapixels (f/2.0 Aperture) - Up to 1080p video recording",
+  "storage": ["128GB", "256GB"],
+  "expansion": "Expandable up to 1TB via microSD",
+  "sim_card": "Dual SIM (Nano-SIM)",
+  "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+  "nfc": "Yes",
+  "bluetooth": "Bluetooth 5.3",
+  "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+  "usb_otg": "Yes",
+  "usb_port": "USB Type-C",
+  "sound": "3.5mm Audio Jack",
+  "fm_radio": "Yes",
+  "biometrics": ["Face Recognition", "Fingerprint Sensor (side-mounted)"],
+  "sensors": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+  "battery": "5000 mAh Li-Po Battery (Non-removable) - 25W Fast Charging",
+  "material": "Glass front, Polycarbonate back",
+  "dimensions": "160.1 x 76.8 x 8.4 mm",
+  "weight": "200 g",
+  "colors": ["Blue Black", "Blue"]
+}

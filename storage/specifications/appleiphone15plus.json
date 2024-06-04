@@ -1,0 +1,49 @@
+{
+  "display": "6.7-inch WUXGA+ OLED Display (1290 x 2796 Pixels, 460 ppi) with Ceramic Shield, 60Hz Refresh Rate, HDR, Dolby Vision, 2000nits peak brightness, and Dynamic Island",
+  "os": "iOS17",
+  "chipset": "Apple A16 Bionic",
+  "cpu": {
+    "description": "Hexa Core CPU",
+    "cores": {
+      "performance": 2,
+      "efficiency": 4
+    }
+  },
+  "gpu": "5-core Apple GPU",
+  "ram": "6 GB",
+  "rear_camera": {
+    "main_camera": "48MP (f/1.6 Aperture, Autofocus, OIS)",
+    "ultra_wide": "12MP (f/2.2 Aperture, 120˚ FoV)",
+    "flash": "Dual-tone LED Flash",
+    "video_recording": "Up to 4K@60fps video recording with EIS"
+  },
+  "front_camera": "12 Megapixels (f/1.9 Aperture, Autofocus) - Up to 4K@60fps video recording with EIS",
+  "storage": ["128GB", "256GB", "512GB"],
+  "expansion": "None",
+  "sim_card": "Dual SIM (Nano + eSIM)",
+  "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac/6",
+  "nfc": "Yes",
+  "bluetooth": "Bluetooth 5.3",
+  "positioning": ["GPS with A-GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+  "usb_otg": "Yes with DisplayPort",
+  "usb_port": "USB Type-C",
+  "sound": ["Stereo Dual Speakers", "Dolby Atmos", "USB Type-C Audio Output"],
+  "fm_radio": "No",
+  "biometrics": "FaceID Face Recognition",
+  "sensors": [
+    "Gyroscope",
+    "Compass",
+    "Ambient Light Sensor",
+    "Proximity Sensor",
+    "Accelerometer",
+    "Ultra Wideband (UWB) - AirTags",
+    "Emergency SOS via satellite (not applicable in PH)",
+    "Crash detection"
+  ],
+  "battery": "Li-ion Battery (Non-removable) - 20W Fast Charging (50% in 30 minutes), 15W Wireless Charging (MagSafe)",
+  "material": "Glass front and back, Aluminum frame (IP68 Water & Dust Resistance)",
+  "dimensions": "160.9 x 77.8 x 7.8 mm",
+  "weight": "201 g",
+  "colors": ["Black", "Blue", "Green", "Yellow", "Pink"]
+}

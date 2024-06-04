@@ -1,0 +1,69 @@
+{
+    "DISPLAY": {
+      "Size": "6.67-inch",
+      "Type": "HD+ LTPS LCD",
+      "Resolution": "720 x 1600 Pixels",
+      "PPI": 264,
+      "Refresh Rate": "90Hz",
+      "Brightness": "950 nits",
+      "Aspect Ratio": "20:9",
+      "Notch": true
+    },
+    "OS": "Android 14 with ColorOS 14.0.1",
+    "CHIPSET": "Qualcomm Snapdragon 680 (6 nm)",
+    "CPU": {
+      "Type": "Octa Core",
+      "Cores": {
+        "Kryo 265 Gold": "4x @ 2.4GHz",
+        "Kryo 265 Silver": "4x @ 1.9GHz"
+      }
+    },
+    "GPU": "Adreno 610",
+    "RAM": "8 GB",
+    "REAR_CAMERA": {
+      "Type": "Dual Cameras",
+      "Main_Camera": {
+        "Resolution": "50MP",
+        "Aperture": "f/1.8",
+        "Features": ["Autofocus"],
+        "Video_Recording": "Up to 1080p"
+      },
+      "Secondary_Camera": {
+        "Resolution": "2MP",
+        "Aperture": "f/2.4"
+      },
+      "LED_Flash": true
+    },
+    "FRONT_CAMERA": {
+      "Resolution": "8 Megapixels",
+      "Aperture": "f/2.0",
+      "Video_Recording": "Up to 1080p"
+    },
+    "STORAGE": "128GB or 256GB",
+    "EXPANSION": "Expandable up to 1TB via microSD",
+    "SIM_CARD": "Dual SIM (Nano-SIM)",
+    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
+    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+    "NFC": false,
+    "BLUETOOTH": "Bluetooth 5.0",
+    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+    "USB_OTG": true,
+    "USB_PORT": "USB Type-C",
+    "SOUND": {
+      "Speakers": "Stereo Dual Speakers, Up to 300% volume",
+      "Audio_Jack": "3.5mm"
+    },
+    "FM_RADIO": false,
+    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
+    "SENSORS": ["Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+    "BATTERY": {
+      "Type": "5000 mAh Li-ion",
+      "Removable": false,
+      "Charging": "45W Fast Charging (SUPERVOOC, 50% in 30 minutes)"
+    },
+    "MATERIAL": "Glass front, Polycarbonate back (IP54 dust & splash resistant, MIL-STD 810H shock resistant)",
+    "DIMENSIONS": "165.71 x 76.02 x 7.68 mm",
+    "WEIGHT": "186 g",
+    "COLORS": ["Midnight Purple", "Ripple Blue"]
+  }
+  
