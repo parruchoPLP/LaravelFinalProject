@@ -34,6 +34,7 @@ Route::get('/login', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
+Route::get('/', [ProductController::class, 'homepage'])->name('homepage');
 Route::get('/homepage', [ProductController::class, 'homepage'])->name('homepage');
 Route::get('/storepage', [ProductController::class, 'storepage'])->name('storepage');
 Route::get('/delivery-and-shipping', [Controller::class, 'showDeliveryAndShipping']);
