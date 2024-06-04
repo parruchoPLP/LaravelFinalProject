@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Collection;
 
 class ProductController extends Controller
 {
@@ -11,7 +13,7 @@ class ProductController extends Controller
 
     public function __construct()
     {
-        $this->keyphone = [
+        $this->keyphone = collect([
             [ 'name' => 'Apple iPhone 11', 'price' => 'Php 24,990', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-11.png'),'brand' => 'Apple'],
             [ 'name' => 'Apple iPhone 12', 'price' => 'Php 30,990', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-12.png'),'brand' => 'Apple'],
             [ 'name' => 'Apple iPhone 13', 'price' => 'Php 42,990', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-13.png'),'brand' => 'Apple'],
@@ -75,13 +77,25 @@ class ProductController extends Controller
             [ 'name' => 'Huawei Nova 12 SE', 'price' => 'Php 15,999', 'rating' => '★★★★☆','image' => asset('images/products/Huawei-nova-12-SE.png'),'brand' => 'Huawei'],
             [ 'name' => 'Huawei Nova 12i', 'price' => 'Php 12,999', 'rating' => '★★★★☆','image' => asset('images/products/Huawei-nova-12i.png'),'brand' => 'Huawei'],
             [ 'name' => 'Huawei P60 Pro', 'price' => 'Php 58,999', 'rating' => '★★★★☆','image' => asset('images/products/HUAWEI-P60-Pro.png'),'brand' => 'Huawei'],
-        ];
+        ]);
     }
 
-    public function storepage()
+    public function storepage(Request $request)
     {
+        $perPage = 6; // Number of items per page
+        $page = $request->input('page', 1); // Get current page from request, default is 1
+        $offset = ($page - 1) * $perPage;
+
+        $paginatedItems = new LengthAwarePaginator(
+            $this->keyphone->slice($offset, $perPage), // Slice the collection to get the items for the current page
+            $this->keyphone->count(), // Total number of items
+            $perPage, // Items per page
+            $page, // Current page
+            ['path' => $request->url(), 'query' => $request->query()] // Path and query parameters for pagination links
+        );
+
         return view('storepage', [
-            'keyphone'=>$this->keyphone,
+            'keyphone'=>$paginatedItems,
             'allkeyphone'=>$this->keyphone
         ]);
     }
@@ -100,21 +114,30 @@ class ProductController extends Controller
         ]);
     }
 
-    public function storesearch($id)
+    public function storesearch(Request $request,$id)
     {
         $searcharray = [];
 
-        foreach($this->keyphone as $key){
-            if($key['brand'] === $id){
-                $searcharray[] = $key;
-            }
-            if($id === 'all'){
+        foreach ($this->keyphone as $key) {
+            if ($key['brand'] === $id || $id === 'all') {
                 $searcharray[] = $key;
             }
         }
+        $searchCollection = collect($searcharray);
+        $perPage = 6; // Number of items per page
+        $page = $request->input('page', 1); // Get current page from request, default is 1
+        $offset = ($page - 1) * $perPage;
+
+        $paginatedItems = new LengthAwarePaginator(
+            $searchCollection->slice($offset, $perPage), // Slice the collection to get the items for the current page
+            $searchCollection->count(), // Total number of items
+            $perPage, // Items per page
+            $page, // Current page
+            ['path' => $request->url(), 'query' => $request->query()] // Path and query parameters for pagination links
+        );
 
         return view('storepage', [
-            'keyphone'=>$searcharray,
+            'keyphone'=>$paginatedItems,
             'allkeyphone'=>$this->keyphone
         ]);
     }

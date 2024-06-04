@@ -1,62 +1,68 @@
 {
-    "display": {
-      "size": "6.1-inch",
-      "type": "HD+ IPS LCD",
-      "resolution": "828 x 1792 Pixels",
-      "ppi": 326,
-      "protection": "Scratch Resistant Glass",
-      "aspect_ratio": "19.5:9",
-      "features": ["Notch"]
+  "display": {
+    "size": "6.1-inch",
+    "resolution": "HD+ IPS LCD Display (828 x 1792 Pixels)",
+    "ppi": 326,
+    "glass": "Scratch Resistant Glass",
+    "aspect_ratio": "19.5:9",
+    "notch": "Yes"
+  },
+  "os": "iOS13",
+  "chipset": "Apple A13 Bionic",
+  "ram": "4 GB",
+  "rear_camera": {
+    "system": "Dual Cameras",
+    "main_camera": {
+      "megapixels": 12,
+      "aperture": "f/1.8",
+      "autofocus": "PDAF",
+      "ois": "OIS"
     },
-    "os": "iOS13",
-    "chipset": "Apple A13 Bionic",
-    "ram": "4 GB",
-    "rear_camera": {
-      "dual_cameras": [
-        {
-          "megapixels": "12MP",
-          "features": ["f/1.8 Aperture", "PDAF", "OIS"]
-        },
-        {
-          "megapixels": "12MP",
-          "features": ["f/2.4 Aperture", "120° Field of View"]
-        }
-      ],
-      "flash": "Quad LED Flash",
-      "video_recording": ["4K 60fps", "Night Mode"]
+    "ultra_wide": {
+      "megapixels": 12,
+      "aperture": "f/2.4",
+      "fov": "120°"
     },
-    "front_camera": {
-      "megapixels": "12MP",
-      "features": ["f/2.2 Aperture", "Screen Flash"]
-    },
-    "storage": ["64GB", "128GB", "512GB"],
-    "expansion": "None",
-    "sim_card": "Dual SIM (Nano + eSIM)",
-    "cellular": ["4G LTE", "3G HSPA+", "2G EDGE & GPRS Networks"],
-    "wifi": "Wi-Fi 802.11 b/g/n/ac (Dual Band)",
-    "nfc": "Yes",
-    "bluetooth": "Bluetooth 5.0",
-    "positioning": ["A-GPS", "GLONASS", "GALILEO", "QZSS"],
-    "usb_port": "Lightning Port",
-    "sound": {
-      "features": ["Dolby ATMOS"],
-      "audio_output": "Lightning Port Audio Output"
-    },
-    "fm_radio": "No",
-    "biometrics": "Face Recognition",
-    "sensors": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
-    "battery": {
-      "capacity": "3110 mAh",
-      "type": "Li-ion (Non-removable)",
-      "charging": ["Fast Charging"]
-    },
-    "material": {
-      "front": "Glass",
-      "back": "Glass",
-      "frame": "Metal"
-    },
-    "dimensions": "150.9 x 75.7 x 8.3 mm",
-    "weight": "194 g",
-    "colors": ["Black", "Purple", "Yellow", "Green", "White", "(Product) Red"]
-  }
-  
+    "flash": "Quad LED Flash",
+    "video_recording": {
+      "resolution": "4K 60fps",
+      "night_mode": "Night Mode"
+    }
+  },
+  "front_camera": {
+    "megapixels": 12,
+    "aperture": "f/2.2",
+    "flash": "Screen Flash"
+  },
+  "storage": ["64GB", "128GB", "512GB"],
+  "expansion": "None",
+  "sim_card": "Dual SIM (Nano + eSIM)",
+  "cellular": ["4G LTE", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac (Dual Band)",
+  "nfc": "Yes",
+  "bluetooth": "Bluetooth 5.0",
+  "positioning": ["A-GPS", "GLONASS", "GALILEO", "QZSS"],
+  "usb_port": "Lightning Port",
+  "sound": {
+    "technology": "Dolby Atmos",
+    "output": "Lightning Port Audio Output"
+  },
+  "fm_radio": "No",
+  "biometrics": "Face Recognition",
+  "sensors": [
+    "Gyroscope",
+    "Compass",
+    "Ambient Light Sensor",
+    "Proximity Sensor",
+    "Accelerometer"
+  ],
+  "battery": {
+    "capacity": "3110 mAh",
+    "type": "Li-ion (Non-removable)",
+    "fast_charging": "Fast Charging"
+  },
+  "material": "Glass Front & Back with Metal Frame",
+  "dimensions": "150.9 x 75.7 x 8.3 mm",
+  "weight": "194 g",
+  "colors": ["Black", "Purple", "Yellow", "Green", "White", "Product RED"]
+}

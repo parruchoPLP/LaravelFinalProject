@@ -1,80 +1,113 @@
 {
-    "display": {
-      "size": "6.8-inch",
-      "type": "QHD+ Dynamic AMOLED 2X",
-      "resolution": "1440 x 3120 Pixels",
-      "ppi": 501,
-      "protection": "Corning Gorilla Glass Armor",
-      "aspect_ratio": "19.3:9",
-      "refresh_rate": "120Hz",
-      "brightness": "2,600nits peak",
-      "hdr": "HDR10+",
-      "additional_features": ["punch-hole", "S Pen stylus integration"]
+  "display": {
+    "size": "6.8-inch",
+    "resolution": "QHD+ Dynamic AMOLED 2X Display (1440 x 3120 Pixels, 501 ppi)",
+    "glass": "Corning Gorilla Glass Armor",
+    "aspect_ratio": "19.3:9",
+    "refresh_rate": "120Hz",
+    "peak_brightness": "2,600nits",
+    "hdr": "HDR10+",
+    "notch_type": "punch-hole",
+    "s_pen_support": "Yes"
+  },
+  "os": "Android 14 with One UI 6.1 and Galaxy AI",
+  "chipset": "Qualcomm Snapdragon 8 Gen 3 (4 nm)",
+  "cpu": {
+    "type": "Octa Core CPU",
+    "cores": {
+      "Cortex-X4": 1,
+      "Cortex-A720":  "clock_speed: 3.2 GHz",
+      "Cortex-A520":  "clock_speed: 2.3 GHz" 
+    }
+  },
+  "gpu": "Adreno 750",
+  "ram": "12 GB",
+  "rear_camera": {
+    "system": "Quad Cameras",
+    "main_camera": {
+      "megapixels": 200,
+      "aperture": "f/1.7",
+      "autofocus": "Laser Autofocus",
+      "ois": "OIS"
     },
-    "os": "Android 14 with One UI 6.1 and Galaxy AI",
-    "chipset": "Qualcomm Snapdragon 8 Gen 3 (4 nm)",
-    "cpu": {
-      "type": "Octa Core",
-      "cores": {
-        "performance": {"count": 1, "type": "Cortex-X4", "speed": "3.3GHz"},
-        "high_performance": {"count": 5, "type": "Cortex-A720", "speed": "3.2GHz"},
-        "efficiency": {"count": 2, "type": "Cortex-A520", "speed": "2.3GHz"}
-      }
+    "periscope_telephoto": {
+      "megapixels": 50,
+      "aperture": "f/3.4",
+      "autofocus": "Autofocus",
+      "ois": "OIS",
+      "optical_zoom": "5x"
     },
-    "gpu": "Adreno 750",
-    "ram": "12 GB",
-    "rear_camera": {
-      "type": "Quad Cameras",
-      "sensors": [
-        {"resolution": "200MP", "aperture": "f/1.7", "features": ["Laser Autofocus", "OIS"]},
-        {"resolution": "50MP", "aperture": "f/3.4", "features": ["Autofocus", "OIS", "5x Optical Zoom"]},
-        {"resolution": "12MP", "aperture": "f/2.2", "features": ["Autofocus", "120˚ FoV"]},
-        {"resolution": "10MP", "aperture": "f/2.4", "features": ["Autofocus", "OIS", "3x Optical Zoom"]}
-      ],
-      "flash": "LED",
-      "video_recording": "Up to 8K@30fps or 4K@60fps with EIS"
-    },
-    "front_camera": {
-      "resolution": "12 Megapixels",
+    "ultra_wide": {
+      "megapixels": 12,
       "aperture": "f/2.2",
-      "features": ["Autofocus"],
-      "video_recording": "Up to 4K@60fps"
+      "fov": "120°",
+      "autofocus": "Autofocus"
     },
-    "storage": ["256GB", "512GB", "1TB"],
-    "expansion": "None",
-    "sim_card": "Dual SIM (Nano + eSIM)",
-    "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
-    "wi_fi": "Wi-Fi 802.11 b/g/n/ac/6/7",
-    "nfc": "Yes",
-    "bluetooth": "Bluetooth 5.3",
-    "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
-    "usb_otg": "Yes with Samsung DeX and Samsung Wireless DeX",
-    "usb_port": "USB Type-C",
-    "sound": {
-      "features": ["Hi-Res Audio", "Stereo Speakers tuned by AKG"],
-      "audio_output": "USB Type-C"
+    "telephoto": {
+      "megapixels": 10,
+      "aperture": "f/2.4",
+      "autofocus": "Autofocus",
+      "ois": "OIS",
+      "optical_zoom": "3x"
     },
-    "fm_radio": "No",
-    "biometrics": ["Face Recognition", "Fingerprint Sensor (under-display)"],
-    "sensors": ["Barometer", "Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer", "Ultra-Wideband (UWB)"],
-    "battery": {
-      "type": "Li-ion (Non-removable)",
-      "capacity": "5000 mAh",
-      "charging": {
-        "fast": "45W Fast Charging (65% in 30 minutes)",
-        "wireless": "15W Wireless Charging",
-        "reverse_wireless": "Reverse Wireless Charging"
-      }
-    },
-    "material": {
-      "front": "Glass",
-      "back": "Glass",
-      "frame": "Titanium",
-      "protection": "IP68 dust and water resistant"
-    },
-    "dimensions": "162.3 x 79.0 x 8.6 mm",
-    "weight": "232 g",
-    "colors": ["Titanium Gray", "Titanium Black", "Titanium Violet", "Titanium Yellow"],
-    "online_exclusive_colors": ["Titanium Blue", "Titanium Green", "Titanium Orange"]
-  }
-  
+    "flash": "LED Flash",
+    "video_recording": {
+      "resolution": "Up to 8K@30fps or 4K@60fps",
+      "eis": "EIS"
+    }
+  },
+  "front_camera": {
+    "megapixels": 12,
+    "aperture": "f/2.2",
+    "autofocus": "Autofocus",
+    "video_recording": "Up to 4K@60fps"
+  },
+  "storage": ["256GB", "512GB", "1TB"],
+  "expansion": "None",
+  "sim_card": "Dual SIM (Nano + eSIM)",
+  "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac/6/7",
+  "nfc": "Yes",
+  "bluetooth": "Bluetooth 5.3",
+  "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+  "usb_otg": {
+    "support": "Yes",
+    "features": ["Samsung DeX", "Samsung Wireless DeX"]
+  },
+  "usb_port": "USB Type-C",
+  "sound": {
+    "technology": "Hi-Res Audio",
+    "speakers": "Stereo Speakers tuned by AKG",
+    "output": "USB Type-C Audio Output"
+  },
+  "fm_radio": "No",
+  "biometrics": {
+    "face_recognition": "Yes",
+    "fingerprint_sensor": "Under-display Fingerprint Sensor"
+  },
+  "sensors": [
+    "Barometer",
+    "Gyroscope",
+    "Compass",
+    "Ambient Light Sensor",
+    "Proximity Sensor",
+    "Accelerometer",
+    "Ultra-Wideband (UWB)"
+  ],
+  "battery": {
+    "capacity": "5000 mAh Li-ion (Non-removable)",
+    "fast_charging": "45W Fast Charging (65% in 30 minutes)",
+    "wireless_charging": "15W Wireless Charging, Reverse Wireless Charging"
+  },
+  "material": "Glass front and back with Titanium frame (IP68 dust and water resistant)",
+  "dimensions": "162.3 x 79.0 x 8.6 mm",
+  "weight": "232 g",
+  "colors": [
+    "Titanium Gray",
+    "Titanium Black",
+    "Titanium Violet",
+    "Titanium Yellow",
+    "Online Exclusive: Titanium Blue",
+    "Online Exclusive: Titanium Green",
+    "Online Exclusive: Titanium Orange"]
+}

@@ -17,12 +17,9 @@ if (!function_exists('formatSpecifications')) {
             $output .= '<td class="p-2">';
 
             if (is_array($value)) {
-                // Check if the array is an indexed array
                 if (array_keys($value) === range(0, count($value) - 1)) {
-                    // It's an indexed array, display values without keys
                     $output .= implode(', ', $value);
                 } else {
-                    // It's an associative array, format recursively
                     $output .= formatSpecifications($value);
                 }
             } else {
