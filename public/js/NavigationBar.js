@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     searchButton.addEventListener('click', function(event) {
         event.preventDefault();
-        const searchTerm = searchBar.value;
+        let searchTerm = searchBar.value;
         if (searchTerm) {
             const matchedName = Array.from(phoneItems).find(item => item.getAttribute('phone-name') === searchTerm);
             if (matchedName) {

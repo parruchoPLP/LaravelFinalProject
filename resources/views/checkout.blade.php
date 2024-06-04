@@ -7,15 +7,15 @@
     @vite('resources/css/app.css')
 </head>
 <body class="bg-gray-100 overflow-x-hidden">
-    <nav class="bg-custom-darkBlue py-4 fixed top-0 w-full z-50">
+<nav class="bg-custom-darkBlue py-2 fixed top-0 w-full z-50">
         <div class="w-full container mx-10 flex justify-between items-center">
-            <ul class="flex space-x-6 text-white">
-                <li class="text-white text-2xl font-bold">logo</li>
-                <li><a href="#" class="text-white text-2xl font-bold">KeyPhone</a></li>
+            <ul class="flex items-center space-x-2 text-white">
+                <li><a href="/homepage"><img src="{{ asset('images/keyphone.png') }}" style="width: 50px; height: 50px;"></a></li>
+                <li><a href="/homepage" class="text-white text-2xl font-bold">KeyPhone</a></li>
             </ul>
             <ul class="flex space-x-6 text-white w-16">
-                <li><a href="homepage" class="hover:border-b hover:border-custom-gold">Home</a></li>
-                <li><a href="storepage" class="hover:border-b hover:border-custom-gold">Store</a></li>
+                <li><a href="/homepage" class="hover:border-b hover:border-custom-gold">Home</a></li>
+                <li><a href="/storepage" class="hover:border-b hover:border-custom-gold">Store</a></li>
                 <li><a href="#" class="hover:border-b hover:border-custom-gold" id="supportDropdown">Support</a></li>
                 <li><a href="#" class="flex items-center" id="svgLink">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="ml-4" id="searchIcon">
@@ -23,13 +23,13 @@
                     </svg>
                     </a>
                 </li>
-                <li><a href="checkout" class="flex items-center">
+                <li><a href="/checkout" class="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     </a>
                 </li>
-                <li><a href="login" class="flex items-center">
+                <li><a href="/login" class="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 20 20" version="1.1" class="text-white fill-current">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Dribbble-Light-Preview" transform="translate(-380.000000, -2159.000000)" fill="#ffffff">
@@ -43,34 +43,138 @@
                 </li>
             </ul>
         </div>
-        <div id="searchContainer" class="relative w-full left-0 bg-custom-darkBlue pt-4 pb-2 px-8 hidden">
-        <div class="relative">
-            <div class="flex items-center">
-                <input type="text" id="searchBar" placeholder="Search KeyPhone" class="w-full p-2 rounded mr-2">
-                <a href="#" class="block">
-                    <button id="searchButton" class="bg-custom-blueGray text-white px-4 py-2 rounded hover:bg-blue-500">Search</button>
-                </a>
-            </div>
-            <div id="brandDropdown" class="absolute left-0 w-full bg-white border border-gray-300 rounded mt-2 hidden">
-                <ul>
-                    <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Apple</li>
-                    <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Huawei</li>
-                    <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Oppo</li>
-                    <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Realme</li>
-                    <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Samsung</li>
-                    <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Vivo</li>
-                    <li class="brandItem px-4 py-2 hover:border-b hover:border-custom-gold hover:bg-gray-200 cursor-pointer">Xiaomi</li>
-                </ul>
+    </nav>
+    <section class="relative bg-cover bg-center" style="background-image: url('{{ asset('images/phones-bg.jpeg') }}');">
+    <div class="bg-custom-darkBlue bg-opacity-75 text-white py-20 flex flex-wrap items-center justify-center p-10 relative z-20">
+        <div class="container text-center mx-auto">
+            <div class="mt-8">
+                <div class="flex flex-col bg-white py-6 px-4 rounded-b-xl shadow border-t-4 border-custom-darkBlue">
+                    <div class="flex items-center mb-2">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#213555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#213555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-custom-darkBlue font-bold">Delivery Address</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mx-2">
+                        <div>
+                            <p class="text-gray-900 font-bold pr-2">Prans Alcantara</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-900 font-bold pr-8">+639184673391</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-900 font-semibold pr-8">123 Pasig City, Metro Manila, Philippines</p>
+                        </div>
+                        <div>
+                            <a href="#" class="text-custom-blueGray font-semibold hover:border-b hover:border-custom-gold">Change</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col">
+                <table class="bg-white rounded-xl shadow mt-2">
+                    <tr>
+                        <th class="p-4 text-custom-blueGray">Products Ordered</th>
+                        <th class="p-4 text-custom-blueGray">Unit Price</th>
+                        <th class="p-4 text-custom-blueGray">Quantity</th>
+                        <th class="p-4 text-custom-blueGray">Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td class="pt-4">
+                            <div class="flex items-center">
+                                <img src="{{ asset('images/products/iPhone-11.png') }}" alt="Product Image" class="w-32 h-24 mr-4 ml-1">
+                                <p class="text-custom-darkBlue font-semibold">Apple Iphone 11</p>
+                            </div>
+                        </td>
+                        <td class="pt-4">
+                            <p class="text-custom-darkBlue">Php 120943</p>
+                        </td>
+                        <td class="pt-4">
+                            <p class="text-gray-700">1</p>
+                        </td>
+                        <td class="pt-4">
+                            <p class="text-gray-700">1765856785</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pt-4">
+                            <div class="flex items-center">
+                                <img src="{{ asset('images/products/iPhone-11.png') }}" alt="Product Image" class="w-32 h-24 mr-4 ml-1">
+                                <p class="text-custom-darkBlue font-semibold">Apple Iphone 11</p>
+                            </div>
+                        </td>
+                        <td class="pt-4">
+                            <p class="text-custom-darkBlue">Php 120943</p>
+                        </td>
+                        <td class="pt-4">
+                            <p class="text-gray-700">1</p>
+                        </td>
+                        <td class="pt-4">
+                            <p class="text-gray-700">1765856785</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-4">
+                            <div class="flex justify-center">
+                                <p class="text-gray-700 p-4">Order Total:</p>
+                                <p class="text-gray-700 p-4">1765856785</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="container text-center mx-auto">
+                    <div class="mt-2">
+                        <div class="flex flex-col bg-white py-6 px-4 rounded-b-xl shadow border-t-4 border-custom-darkBlue">
+                            <div class="flex justify-between mb-2">
+                                <div>
+                                    <p class="text-custom-darkBlue font-bold">Payment Method</p>
+                                </div>
+                            <div class="ml-auto">
+                                <p class="text-custom-darkBlue font-semibold">Cash on Delivery</p>    
+                            </div>
+                            <div class="ml-2">
+                                <a href="#" class="text-custom-blueGray font-semibold hover:border-b hover:border-custom-gold">Change</a>
+                            </div>
+                        </div>
+                            <div class="flex items-center">
+                                <div class="ml-auto">
+                                    <p class="text-custom-darkBlue">Merchandise Subtotal</p>
+                                </div>
+                                <div class="ml-2">
+                                    <p class="text-custom-darkBlue font-semibold">Php 123</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="ml-auto">
+                                    <p class="text-custom-darkBlue">Shipping Total</p>
+                                </div>
+                                <div class="ml-2">
+                                    <p class="text-custom-darkBlue font-semibold">Php 123</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="ml-auto">
+                                    <p class="text-custom-darkBlue">Total Payment: </p>
+                                </div>
+                            <div class="ml-2">
+                                <p class="text-custom-darkBlue font-semibold text-xl">Php 123</p>
+                            </div>
+                            </div>
+                            <div class="flex justify-center">
+                                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                                    Place Order
+                                </button>
+                            </div>
+                            </div>
+                </div>
             </div>
         </div>
     </div>
-        <div id="supportDropdownContent" class="absolute w-full left-0 bg-custom-darkBlue py-4 px-8 hidden flex justify-center">
-            <a href="delivery-and-shipping" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Delivery and Shipping</a>
-            <a href="payment" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Payment</a>
-            <a href="#" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">About Us</a>
-        </div>
-    </nav>
-    
+</section>
     <footer class="bg-gray-900 text-white pt-6">
     <div class="container mx-auto md:flex md:justify-between">
         <div class="md:w-1/2 md:mb-0 mb-4 -ml-10">
@@ -116,30 +220,5 @@
         </div>
     </div>
     </footer>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('svgLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        var searchContainer = document.getElementById('searchContainer');
-        searchContainer.classList.toggle('hidden');
-    });
-    document.getElementById('supportDropdown').addEventListener('click', function(event) {
-        event.preventDefault();
-        var supportDropdown = document.getElementById('supportDropdownContent');
-        supportDropdown.classList.toggle('hidden');
-    });
-    const searchBar = document.getElementById('searchBar');
-    const brandDropdown = document.getElementById('brandDropdown');
-
-    searchBar.addEventListener('focus', () => {
-        brandDropdown.classList.remove('hidden');
-    });
-    document.addEventListener('click', (event) => {
-        if (!searchBar.contains(event.target) && !brandDropdown.contains(event.target)) {
-            brandDropdown.classList.add('hidden');
-        }
-    });
-});
-</script>
 </body>
 </html>
