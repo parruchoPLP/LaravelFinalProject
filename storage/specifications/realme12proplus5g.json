@@ -1,84 +1,41 @@
 {
-    "DISPLAY": {
-      "Size": "6.7-inch",
-      "Type": "FHD+ AMOLED",
-      "Resolution": "1080 x 2412 Pixels",
-      "PPI": 394,
-      "Aspect Ratio": "20:9",
-      "Refresh Rate": "120Hz",
-      "Brightness": "950 nits",
-      "Glass": "Reinforced Glass",
-      "Notch": false
-    },
-    "OS": "Android 14 with realme UI 5.0",
-    "CHIPSET": "Qualcomm Snapdragon 7s Gen 2 (4 nm)",
-    "CPU": {
-      "Type": "Octa Core",
-      "Cores": {
-        "Cortex-A78": "4x @ 2.4GHz",
-        "Cortex-A55": "4x @ 1.95GHz"
-      }
-    },
-    "GPU": "Adreno 710",
-    "RAM": "12 GB",
-    "REAR_CAMERA": {
-      "Triple Cameras": [
-        {
-          "Main Camera": {
-            "Resolution": "50MP",
-            "Aperture": "f/1.8",
-            "Features": ["Autofocus", "OIS"]
-          }
-        },
-        {
-          "Periscope Portrait/Telephoto": {
-            "Resolution": "64MP",
-            "Aperture": "f/2.8",
-            "Features": ["Autofocus", "OIS", "3x Optical Zoom"]
-          }
-        },
-        {
-          "Ultra-wide": {
-            "Resolution": "8MP",
-            "Aperture": "f/2.2",
-            "FoV": "112°"
-          }
-        }
-      ],
-      "Flash": "LED",
-      "Video Recording": "Up to 4K with EIS"
-    },
-    "FRONT_CAMERA": {
-      "Resolution": "32 Megapixels",
-      "Aperture": "f/2.4",
-      "Video Recording": "Up to 1080p"
-    },
-    "STORAGE": "512GB",
-    "EXPANSION": "None",
-    "SIM_CARD": "Dual SIM (Nano-SIM)",
-    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
-    "WI-FI": "Wi-Fi 802.11 b/g/n/ac/6",
-    "NFC": true,
-    "BLUETOOTH": "Bluetooth 5.2",
-    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
-    "USB_OTG": true,
-    "USB_PORT": "USB Type-C",
-    "SOUND": {
-      "Audio": "Hi-Res Audio",
-      "Speakers": "Stereo Dual Speakers",
-      "Audio_Output": "USB Type-C"
-    },
-    "FM_RADIO": false,
-    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (under-display)",
-    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
-    "BATTERY": {
-      "Type": "5000 mAh Li-Po",
-      "Removable": false,
-      "Charging": "67W Fast Charging (SUPERVOOC, 50% in 19 minutes)"
-    },
-    "MATERIAL": "Glass front, Vegan Leather back (IP65 dust & water resistant)",
-    "DIMENSIONS": "161.47 x 74.02 x 8.75 mm",
-    "WEIGHT": "196 g",
-    "COLORS": ["Submarine Blue", "Navigator Beige"]
-  }
-  
+  "display": "6.7-inch FHD+ AMOLED Display (1080 x 2412 Pixels, 394 ppi) with Reinforced Glass, 20:9 Aspect Ratio, 120Hz Refresh Rate, 950nits peak brightness, and punch-hole",
+  "os": "Android 14 with realme UI 5.0",
+  "chipset": "Qualcomm Snapdragon 7s Gen 2 (4 nm)",
+  "cpu": {
+    "description": "Octa Core CPU",
+    "cores": {
+      "Cortex-A78": "2.4GHz",
+      "Cortex-A55": "1.95GHz"
+    }
+  },
+  "gpu": "Adreno 710",
+  "ram": "12 GB",
+  "rear_camera": {
+    "main_camera": "50MP Main Camera (f/1.8 Aperture, Autofocus, OIS)",
+    "periscope_portrait_telephoto": "64MP Periscope Portrait/Telephoto (f/2.8 Aperture, Autofocus, OIS, 3x Optical Zoom)",
+    "ultra_wide": "8MP Ultra-wide (f/2.2 Aperture, 112˚ FoV)",
+    "flash": "LED Flash",
+    "video_recording": "Up to 4K video recording with EIS"
+  },
+  "front_camera": "32 Megapixels (f/2.4 Aperture) - Up to 1080p video recording",
+  "storage": "512GB",
+  "expansion": "None",
+  "sim_card": "Dual SIM (Nano-SIM)",
+  "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac/6",
+  "nfc": "Yes",
+  "bluetooth": "Bluetooth 5.2",
+  "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+  "usb_otg": "Yes",
+  "usb_port": "USB Type-C",
+  "sound": ["Hi-Res Audio", "Stereo Dual Speakers", "USB Type-C Audio Output"],
+  "fm_radio": "No",
+  "biometrics": ["Face Recognition", "Fingerprint Sensor (under-display)"],
+  "sensors": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+  "battery": "5000 mAh Li-Po Battery (Non-removable) - 67W Fast Charging (SUPERVOOC, 50% in 19 minutes)",
+  "material": "Glass front, Vegan Leather back (IP65 dust & water resistant)",
+  "dimensions": "161.47 x 74.02 x 8.75 mm",
+  "weight": "196 g",
+  "colors": ["Submarine Blue", "Navigator Beige"]
+}

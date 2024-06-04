@@ -1,75 +1,40 @@
 {
-    "DISPLAY": {
-      "Size": "6.72-inch",
-      "Type": "FHD+ IPS LCD",
-      "Resolution": "1080 x 2400 Pixels",
-      "PPI": 392,
-      "Aspect Ratio": "20:9",
-      "Refresh Rate": "120Hz",
-      "Brightness": "950 nits",
-      "Notch": false
-    },
-    "OS": "Android 14 with realme UI 5.0",
-    "CHIPSET": "MediaTek Dimensity 6100+ (6 nm)",
-    "CPU": {
-      "Type": "Octa Core",
-      "Cores": {
-        "Cortex-A76": "2x @ 2.2GHz",
-        "Cortex-A55": "6x @ 2.0GHz"
-      }
-    },
-    "GPU": "Mali-G57 MC2",
-    "RAM": "8 GB",
-    "REAR_CAMERA": {
-      "Dual Cameras": [
-        {
-          "Main Camera": {
-            "Resolution": "108MP",
-            "Aperture": "f/1.8",
-            "Features": ["Autofocus"]
-          }
-        },
-        {
-          "Depth Sensor": {
-            "Resolution": "2MP",
-            "Aperture": "Not specified"
-          }
-        }
-      ],
-      "Flash": "LED",
-      "Video Recording": "Up to 1080p"
-    },
-    "FRONT_CAMERA": {
-      "Resolution": "8 Megapixels",
-      "Aperture": "f/2.0",
-      "Video Recording": "Up to 1080p"
-    },
-    "STORAGE": "256GB",
-    "EXPANSION": "Expandable up to 1TB via microSD",
-    "SIM_CARD": "Dual SIM (Nano-SIM)",
-    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
-    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
-    "NFC": false,
-    "BLUETOOTH": "Bluetooth 5.2",
-    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
-    "USB_OTG": true,
-    "USB_PORT": "USB Type-C",
-    "SOUND": {
-      "Audio": "Hi-Res Audio",
-      "Speakers": "Stereo Speakers",
-      "Audio_Jack": "3.5mm"
-    },
-    "FM_RADIO": false,
-    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
-    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
-    "BATTERY": {
-      "Type": "5000 mAh Li-ion",
-      "Removable": false,
-      "Charging": "45W Fast Charging (SUPERVOOC, 50% in 30 minutes)"
-    },
-    "MATERIAL": "Glass front, Polycarbonate back (IP54 dust and splash resistant)",
-    "DIMENSIONS": "165.6 x 76.1 x 7.69 mm",
-    "WEIGHT": "188 g",
-    "COLORS": ["Twilight Purple", "Woodland Green"]
-  }
-  
+  "display": "6.72-inch FHD+ IPS LCD Display (1080 x 2400 Pixels, 392 ppi) with 20:9 Aspect Ratio, 120Hz Refresh Rate, 950nits max brightness, and punch-hole",
+  "os": "Android 14 with realme UI 5.0",
+  "chipset": "MediaTek Dimensity 6100+ (6 nm)",
+  "cpu": {
+    "description": "Octa Core CPU",
+    "cores": {
+      "Cortex-A76": "2.2GHz",
+      "Cortex-A55": "2.0GHz"
+    }
+  },
+  "gpu": "Mali-G57 MC2",
+  "ram": "8 GB",
+  "rear_camera": {
+    "main_camera": "108MP Main Camera (f/1.8 Aperture, Autofocus)",
+    "depth_sensor": "2MP Depth Sensor",
+    "flash": "LED Flash",
+    "video_recording": "Up to 1080p video recording"
+  },
+  "front_camera": "8 Megapixels (f/2.0 Aperture) - Up to 1080p video recording",
+  "storage": "256GB",
+  "expansion": "Expandable up to 1TB via microSD",
+  "sim_card": "Dual SIM (Nano-SIM)",
+  "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+  "nfc": "No",
+  "bluetooth": "Bluetooth 5.2",
+  "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+  "usb_otg": "Yes",
+  "usb_port": "USB Type-C",
+  "sound": ["Hi-Res Audio", "Stereo Speakers", "3.5mm Audio Jack"],
+  "fm_radio": "No",
+  "biometrics": ["Face Recognition", "Fingerprint Sensor (side-mounted)"],
+  "sensors": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+  "battery": "5000 mAh Li-ion Battery (Non-removable) - 45W Fast Charging (SUPERVOOC, 50% in 30 minutes)",
+  "material": "Glass front, Polycarbonate back (IP54 dust and splash resistant)",
+  "dimensions": "165.6 x 76.1 x 7.69 mm",
+  "weight": "188 g",
+  "colors": ["Twilight Purple", "Woodland Green"]
+}

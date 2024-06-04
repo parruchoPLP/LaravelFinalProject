@@ -1,80 +1,45 @@
 {
-    "display": {
-      "size": "6.2-inch",
-      "type": "FHD+ Dynamic AMOLED 2X",
-      "resolution": "1080 x 2340 Pixels",
-      "ppi": 416,
-      "protection": "Corning Gorilla Glass Victus 2",
-      "aspect_ratio": "19.5:9",
-      "refresh_rate": "120Hz",
-      "brightness": "2,600nits peak",
-      "hdr": "HDR10+",
-      "additional_features": ["punch-hole"]
-    },
-    "os": "Android 14 with One UI 6.1 and Galaxy AI",
-    "chipset": "Exynos 2400 (4 nm)",
-    "cpu": {
-      "type": "Deca Core",
-      "cores": {
-        "performance": {"count": 1, "type": "Cortex-X4", "speed": "3.2GHz"},
-        "high_performance": {"count": 2, "type": "Cortex-A720", "speed": "2.9GHz"},
-        "medium_performance": {"count": 3, "type": "Cortex-A720", "speed": "2.6GHz"},
-        "efficiency": {"count": 4, "type": "Cortex-A520", "speed": "2.0GHz"}
-      }
-    },
-    "gpu": "Xclipse 940",
-    "ram": "8 GB",
-    "rear_camera": {
-      "type": "Triple Cameras",
-      "sensors": [
-        {"resolution": "50MP", "aperture": "f/1.8", "features": ["Autofocus", "OIS"]},
-        {"resolution": "12MP", "aperture": "f/2.2", "features": ["Autofocus", "120˚ FoV"]},
-        {"resolution": "10MP", "aperture": "f/2.4", "features": ["Autofocus", "OIS", "3x Optical Zoom"]}
-      ],
-      "flash": "LED",
-      "video_recording": "Up to 8K@30fps or 4K@60fps with EIS"
-    },
-    "front_camera": {
-      "resolution": "12 Megapixels",
-      "aperture": "f/2.2",
-      "features": ["Autofocus"],
-      "video_recording": "Up to 4K@60fps"
-    },
-    "storage": ["256GB", "512GB"],
-    "expansion": "None",
-    "sim_card": "Dual SIM (Nano-SIM)",
-    "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
-    "wi_fi": "Wi-Fi 802.11 b/g/n/ac/6e",
-    "nfc": "Yes",
-    "bluetooth": "Bluetooth 5.3",
-    "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
-    "usb_otg": "Yes with Samsung DeX and Samsung Wireless DeX",
-    "usb_port": "USB Type-C",
-    "sound": {
-      "features": ["Hi-Res Audio", "Stereo Speakers tuned by AKG"],
-      "audio_output": "USB Type-C"
-    },
-    "fm_radio": "No",
-    "biometrics": ["Face Recognition", "Fingerprint Sensor (under-display)"],
-    "sensors": ["Barometer", "Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
-    "battery": {
-      "type": "Li-ion (Non-removable)",
-      "capacity": "4000 mAh",
-      "charging": {
-        "fast": "25W Fast Charging (50% in 30 minutes)",
-        "wireless": "15W Wireless Charging",
-        "reverse_wireless": "Reverse Wireless Charging"
-      }
-    },
-    "material": {
-      "front": "Glass",
-      "back": "Glass",
-      "frame": "Aluminum",
-      "protection": "IP68 dust and water resistant"
-    },
-    "dimensions": "147.0 x 70.6 x 7.6 mm",
-    "weight": "167 g",
-    "colors": ["Onyx Black", "Marble Gray", "Cobalt Violet", "Amber Yellow"],
-    "online_exclusive_colors": ["Sapphire Blue", "Jade Green", "Sandstone Orange"]
-  }
-  
+  "display": "6.2-inch FHD+ Dynamic AMOLED 2X Display (1080 x 2340 Pixels, 416 ppi) with Corning Gorilla Glass Victus 2, 19.5:9 Aspect Ratio, 120Hz Refresh Rate, 2,600nits peak brightness, HDR10+, and punch-hole",
+  "os": "Android 14 with One UI 6.1 and Galaxy AI",
+  "chipset": "Exynos 2400 (4 nm)",
+  "cpu": {
+    "description": "Deca Core CPU",
+    "cores": {
+      "Cortex-X4": "3.2GHz",
+      "Cortex-A720": {
+        "2x Core": "2.9GHz",
+        "3x Core": "2.6GHz"
+      },
+      "Cortex-A520": "2.0GHz"
+    }
+  },
+  "gpu": "Xclipse 940",
+  "ram": "8 GB",
+  "rear_camera": {
+    "main_camera": "50MP Main Camera (f/1.8 Aperture, Autofocus, OIS)",
+    "ultra_wide": "12MP Ultra-wide (f/2.2 Aperture, 120˚ FoV)",
+    "telephoto": "10MP Telephoto (f/2.4 Aperture, Autofocus, OIS, 3x Optical Zoom)",
+    "flash": "LED Flash",
+    "video_recording": "Up to 8K@30fps or 4K@60fps video recording with EIS"
+  },
+  "front_camera": "12 Megapixels (f/2.2 Aperture, Autofocus) - Up to 4K@60fps video recording",
+  "storage": ["256GB", "512GB"],
+  "expansion": "None",
+  "sim_card": "Dual SIM (Nano-SIM)",
+  "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac/6e",
+  "nfc": "Yes",
+  "bluetooth": "Bluetooth 5.3",
+  "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+  "usb_otg": "Yes with Samsung DeX and Samsung Wireless DeX",
+  "usb_port": "USB Type-C",
+  "sound": ["Hi-Res Audio", "Stereo Speakers tuned by AKG", "USB Type-C Audio Output"],
+  "fm_radio": "No",
+  "biometrics": ["Face Recognition", "Fingerprint Sensor (under-display)"],
+  "sensors": ["Barometer", "Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+  "battery": "4000 mAh Li-ion Battery (Non-removable) - 25W Fast Charging (50% in 30 minutes), 15W Wireless Charging, Reverse Wireless Charging",
+  "material": "Glass front and back with Aluminum frame (IP68 dust and water resistant)",
+  "dimensions": "147.0 x 70.6 x 7.6 mm",
+  "weight": "167 g",
+  "colors": ["Onyx Black", "Marble Gray", "Cobalt Violet", "Amber Yellow", "(Online Exclusive: Sapphire Blue, Jade Green, Sandstone Orange)"]
+}

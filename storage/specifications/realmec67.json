@@ -1,73 +1,40 @@
 {
-    "DISPLAY": {
-      "Size": "6.72-inch",
-      "Type": "FHD+ IPS LCD",
-      "Resolution": "1080 x 2400 Pixels",
-      "PPI": 392,
-      "Refresh Rate": "90Hz",
-      "Brightness": "950 nits",
-      "Punch-hole": true
-    },
-    "OS": "Android 14 with realme UI",
-    "CHIPSET": "Qualcomm Snapdragon 685 (6 nm)",
-    "CPU": {
-      "Type": "Octa Core",
-      "Cores": {
-        "Cortex-A73": "4x @ 2.8GHz",
-        "Cortex-A53": "4x @ 1.9GHz"
-      }
-    },
-    "GPU": "Adreno 610",
-    "RAM": "8 GB",
-    "REAR_CAMERA": {
-      "Dual Cameras": [
-        {
-          "Main Camera": {
-            "Resolution": "108MP",
-            "Aperture": "f/1.75",
-            "Features": ["Autofocus"]
-          }
-        },
-        {
-          "Depth Sensor": {
-            "Resolution": "2MP",
-            "Aperture": "Not specified"
-          }
-        }
-      ],
-      "Flash": "LED",
-      "Video Recording": "Up to 1080p with EIS"
-    },
-    "FRONT_CAMERA": {
-      "Resolution": "8 Megapixels",
-      "Aperture": "f/2.05",
-      "Video Recording": "Up to 1080p"
-    },
-    "STORAGE": "128GB or 256GB",
-    "EXPANSION": "Expandable up to 1TB via microSD",
-    "SIM_CARD": "Dual SIM (Nano-SIM)",
-    "CELLULAR": "4G LTE, 3G HSPA+, 2G EDGE & GPRS Networks",
-    "WI-FI": "Wi-Fi 802.11 b/g/n/ac (dual band)",
-    "NFC": false,
-    "BLUETOOTH": "Bluetooth 5.0",
-    "POSITIONING": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
-    "USB_OTG": true,
-    "USB_PORT": "USB Type-C",
-    "SOUND": {
-      "Speakers": "Stereo Dual Loudspeakers",
-      "Audio Jack": "3.5mm"
-    },
-    "FM_RADIO": false,
-    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (side-mounted)",
-    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
-    "BATTERY": {
-      "Type": "5000 mAh Li-Po",
-      "Removable": false,
-      "Charging": "33W Fast Charging (SUPERVOOC)"
-    },
-    "MATERIAL": "Glass front, Plastic back (IP54 dust and splash resistant)",
-    "DIMENSIONS": "164.6 x 75.4 x 7.59 mm",
-    "WEIGHT": "185 g",
-    "COLORS": ["Black Rock", "Sunny Oasis"]
-  }
-  
+  "display": "6.72-inch FHD+ IPS LCD Display (1080 x 2400 Pixels, 392 ppi) with 90Hz Refresh Rate, 950nits max brightness, and punch-hole",
+  "os": "Android 14 with realme UI",
+  "chipset": "Qualcomm Snapdragon 685 (6 nm)",
+  "cpu": {
+    "description": "Octa Core CPU",
+    "cores": {
+      "Cortex-A73": "2.8GHz",
+      "Cortex-A53": "1.9GHz"
+    }
+  },
+  "gpu": "Adreno 610",
+  "ram": "8 GB",
+  "rear_camera": {
+    "main_camera": "108MP Main Camera (f/1.75 Aperture, Autofocus)",
+    "depth_sensor": "2MP Depth Sensor",
+    "flash": "LED Flash",
+    "video_recording": "Up to 1080p video recording with EIS"
+  },
+  "front_camera": "8 Megapixels (f/2.05 Aperture) - Up to 1080p video recording",
+  "storage": ["128GB", "256GB"],
+  "expansion": "Expandable up to 1TB via microSD",
+  "sim_card": "Dual SIM (Nano-SIM)",
+  "cellular": ["4G LTE", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+  "nfc": "No",
+  "bluetooth": "Bluetooth 5.0",
+  "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+  "usb_otg": "Yes",
+  "usb_port": "USB Type-C",
+  "sound": ["Stereo Dual Loudspeakers", "3.5mm Audio Jack"],
+  "fm_radio": "No",
+  "biometrics": ["Face Recognition", "Fingerprint Sensor (side-mounted)"],
+  "sensors": ["Gyroscope", "Compass", "Ambient Light Sensor", "Proximity Sensor", "Accelerometer"],
+  "battery": "5000 mAh Li-Po Battery (Non-removable) - 33W Fast Charging (SUPERVOOC)",
+  "material": "Glass front, Plastic back (IP54 dust and splash resistant)",
+  "dimensions": "164.6 x 75.4 x 7.59 mm",
+  "weight": "185 g",
+  "colors": ["Black Rock", "Sunny Oasis"]
+}

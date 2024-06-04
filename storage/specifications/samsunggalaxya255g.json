@@ -1,69 +1,41 @@
 {
-    "display": {
-      "size": "6.5-inch",
-      "type": "FHD+ Super AMOLED",
-      "resolution": "1080 x 2340 Pixels",
-      "ppi": 396,
-      "aspect_ratio": "19.5:9",
-      "refresh_rate": "120Hz",
-      "brightness": "1000nits max",
-      "notch": true
-    },
-    "os": "Android 14 with One UI 6",
-    "chipset": "Exynos 1280 (5 nm)",
-    "cpu": {
-      "type": "Octa Core",
-      "cores": {
-        "high_performance": {"count": 2, "type": "Cortex-A78", "speed": "2.4GHz"},
-        "efficiency": {"count": 6, "type": "Cortex-A55", "speed": "2.0GHz"}
-      }
-    },
-    "gpu": "Mali-G68",
-    "ram": ["6GB", "8GB"],
-    "rear_camera": {
-      "type": "Triple Cameras",
-      "sensors": [
-        {"resolution": "50MP", "aperture": "f/1.8", "features": ["Autofocus", "OIS"]},
-        {"resolution": "8MP", "aperture": "f/2.2", "features": ["Ultra-wide"]},
-        {"resolution": "2MP", "aperture": "f/2.0", "features": ["Macro"]}
-      ],
-      "flash": "LED",
-      "video_recording": "Up to 4K@30fps with EIS"
-    },
-    "front_camera": {
-      "resolution": "13 Megapixels",
-      "aperture": "f/2.2",
-      "video_recording": "Up to 1080p"
-    },
-    "storage": ["128GB", "256GB"],
-    "expansion": "Expandable up to 1TB via microSD",
-    "sim_card": "Dual SIM (Nano-SIM)",
-    "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
-    "wi_fi": "Wi-Fi 802.11 b/g/n/ac (dual band)",
-    "nfc": true,
-    "bluetooth": "Bluetooth 5.3",
-    "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
-    "usb_otg": true,
-    "usb_port": "USB Type-C",
-    "sound": {
-      "audio_jack": true,
-      "technology": "Dolby ATMOS",
-      "speakers": "Stereo Dual Speakers"
-    },
-    "fm_radio": false,
-    "biometrics": ["Face Recognition", "Fingerprint Sensor (side-mounted)"],
-    "sensors": ["Gyroscope", "Compass", "Ambient Light Sensor", "Virtual Proximity Sensor", "Accelerometer"],
-    "battery": {
-      "type": "Li-Po (Non-removable)",
-      "capacity": "5000 mAh",
-      "charging": "25W Fast Charging"
-    },
-    "material": {
-      "front": "Glass",
-      "back": "Polycarbonate"
-    },
-    "dimensions": "161.0 x 76.5 x 8.3 mm",
-    "weight": "197 g",
-    "colors": ["Blue Black", "Blue", "Yellow"]
-  }
-  
+  "display": "6.5-inch FHD+ Super AMOLED Display (1080 x 2340 Pixels, 396 ppi) with 19.5:9 Aspect Ratio, 120Hz Refresh Rate, 1000nits max brightness, and notch",
+  "os": "Android 14 with One UI 6",
+  "chipset": "Exynos 1280 (5 nm)",
+  "cpu": {
+    "description": "Octa Core CPU",
+    "cores": {
+      "Cortex-A78": "2.4GHz",
+      "Cortex-A55": "2.0GHz"
+    }
+  },
+  "gpu": "Mali-G68",
+  "ram": ["6GB", "8GB"],
+  "rear_camera": {
+    "main_camera": "50MP Main Camera (f/1.8 Aperture, Autofocus, OIS)",
+    "ultra_wide": "8MP Ultra-wide (f/2.2 Aperture, 120˚ FoV)",
+    "macro": "2MP Macro (f/2.0 Aperture)",
+    "flash": "LED Flash",
+    "video_recording": "Up to 4K@30fps video recording with EIS"
+  },
+  "front_camera": "13 Megapixels (f/2.2 Aperture) - Up to 1080p video recording",
+  "storage": ["128GB", "256GB"],
+  "expansion": "Expandable up to 1TB via microSD",
+  "sim_card": "Dual SIM (Nano-SIM)",
+  "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac (dual band)",
+  "nfc": "Yes",
+  "bluetooth": "Bluetooth 5.3",
+  "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou", "QZSS"],
+  "usb_otg": "Yes",
+  "usb_port": "USB Type-C",
+  "sound": ["Dolby ATMOS", "Stereo Dual Speakers", "3.5mm Audio Jack"],
+  "fm_radio": "No",
+  "biometrics": ["Face Recognition", "Fingerprint Sensor (side-mounted)"],
+  "sensors": ["Gyroscope", "Compass", "Ambient Light Sensor", "Virtual Proximity Sensor", "Accelerometer"],
+  "battery": "5000 mAh Li-Po Battery (Non-removable) - 25W Fast Charging",
+  "material": "Glass front, Polycarbonate back",
+  "dimensions": "161.0 x 76.5 x 8.3 mm",
+  "weight": "197 g",
+  "colors": ["Blue Black", "Blue", "Yellow"]
+}

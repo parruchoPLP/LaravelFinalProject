@@ -1,86 +1,45 @@
 {
-    "DISPLAY": {
-      "Size": "6.4-inch",
-      "Type": "FHD+ AMOLED",
-      "Resolution": "1080 x 2340 Pixels",
-      "PPI": 403,
-      "Aspect Ratio": "19.5:9",
-      "Peak Brightness": "1,450 nits",
-      "HDR": "HDR10+",
-      "Refresh Rate": "120Hz",
-      "Protection": "Corning Gorilla Glass 5",
-      "Notch": true
-    },
-    "OS": "Android 13 with One UI 5.1",
-    "CHIPSET": "Exynos 2200",
-    "CPU": {
-      "Type": "Octa Core",
-      "Cores": {
-        "Cortex-X2": "1x @ 2.8GHz",
-        "Cortex-A710": "3x @ 2.5GHz",
-        "Cortex-A510": "4x @ 1.8GHz"
-      }
-    },
-    "GPU": "Xclipse 920",
-    "RAM": "8 GB",
-    "REAR_CAMERA": {
-      "Triple Cameras": [
-        {
-          "Main Camera": {
-            "Resolution": "50MP",
-            "Aperture": "f/1.8",
-            "Features": ["Autofocus", "OIS"]
-          }
-        },
-        {
-          "Ultra-wide": {
-            "Resolution": "12MP",
-            "Aperture": "f/2.2",
-            "FOV": "123˚"
-          }
-        },
-        {
-          "Telephoto": {
-            "Resolution": "8MP",
-            "Aperture": "f/2.4",
-            "Zoom": "3x Optical",
-            "Features": ["Autofocus"]
-          }
-        }
-      ],
-      "Flash": "LED",
-      "Video Recording": "Up to 8K@24fps",
-      "EIS": true
-    },
-    "FRONT_CAMERA": {
-      "Resolution": "10 Megapixels",
-      "Aperture": "f/2.4"
-    },
-    "STORAGE": "128GB or 256GB",
-    "EXPANSION": "None",
-    "SIM_CARD": "Dual SIM (Nano-SIM)",
-    "CELLULAR": "5G, 4G LTE (with VoLTE), 3G HSPA+, 2G EDGE & GPRS Networks",
-    "WI-FI": "Wi-Fi 802.11 b/g/n/ac/6e",
-    "NFC": true,
-    "BLUETOOTH": "Bluetooth 5.3",
-    "POSITIONING": "GPS, GLONASS, GALILEO, BeiDou",
-    "USB_OTG": true,
-    "USB_PORT": "USB Type-C",
-    "SOUND": {
-      "Speakers": "Stereo Dual Speakers",
-      "Audio_Output": "USB Type-C"
-    },
-    "FM_RADIO": false,
-    "BIOMETRICS": "Face Recognition & Fingerprint Sensor (under-display)",
-    "SENSORS": ["Gyroscope", "Compass", "Ambient Light Sensor", "Virtual Proximity Sensor", "Accelerometer"],
-    "BATTERY": {
-      "Type": "4500 mAh Li-Po",
-      "Removable": false,
-      "Charging": "25W Fast Charging (50% in 30 minutes), Wireless Charging"
-    },
-    "MATERIAL": "Glass front and back, Aluminum frame (IP68 Water & Dust Resistant)",
-    "DIMENSIONS": "158.0 x 76.5 x 8.2 mm",
-    "WEIGHT": "209 g",
-    "COLORS": ["Graphite", "Purple", "Mint"]
-  }
-  
+  "display": "6.4-inch FHD+ AMOLED Display (1080 x 2340 Pixels, 403 ppi) with Corning Gorilla Glass 5, 19.5:9 Aspect Ratio, 120Hz Refresh Rate, 1,450 nits peak brightness, HDR10+, and punch-hole",
+  "os": "Android 13 with One UI 5.1",
+  "chipset": "Exynos 2200",
+  "cpu": {
+    "description": "Octa Core CPU",
+    "cores": {
+      "Cortex-X2": "2.8GHz",
+      "Cortex-A710": "2.5GHz",
+      "Cortex-A510": "1.8GHz"
+    }
+  },
+  "gpu": "Xclipse 920",
+  "ram": "8 GB",
+  "rear_camera": {
+    "main_camera": "50MP Main Camera (f/1.8 Aperture, Autofocus, OIS)",
+    "ultra_wide": "12MP Ultra-wide (f/2.2 Aperture, 123˚ FoV)",
+    "telephoto": "8MP Telephoto (f/2.4 Aperture, Autofocus, 3x Optical Zoom)",
+    "flash": "LED Flash",
+    "video_recording": "Up to 8K@24fps video recording, EIS"
+  },
+  "front_camera": {
+    "megapixels": 10,
+    "aperture": "f/2.4"
+  },
+  "storage": "128GB or 256GB",
+  "expansion": "None",
+  "sim_card": "Dual SIM (Nano-SIM)",
+  "cellular": ["5G", "4G LTE (with VoLTE)", "3G HSPA+", "2G EDGE & GPRS Networks"],
+  "wifi": "Wi-Fi 802.11 b/g/n/ac/6e",
+  "nfc": "Yes",
+  "bluetooth": "Bluetooth 5.3",
+  "positioning": ["GPS", "GLONASS", "GALILEO", "BeiDou"],
+  "usb_otg": "Yes",
+  "usb_port": "USB Type-C",
+  "sound": "Stereo Dual Speakers, USB Type-C Audio Output",
+  "fm_radio": "No",
+  "biometrics": "Face Recognition & Fingerprint Sensor (under-display)",
+  "sensors": ["Gyroscope", "Compass", "Ambient Light Sensor", "Virtual Proximity Sensor", "Accelerometer"],
+  "battery": "4500 mAh Li-Po Battery (Non-removable) - 25W Fast Charging (50% in 30 minutes), Wireless Charging",
+  "material": "Glass front and back, Aluminum frame (IP68 Water & Dust Resistant)",
+  "dimensions": "158.0 x 76.5 x 8.2 mm",
+  "weight": "209 g",
+  "colors": ["Graphite", "Purple", "Mint"]
+}
