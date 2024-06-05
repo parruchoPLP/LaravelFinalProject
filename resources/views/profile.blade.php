@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     <title>Profile Information</title>
 </head>
-<body style="background-image: url('images/phones-bg.jpeg');">
+<body class="bg-cover bg-center bg-no-repeat" style="background-image: url('images/phones-bg.jpeg');">
     <nav class="bg-custom-darkBlue py-2 fixed top-0 w-full z-50">
         <div class="w-full container mx-10 flex justify-between items-center">
             <ul class="flex items-center space-x-2 text-white">
@@ -45,10 +45,11 @@
             <a href="/aboutus" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">About Us</a>
         </div>
     </nav>
-    <div class="bg-custom-darkBlue bg-opacity-50 flex justify-center items-center min-h-screen">
-        <section class="bg-white flex-col p-14 rounded-2xl shadow-md mx-auto text-custom-darkBlue flex" style="min-width: 50%;">
-            <h2 class="text-6xl text-sky-950 font-bold mb-6">Profile</h2>
-            <hr class="bg-gray-200 rounded-full h-1 mb-10">
+    <div class="bg-custom-darkBlue flex-col bg-opacity-50 flex justify-center items-center min-h-screen">
+        <section class="bg-white flex-col px-14 py-10 mb-2 rounded-t-2xl border-b-4 border-custom-darkBlue shadow-md mx-auto text-custom-darkBlue flex" style="min-width: 50%;">
+            <h2 class="text-6xl text-sky-950 font-bold">Profile</h2> 
+        </section>
+        <section class="bg-white flex-col p-14 rounded-b-2xl shadow-md mx-auto text-custom-darkBlue flex" style="min-width: 50%;">
             <form id="profileForm" class="text-lg flex">
                 <div class="w-1/2 pr-6">
                     <div class="mb-4">

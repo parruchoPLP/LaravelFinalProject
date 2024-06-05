@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     <title>Log in</title>
 </head>
-<body style="background-image: url('images/phones-bg.jpeg');">
+<body class="bg-cover bg-center bg-no-repeat" style="background-image: url('images/phones-bg.jpeg');">
     <nav class="bg-custom-darkBlue py-2 fixed top-0 w-full z-50">
         <div class="w-full container mx-10 flex justify-between items-center">
             <ul class="flex items-center space-x-2 text-white">
