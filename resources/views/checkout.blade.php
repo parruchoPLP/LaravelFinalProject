@@ -3,6 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #1e40af;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; 
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
     <title>KeyPhone</title>
     @vite('resources/css/app.css')
 </head>
@@ -94,7 +127,17 @@
                             <p class="text-custom-darkBlue">Php 120943</p>
                         </td>
                         <td class="pt-4">
-                            <p class="text-gray-700">1</p>
+                            <p class="text-gray-700">
+                                <span class="tooltip">
+                                    <i class="fas fa-minus-square text-blue-800 dark:hover:text-custom-gold cursor-pointer"></i>
+                                    <span class="tooltiptext">Remove Quantity</span>
+                                </span>
+                                1
+                                <span class="tooltip">
+                                    <i class="fas fa-plus-square text-blue-800 dark:hover:text-custom-gold cursor-pointer"></i>
+                                    <span class="tooltiptext">Add Quantity</span>
+                                </span>
+                            </p>
                         </td>
                         <td class="pt-4">
                             <p class="text-gray-700">1765856785</p>
@@ -111,7 +154,17 @@
                             <p class="text-custom-darkBlue">Php 120943</p>
                         </td>
                         <td class="pt-4">
-                            <p class="text-gray-700">1</p>
+                            <p class="text-gray-700">
+                                <span class="tooltip">
+                                    <i class="fas fa-minus-square text-blue-800 dark:hover:text-custom-gold cursor-pointer"></i>
+                                    <span class="tooltiptext">Remove Quantity</span>
+                                </span>
+                                1
+                                <span class="tooltip">
+                                    <i class="fas fa-plus-square text-blue-800 dark:hover:text-custom-gold cursor-pointer"></i>
+                                    <span class="tooltiptext">Add Quantity</span>
+                                </span>
+                            </p>
                         </td>
                         <td class="pt-4">
                             <p class="text-gray-700">1765856785</p>
