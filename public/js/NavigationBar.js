@@ -8,9 +8,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const supportDropdown = document.getElementById('supportDropdown');
     const supportDropdownContent = document.getElementById('supportDropdownContent');
 
+    document.addEventListener('click', function(event) {
+        if(!svgLink.contains(event.target) && !searchContainer.contains(event.target)){
+            searchContainer.classList.add('hidden');
+            phoneDropdown.classList.add('hidden');
+            searchBar.value = '';
+        }
+        if(!svgLink.contains(event.target) && !supportDropdown.contains(event.target)){
+            supportDropdownContent.classList.add('hidden');
+        }
+    });
+
     svgLink.addEventListener('click', function(event) {
         event.preventDefault();
-        searchContainer.classList.toggle('hidden');
+        if(searchContainer.classList.contains('hidden')){
+            searchContainer.classList.toggle('hidden');   
+        }
+    });
+
+    svgLink.addEventListener('mouseover', function(event) {
+        event.preventDefault();
+        searchContainer.classList.remove('hidden');
     });
 
     searchBar.addEventListener('focus', function() {
@@ -25,7 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const phoneName = item.getAttribute('phone-name').toLowerCase();
             if (phoneName.includes(searchText) && count < 10) {
                 item.style.display = 'flex block';
-                matchFound = true;
+                if (searchText === phoneName){
+                    matchFound = true;
+                }
                 count++;
             } else {
                 item.style.display = 'none';
@@ -46,8 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (matchedName) {
                 searchTerm = searchTerm.replace(/\s/g, '').toLowerCase();
                 window.location.href = `/product/${searchTerm}`;
-            } else {
-                window.location.href = `search?query=${searchTerm}`;
             }
         }
     });

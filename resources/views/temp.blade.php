@@ -3,105 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KeyPhone Store</title>
-    <link rel="icon" href="{{ asset('images/luguu.png') }}" type="image/png">
-    <script src="{{ asset('js/NavigationBar.js') }}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     @vite('resources/css/app.css')
+    <title>Log in</title>
 </head>
-<body class="bg-gray-100 overflow-x-hidden">
-    <div class="flex items-center">
-        <img src="{{ asset('images/products/vivo-Y03.png') }}" alt="Website Icon" class="w-8 h-auto mr-2">
-        <h1 class="text-2xl font-bold">KeyPhone Store</h1>
-    </div>
-    
-    <x-navigation-bar
-        :allkeyphone="$allkeyphone"
-    />
-
-    <section class="relative bg-cover bg-center" style="background-image: url('{{ asset('images/phones-bg.jpeg') }}');">
-        <div class="bg-custom-darkBlue bg-opacity-75 text-white py-32 flex flex-wrap items-center justify-center p-10 relative z-20">
-            <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">
-                <div class="text-center m-8">
-                    <h1 class="text-5xl font-bold mb-7">KeyPhone Products</h1>
-                     </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-6 flex ">
-    <aside class="w-1/4 p-6 bg-white h-full rounded">
-        <h2 class="text-2xl font-bold mb-4 text-custom-darkBlue">KeyPhone Brands</h2>
-        <ul class="space-y-4" id="brandList">
-            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="all">All KeyPhone</a></li>
-            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Apple">Apple</a></li>
-            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Huawei">Huawei</a></li>
-            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Oppo">Oppo</a></li>
-            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Realme">Realme</a></li>
-            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Samsung">Samsung</a></li>
-            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Vivo">Vivo</a></li>
-            <li><a href="#" class="block font-semibold text-custom-darkBlue hover:border-b hover:border-custom-gold p-2 rounded" phone-brand="Xiaomi">Xiaomi</a></li>
-        </ul>
-        <div class="w-full mt-6">
-            <h2 class="text-2xl font-bold mb-4 text-custom-darkBlue">Latest KeyPhones</h2>
-        <div class="flex mb-8">
-            <img src="{{ asset('images/products/Xiaomi-14.png') }}" alt="14" class="w-64 h-auto">
-            <div class="flex flex-col">
-                <h3 class="text-xl font-semibold mb-2 text-custom-darkBlue hover:border-b hover:border-custom-gold">Xiaomi 14</h3>
-                <p class="text-yellow-400 mb-2">★★★★★</p>
-                <p class="text-lg font-bold mb-2">Php 1231233r4</p>
-            </div>
-        </div>
-        <div class="flex mb-8">
-            <img src="{{ asset('images/products/vivo-Y03.png') }}" alt="Y03" class="w-64 h-auto">
-            <div class="flex flex-col">
-                <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">Vivo Y03</h3>
-                <p class="text-yellow-400 mb-2">★★★★☆</p>
-                <p class="text-lg font-bold mb-2">$999</p>
-            </div>
-        </div>
-        <div class="flex mb-8">
-            <img src="{{ asset('images/products/SAMSUNG-Galaxy-Z-Flip5.png') }}" alt="Flip5" class="w-64 h-auto">
-            <div class="flex flex-col">
-                <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">Samsung Galaxy Z Flip 5</h3>
-                <p class="text-yellow-400 mb-2">★★★★★</p>
-                <p class="text-lg font-bold mb-2">$999</p>
-            </div>
-        </div>
-        <div class="flex mb-8">
-            <img src="{{ asset('images/products/iPhone-15-Pro-Max.png') }}" alt="15" class="w-64 h-auto">
-            <div class="flex flex-col">
-                <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">iPhone 15 Pro Max</h3>
-                <p class="text-yellow-400 mb-2">★★★★★</p>
-                <p class="text-lg font-bold mb-2">$999</p>
-            </div>
-        </div>
-        <div class="flex">
-            <img src="{{ asset('images/products/OPPO-Reno11-Pro-5G.png') }}" alt="15" class="w-64 h-auto">
-            <div class="flex flex-col">
-                <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">Oppo Reno 11 Pro 5G</h3>
-                <p class="text-yellow-400 mb-2">★★★★★</p>
-                <p class="text-lg font-bold mb-2">$999</p>
-            </div>
-        </div>
-        </div>
-    </aside>
-    <div class="w-3/4 container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="productGrid">
-            @foreach($keyphone as $product)
-                <div id="{{ Str::slug($product['name'], '-') }}" class="bg-white p-6 rounded-lg shadow-md product relative flex flex-col" phone-brand="{{ $product['brand'] }}">
-                    <a href="{{ url('/product/' . Str::slug(str_replace(' ', '', strtolower($product['name'])), '-')) }}">
-                        <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}" class="w-full mb-4">
+<body style="background-image: url('images/phones-bg.jpeg');">
+    <nav class="bg-custom-darkBlue py-2 fixed top-0 w-full z-50">
+        <div class="w-full container mx-10 flex justify-between items-center">
+            <ul class="flex items-center space-x-2 text-white">
+                <li><a href="/homepage"><img src="{{ asset('images/keyphone.png') }}" style="width: 50px; height: 50px;"></a></li>
+                <li><a href="/homepage" class="text-white text-2xl font-bold">KeyPhone</a></li>
+            </ul>
+            <ul class="flex space-x-6 text-white w-16">
+                <li><a href="/homepage" class="hover:border-b hover:border-custom-gold">Home</a></li>
+                <li><a href="/storepage" class="hover:border-b hover:border-custom-gold">Store</a></li>
+                <li><a href="#" class="hover:border-b hover:border-custom-gold" id="supportDropdown">Support</a></li>
+                <li><a href="/checkout" class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                     </a>
-                    <h3 class="text-xl font-semibold mb-2">{{ $product['name'] }}</h3>
-                    <p class="text-yellow-400 font-semibold text-lg">{{ $product['rating'] }}</p>
-                    <p class="text-lg font-bold mb-4 pt-1 py-10">{{ $product['price'] }}</p>
-                    <div class="flex-grow"></div>
-                    <a href="#" class="block bg-custom-darkBlue text-white text-center py-2 rounded-lg hover:bg-custom-blueGray absolute bottom-0 left-0 right-0 mb-6 mx-6">Add to Cart</a>
-                </div>
-            @endforeach
+                </li>
+                <li><a href="/login" class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 20 20" version="1.1" class="text-white fill-current">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-380.000000, -2159.000000)" fill="#ffffff">
+                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <path d="M334,2011 C337.785,2011 340.958,2013.214 341.784,2017 L326.216,2017 C327.042,2013.214 330.215,2011 334,2011 M330,2005 C330,2002.794 331.794,2001 334,2001 C336.206,2001 338,2002.794 338,2005 C338,2007.206 336.206,2009 334,2009 C331.794,2009 330,2007.206 330,2005 M337.758,2009.673 C339.124,2008.574 340,2006.89 340,2005 C340,2001.686 337.314,1999 334,1999 C330.686,1999 328,2001.686 328,2005 C328,2006.89 328.876,2008.574 330.242,2009.673 C326.583,2011.048 324,2014.445 324,2019 L344,2019 C344,2014.445 341.417,2011.048 337.758,2009.673" id="profile-[#1336]"></path>
+                        </g>
+                        </g>
+                        </g>
+                    </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </div>
-    </div>
+        </div>
+        <div id="supportDropdownContent" class="absolute w-full left-0 bg-custom-darkBlue py-4 px-8 hidden flex justify-center">
+            <a href="/delivery-and-shipping" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Delivery and Shipping</a>
+            <a href="/payment" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Payment</a>
+            <a href="/aboutus" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">About Us</a>
+        </div>
+    </nav>
+
+    <div class="bg-custom-darkBlue bg-opacity-50 flex justify-center items-center min-h-screen"> 
+    @if(Request::is('login'))
+    <section class="bg-white p-14 rounded-2xl shadow-lg mx-auto max-w-4xl text-custom-darkBlue flex text-lg">
+        <div class="w-2/5 flex items-center justify-center border-r-2 border-custom-lightGray pr-5">
+            <img src="{{ asset('images/loginpic.png') }}" class="rounded-lg">
+        </div>
+        <div class="w-3/5 pl-8">
+            <h2 class="text-5xl text-sky-950 font-bold mb-6">Log in</h2>
+            <form action="/authenticate" method="POST">
+                @csrf
+                <div class="mb-4">
+                    <label for="email" class="block text-sky-950 font-bold mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" class="border-b form-input w-full focus:outline-none" placeholder="Enter your email address" required autofocus>
+                </div>
+                <div class="mb-4 relative">
+                    <label for="password" class="block text-sky-950 font-bold mb-2">Password</label>
+                    <input type="password" id="password" name="password" class="border-b form-input w-full focus:outline-none pr-10" placeholder="Enter your password" required>
+                    <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
+                        <i class="fas fa-eye text-custom-darkBlue hover:text-custom-gold"></i>
+                    </button>
+                </div>
+                <div class="mb-4">
+                    <input type="checkbox" id="remember" class="mr-1">
+                    <label for="remember" class="text-sky-950">Remember me</label>
+                </div>
+                <div>
+                    <button type="submit" name="submit" class="bg-custom-darkBlue text-white font-bold px-6 py-2 rounded-xl mt-4 hover:bg-custom-gold hover:text-custom-darkBlue">Login</button>
+                </div>
+                @if ($errors->has('email'))
+                    <div class="text-red-500">
+                        <ul>
+                            <li>{{ $errors->first('email') }}</li>
+                        </ul>
+                    </div>
+                @endif
+                @if ($errors->has('password'))
+                    <div class="text-red-500">
+                        <ul>
+                            <li>{{ $errors->first('password') }}</li>
+                        </ul>
+                    </div>
+                @endif
+            </form>
+            <h3 class="text-l mt-6">Doesn't have an account yet? <a href="/signup" class="text-custom-darkBlue font-bold hover:underline">Sign up here</a>. </h3>
+        </div>
     </section>
+    @endif
+
+    @if(Request::is('signup'))
+    <section class="bg-white p-14 rounded-2xl shadow-md mx-auto max-w-4xl text-custom-darkBlue flex text-lg">
+        <div class="w-2/5 flex items-center justify-center border-r-2 border-custom-lightGray p-5"> 
+            <img src="{{ asset('images/signuppic.png') }}" class="rounded-lg">
+        </div>
+        <div class="w-3/5 pl-8"> 
+            <h2 class="text-5xl font-bold">Welcome!</h2>
+            <h3 class="text-2xl mb-6">Sign up account</h3>
+            <form action="/store" method="POST">
+                @csrf
+                <div class="mb-4">
+                    <label for="name" class="block text-sky-950 font-bold mb-2">Full Name</label>
+                    <input type="text" id="name" name="name" class="border-b border-custom-lightGray form-input w-full focus:outline-none" placeholder="Enter your full name" required autofocus>
+                </div>
+                @error('name')
+                    <p class="text-red-500 text-sm">{{ $message }}</p>
+                @enderror
+                <div class="mb-4">
+                    <label for="email" class="block text-sky-950 font-bold mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" class="border-b border-custom-lightGray  form-input w-full focus:outline-none" placeholder="Enter your email address" required autofocus>
+                </div>
+                @error('email')
+                    <p class="text-red-500 text-sm">{{ $message }}</p>
+                @enderror
+                <div class="mb-4 relative">
+                    <label for="password" class="block text-sky-950 font-bold mb-2">Password</label>
+                    <input type="password" id="password" name="password" class="border-b border-custom-lightGray form-input w-full focus:outline-none" placeholder="Enter your password" required>
+                    <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
+                        <i class="fas fa-eye text-custom-darkBlue hover:text-custom-gold"></i>
+                    </button>
+                </div>
+                <div class="mb-4 relative">
+                    <label for="password_confirmation" class="block text-sky-950 font-bold mb-2">Confirm Password</label>
+                    <input type="password" id="password_confirmation" name="password_confirmation" class="border-b border-custom-lightGray form-input w-full focus:outline-none" placeholder="Confirm your password" required>
+                    <button type="button" id="toggleConfirmPassword" class="absolute inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
+                        <i class="fas fa-eye text-custom-darkBlue hover:text-custom-gold"></i>
+                    </button>
+                </div>
+                @error('password')
+                    <p class="text-red-500 text-sm">{{ $message }}</p>
+                @enderror
+                <div>
+                    <button type="submit" name="submit" class="bg-custom-darkBlue text-white font-bold px-6 py-2 rounded-xl mt-4 hover:bg-custom-lightGray hover:text-custom-darkBlue">Register</button>
+                </div>
+            </form>
+            <h3 class="text-l mt-6">Already have an account? <a href="/login" class="text-custom-darkBlue font-bold hover:underline">Log in here</a>. </h3>
+        </div>
+    </section>
+    @endif
+    </div> 
+
     <footer class="bg-gray-900 text-white pt-6">
     <div class="container mx-auto md:flex md:justify-between">
         <div class="md:w-1/2 md:mb-0 mb-4 -ml-10">
@@ -147,22 +190,28 @@
         </div>
     </div>
     </footer>
+
     <script>
-        var allProducts = <?php echo json_encode($allkeyphone) ?>;
-    
-        document.addEventListener('DOMContentLoaded', function() {
-            var brandList = document.getElementById('brandList');
-            var productGrid = document.getElementById('productGrid');
-    
-            brandList.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    e.preventDefault();
-                    var selectedBrand = e.target.getAttribute('phone-brand');
-                    window.location.href = `/storepage/${selectedBrand}`;
-                }
-            });
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function (e) {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.querySelector('i').classList.toggle('fa-eye');
+            this.querySelector('i').classList.toggle('fa-eye-slash');
+        });
+
+        const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
+        const confirmPassword = document.querySelector('#password_confirmation');
+
+        toggleConfirmPassword.addEventListener('click', function (e) {
+            const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+            confirmPassword.setAttribute('type', type);
+            this.querySelector('i').classList.toggle('fa-eye');
+            this.querySelector('i').classList.toggle('fa-eye-slash');
         });
     </script>
-    
+
 </body>
 </html>
