@@ -44,6 +44,9 @@
 @endsection
 
 @section('content')
+<section class="relative bg-cover bg-center" style="background-image: url('{{ asset('images/phones-bg.jpeg') }}');">
+<div class="bg-custom-darkBlue bg-opacity-75 text-black py-20 flex flex-wrap items-center justify-center p-10 relative z-20">
+    <section class="Delship w-10/12 bg-white rounded-3xl shadow-2xl py-10">
     <section class="aboutus mb-11 mt-8">
     <section class="FAQheader bg-custom-gold shadow-md py-6">
             <div class="container mx-auto px-4 flex flex-col justify-center items-center">
@@ -159,6 +162,9 @@
             </section>
         </section>
     </section>
+    </section>
+</div>
+</section>
 @endsection
 
 @push('scripts')
