@@ -36,8 +36,8 @@
 
         .flip-card-front img,
         .flip-card-back img {
-        width: 100%; /* Adjust image width */
-        height: 100%; /* Adjust image height */
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         }
     </style>

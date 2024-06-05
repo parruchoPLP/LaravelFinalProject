@@ -71,13 +71,14 @@
             <a href="#" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">About Us</a>
         </div>
     </nav>
-    <section class="Delship py-10 w-full">
-        <section class="FAQheader bg-custom-gold shadow-md py-6">
+    <section class="relative bg-cover bg-center" style="background-image: url('{{ asset('images/phones-bg.jpeg') }}');">
+    <div class="bg-custom-darkBlue bg-opacity-75 text-white py-20 flex flex-wrap items-center justify-center p-10 relative z-20">
+    <section class="Delship w-10/12 bg-white rounded-3xl shadow-2xl py-10">
+        <section class="FAQheader">
             <div class="container mx-auto px-4 flex flex-col justify-center items-center">
-                <h1 class="FAQ__h1 text-6xl font-bold mb-7 text-center text-white my-5">Payment Options</h1>
-                <p class="FAQ__p text-2xl text-white text-center mb-5">Learn more about Payment Options</p>
+                <h1 class="FAQ__h1 text-6xl font-bold mb-7 text-center text-custom-darkBlue my-5">Payment Options</h1>
+                <p class="FAQ__p text-2xl text-center text-custom-darkBlue mb-5">Learn more about Payment Options</p>
             </div>
-        </section>
         <section class="FAQcontent mt-8 content-start">
             <div class="container mx-auto items-center flex flex-col justify-center md:w-9/12">
                 <h1 class="FAQcontent__h1 text-4xl font-bold text-gray-800 text-center mb-4">Payment Options</h1><br/><br/>
@@ -102,6 +103,9 @@
             </div>
         </section>
     </section>
+    </section>
+    </div>
+        </section>
 
     <footer class="bg-custom-darkBlue text-white pt-6 mt-20">
         <div class="container mx-auto md:flex md:justify-between">
