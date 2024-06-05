@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
 
     <style>
-        .faq-container .dropdown-content,
+        .pay-container .dropdown-content,
         .dropdown-content {
             max-height: 0;
             overflow: hidden;
@@ -16,7 +16,7 @@
             opacity: 0;
         }
 
-        .faq-container:hover .dropdown-content,
+        .pay-container:hover .dropdown-content,
         .dropdown-content {
             max-height: 1000px;
             opacity: 1;
@@ -99,7 +99,7 @@
         <section class="FAQcontent mt-8 content-start">
             <div class="container mx-auto items-center flex flex-col justify-center md:w-9/12">
                 <h1 class="FAQcontent__h1 text-4xl font-bold text-gray-800 text-center mb-4">Payment Options</h1><br/><br/>
-                    <div class="div__faq flex flex-col faq-container">
+                    <div class="div__pay flex flex-col pay-container">
                             <h1 class="text-3xl font-medium text-black hover:border-b-4 hover:border-custom-gold text-center">Credit/Debit Card</h1>
                             <div class="dropdown-content">
                                 <p class="text-2xl max-w-5xl text-center justify-center bg-custom-blueGray rounded-b-xl p-4 mb-4 pb-10">
@@ -108,7 +108,7 @@
                             </div>
                     </div>
                     <br><br>
-                    <div class="div__faq flex flex-col faq-container">
+                    <div class="div__pay flex flex-col pay-container">
                             <h1 class="text-3xl font-medium text-black hover:border-b-4 hover:border-custom-gold text-center">e-Wallets</h1>
                             <div class="dropdown-content">
                                 <p class="text-2xl max-w-5xl text-center justify-center bg-custom-blueGray rounded-b-xl p-4 mb-4 pb-10">
@@ -117,7 +117,7 @@
                             </div>
                     </div>
                     <br><br>
-                    <div class="div__faq flex flex-col faq-container">
+                    <div class="div__pay flex flex-col pay-container">
                             <h1 class="text-3xl font-medium text-black hover:border-b-4 hover:border-custom-gold text-center">Online Banking</h1>
                             <div class="dropdown-content">
                                 <p class="text-2xl max-w-5xl text-center justify-center bg-custom-blueGray rounded-b-xl p-4 mb-4 pb-10">
