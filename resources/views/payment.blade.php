@@ -6,6 +6,23 @@
     <title>Payment</title>
     @vite('resources/css/app.css')
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+    <style>
+        .faq-container .dropdown-content,
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            opacity: 0;
+        }
+
+        .faq-container:hover .dropdown-content,
+        .dropdown-content {
+            max-height: 1000px;
+            opacity: 1;
+        }
+    </style>
+
 </head>
 <body class="bg-gray-100">
 <nav class="bg-custom-darkBlue py-4 fixed top-0 w-full z-50">
@@ -82,30 +99,38 @@
         <section class="FAQcontent mt-8 content-start">
             <div class="container mx-auto items-center flex flex-col justify-center md:w-9/12">
                 <h1 class="FAQcontent__h1 text-4xl font-bold text-gray-800 text-center mb-4">Payment Options</h1><br/><br/>
-                <div class="hover:border-b-4 hover:border-custom-gold">
-                <h1 class="payment w-full text-3xl text-gray-800 text-center font-semibold ">Credit/Debit Card</h1>
-                    <p class="paymentp text-3xl text-gray-800 text-center p-4 mb-4">
-                     Typhone accepts all major credit cards (Visa, Mastercard, and etc.)
-                    </p>
-                </div>
-                <div class="hover:border-b-4 hover:border-custom-gold">
-                <h1 class="payment w-full text-3xl text-gray-800 text-center font-semibold">e-Wallets</h1>
-                    <p class="paymentp text-3xl text-gray-800 text-center p-4 mb-4">
-                    Typhone accepts e-Wallet payments such a Paymaya, Gcash, and
-                     Coins.ph
-                    </p>
-                </div>
-                <div class="hover:border-b-4 hover:border-custom-gold">
-                <h1 class="payment w-full text-3xl text-gray-800 text-center font-semibold">Online Banking</h1>
-                    <p class="paymentp text-3xl text-center p-4 mb-4">
-                    </p>
-               </div>
+                    <div class="div__faq flex flex-col faq-container">
+                            <h1 class="text-3xl font-medium text-black hover:border-b-4 hover:border-custom-gold text-center">Credit/Debit Card</h1>
+                            <div class="dropdown-content">
+                                <p class="text-2xl max-w-5xl text-center justify-center bg-custom-blueGray rounded-b-xl p-4 mb-4 pb-10">
+                                Keyphone accepts all major credit cards (Visa, Mastercard, and etc.)                           
+                                </p>
+                            </div>
+                    </div>
+                    <br><br>
+                    <div class="div__faq flex flex-col faq-container">
+                            <h1 class="text-3xl font-medium text-black hover:border-b-4 hover:border-custom-gold text-center">e-Wallets</h1>
+                            <div class="dropdown-content">
+                                <p class="text-2xl max-w-5xl text-center justify-center bg-custom-blueGray rounded-b-xl p-4 mb-4 pb-10">
+                                Keyphone accepts e-Wallet payments such as Paymaya, Gcash, and Coins.ph
+                                </p>
+                            </div>
+                    </div>
+                    <br><br>
+                    <div class="div__faq flex flex-col faq-container">
+                            <h1 class="text-3xl font-medium text-black hover:border-b-4 hover:border-custom-gold text-center">Online Banking</h1>
+                            <div class="dropdown-content">
+                                <p class="text-2xl max-w-5xl text-center justify-center bg-custom-blueGray rounded-b-xl p-4 mb-4 pb-10">
+                                Keyphone accepts e-Banking payments such as Land Bank and UnionBank
+                                </p>
+                            </div>
+                    </div>
             </div>
         </section>
     </section>
     </section>
     </div>
-        </section>
+    </section>
 
     <footer class="bg-custom-darkBlue text-white pt-6 mt-20">
         <div class="container mx-auto md:flex md:justify-between">
