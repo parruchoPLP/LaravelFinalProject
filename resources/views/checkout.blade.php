@@ -117,7 +117,7 @@
                         <th class="p-4 text-custom-blueGray">Subtotal</th>
                     </tr>
                     <tr>
-                        <td class="pt-4">
+                        <td class="p-4">
                             <div class="flex items-center">
                                 <img src="{{ asset('images/products/iPhone-11.png') }}" alt="Product Image" class="w-32 h-24 mr-4 ml-1">
                                 <p class="text-custom-darkBlue font-semibold">Apple Iphone 11</p>
@@ -134,7 +134,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="pt-4">
+                        <td class="p-4">
                             <div class="flex items-center">
                                 <img src="{{ asset('images/products/iPhone-11.png') }}" alt="Product Image" class="w-32 h-24 mr-4 ml-1">
                                 <p class="text-custom-darkBlue font-semibold">Apple Iphone 11</p>
@@ -156,10 +156,10 @@
                                 <p class="text-custom-blueGray font-bold p-4">Order Total:</p>
                                 <p class="text-gray-700 p-4">1765856785</p>
                             </div>
-    </div>
+                </div>
                 <div class="container text-center mx-auto">
                     <div class="mt-2">
-                        <div class="flex flex-col bg-white py-6 px-4 rounded-b-xl shadow border-t-4 border-custom-darkBlue">
+                        <div class="flex flex-col bg-white py-6 px-4 rounded-xl shadow">
                             <div class="flex justify-between mb-2">
                                 <div>
                                     <p class="text-custom-darkBlue font-bold">Payment Method</p>
@@ -196,7 +196,7 @@
                             </div>
                             </div>
                             <div class="flex justify-end pt-6">
-                                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                                <button type="submit" class="bg-custom-darkBlue hover:bg-custom-blueGray text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                                     Place Order
                                 </button>
                             </div>
