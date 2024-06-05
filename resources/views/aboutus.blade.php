@@ -45,17 +45,14 @@
 
 @section('content')
 <section class="relative bg-cover bg-center" style="background-image: url('{{ asset('images/phones-bg.jpeg') }}');">
-<div class="bg-custom-darkBlue bg-opacity-75 text-black py-20 flex flex-wrap items-center justify-center p-10 relative z-20">
+<div class="bg-custom-darkBlue bg-opacity-75 py-20 flex flex-wrap items-center justify-center p-10 relative z-20">
     <section class="Delship w-10/12 bg-white rounded-3xl shadow-2xl py-10">
     <section class="aboutus mb-11 mt-8">
-    <section class="FAQheader bg-custom-gold shadow-md py-6">
-            <div class="container mx-auto px-4 flex flex-col justify-center items-center">
-                <h1 class="FAQ__h1 text-6xl font-bold mb-7 text-center text-white my-5">About Us</h1>
-                <p class="FAQ__p text-4xl text-white text-center mb-5">Learn more about KeyPhone</p>
+            <div class="container mx-auto px-4 flex flex-col justify-center items-center text-custom-darkBlue">
+                <h1 class="FAQ__h1 text-6xl font-bold mb-7 text-center my-5">About Us</h1>
+                <p class="FAQ__p text-4xl text-center mb-5">Learn more about KeyPhone</p>
             </div>
-        </section>
         <section class="FAQcontent--aboutus mt-10 flex flex-col items-center gap-10">
-            <h1 class="text-6xl font-extrabold text-custom-darkBlue">KeyPhone</h1>
             <div class="outerdiv__aboutus flex flex-col items-center gap-16">
                 <div class="div__aboutus flex flex-col gap-5">
                     <h1 class="text-4xl font-bold text-custom-gold text-center">Our Mission</h1>
