@@ -12,36 +12,36 @@
             <div class="w-1/2 pr-6">
                 <div class="mb-4">
                     <label for="name" class="block text-sky-950 font-bold mb-2">Full Name</label>
-                    <div class="flex">
-                        <input type="text" id="name" name="name" class="border-b mr-4 bg-custom-lightGray form-input w-full focus:outline-none" readonly>
-                        <button type="button" class="editButton hover:text-custom-gold hover:underline font-bold px-2 py-1 flex items-center">
+                    <div class="flex items-center relative">
+                        <input type="text" id="name" name="name" class="border-b form-input w-full focus:outline-none pr-10" readonly>
+                        <button type="button" class="absolute editButton inset-y-0 right-0 pr-3 flex items-center h-full hover:text-custom-gold hover:underline font-bold">
                             <i class="fas fa-edit"></i>
                         </button>
                     </div>
                 </div>
                 <div class="mb-4">
                     <label for="email" class="block text-sky-950 font-bold mb-2">Email Address</label>
-                    <div class="flex">
-                        <input type="email" id="email" name="email" class="border-b mr-4 bg-custom-lightGray form-input w-full focus:outline-none" readonly>
-                        <button type="button" class="editButton hover:text-custom-gold hover:underline font-bold px-2 py-1 flex items-center">
+                    <div class="flex items-center relative">
+                        <input type="email" id="email" name="email" class="border-b form-input w-full focus:outline-none pr-10" readonly>
+                        <button type="button" class="absolute editButton inset-y-0 right-0 pr-3 flex items-center h-full hover:text-custom-gold hover:underline font-bold">
                             <i class="fas fa-edit"></i>
                         </button>
                     </div>
                 </div>
                 <div class="mb-4">
                     <label for="contactNum" class="block text-sky-950 font-bold mb-2">Contact Number</label>
-                    <div class="flex">
-                        <input type="text" id="contactNum" name="contactNum" class="border-b mr-4 bg-custom-lightGray form-input w-full focus:outline-none" readonly>
-                        <button type="button" class="editButton hover:text-custom-gold hover:underline font-bold px-2 py-1 flex items-center">
+                    <div class="flex items-center relative">
+                        <input type="text" id="contactNum" name="contactNum" class="border-b form-input w-full focus:outline-none pr-10" readonly>
+                        <button type="button" class="absolute editButton inset-y-0 right-0 pr-3 flex items-center h-full hover:text-custom-gold hover:underline font-bold">
                             <i class="fas fa-edit"></i>
                         </button>
                     </div>
                 </div>
                 <div class="mb-4">
                     <label for="address" class="block text-sky-950 font-bold mb-2">Address</label>
-                    <div class="flex">
-                        <input type="text" id="address" name="address" class="border-b mr-4 bg-custom-lightGray form-input w-full focus:outline-none" readonly>
-                        <button type="button" class="editButton hover:text-custom-gold hover:underline font-bold px-2 py-1 flex items-center">
+                    <div class="flex items-center relative">
+                        <input type="text" id="address" name="address" class="border-b form-input w-full focus:outline-none pr-10" readonly>
+                        <button type="button" class="absolute editButton inset-y-0 right-0 pr-3 flex items-center h-full hover:text-custom-gold hover:underline font-bold">
                             <i class="fas fa-edit"></i>
                         </button>
                     </div>
@@ -50,9 +50,9 @@
             <div class="w-1/2 pl-6">
                 <div class="mb-4 relative">
                     <label for="currentPassword" class="block text-sky-950 font-bold mb-2">Current Password</label>
-                    <div class="flex">
-                        <input type="password" id="currentPassword" name="currentPassword" class="border-b mr-4 bg-custom-lightGray form-input w-full focus:outline-none" readonly>
-                        <button type="button" id="toggleCurrentPassword" class="inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
+                    <div class="flex items-center relative">
+                        <input type="password" id="currentPassword" name="currentPassword" class="border-b form-input w-full focus:outline-none pr-10" readonly>
+                        <button type="button" id="toggleCurrentPassword" class="absolute inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
                             <i class="fas fa-eye text-custom-darkBlue hover:text-custom-gold"></i>
                         </button>
                     </div>
@@ -63,18 +63,18 @@
                 <div id="passwordFields" class="hidden">
                     <div class="mb-4 relative">
                         <label for="newPassword" class="block text-sky-950 font-bold mb-2">New Password</label>
-                        <div class="flex">
-                            <input type="password" id="newPassword" name="newPassword" class="border-b mr-4 bg-custom-lightGray form-input w-full focus:outline-none" placeholder="Enter new password">
-                            <button type="button" id="toggleNewPassword" class="inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
+                        <div class="flex items-center relative">
+                            <input type="password" id="newPassword" name="newPassword" class="border-b form-input w-full focus:outline-none pr-10" placeholder="Enter new password">
+                            <button type="button" id="toggleNewPassword" class="absolute inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
                                 <i class="fas fa-eye text-custom-darkBlue hover:text-custom-gold"></i>
                             </button>
                         </div>
                     </div>
                     <div class="mb-4 relative">
                         <label for="confirmPassword" class="block text-sky-950 font-bold mb-2">Confirm New Password</label>
-                        <div class="flex">
-                            <input type="password" id="confirmPassword" name="confirmPassword" class="border-b mr-4 bg-custom-lightGray form-input w-full focus:outline-none" placeholder="Confirm new password">
-                            <button type="button" id="toggleConfirmPassword" class="inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
+                        <div class="flex items-center relative">
+                            <input type="password" id="confirmPassword" name="confirmPassword" class="border-b form-input w-full focus:outline-none pr-10" placeholder="Confirm new password">
+                            <button type="button" id="toggleConfirmPassword" class="absolute inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
                                 <i class="fas fa-eye text-custom-darkBlue hover:text-custom-gold"></i>
                             </button> 
                         </div>

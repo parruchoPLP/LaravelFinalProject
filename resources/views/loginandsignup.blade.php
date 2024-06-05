@@ -19,16 +19,23 @@
             <h2 class="text-5xl text-sky-950 font-bold mb-6">Log in</h2>
             <form action="/authenticate" method="POST">
                 @csrf
-                <div class="mb-4">
+                <div class="mb-4 relative">
                     <label for="email" class="block text-sky-950 font-bold mb-2">Email Address</label>
-                    <input type="email" id="email" name="email" class="border-b form-input w-full focus:outline-none" placeholder="Enter your email address" required autofocus>
+                    <div class="flex items-center relative">
+                        <input type="email" id="email" name="email" class="border-b form-input w-full pr-10 focus:outline-none" placeholder="Enter your email address" required autofocus>
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="mb-4 relative">
                     <label for="password" class="block text-sky-950 font-bold mb-2">Password</label>
-                    <input type="password" id="password" name="password" class="border-b form-input w-full focus:outline-none pr-10" placeholder="Enter your password" required>
-                    <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
-                        <i class="fas fa-eye text-custom-darkBlue hover:text-custom-gold"></i>
-                    </button>
+                    <div class="flex items-center relative">
+                        <input type="password" id="password" name="password" class="border-b form-input w-full focus:outline-none pr-10" placeholder="Enter your password" required>
+                        <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
+                            <i class="fas fa-eye text-custom-darkBlue hover:text-custom-gold"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="mb-4">
                     <input type="checkbox" id="remember" class="mr-1">
@@ -67,33 +74,47 @@
             <h3 class="text-2xl mb-6">Sign up account</h3>
             <form action="/store" method="POST">
                 @csrf
-                <div class="mb-4">
+                <div class="mb-4 relative">
                     <label for="name" class="block text-sky-950 font-bold mb-2">Full Name</label>
-                    <input type="text" id="name" name="name" class="border-b border-custom-lightGray form-input w-full focus:outline-none" placeholder="Enter your full name" required autofocus>
+                    <div class="flex items-center relative">
+                        <input type="text" id="name" name="name" class="border-b form-input w-full pr-10 focus:outline-none" placeholder="Enter your full name" required autofocus>
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
                 </div>
                 @error('name')
                     <p class="text-red-500 text-sm">{{ $message }}</p>
                 @enderror
-                <div class="mb-4">
+                <div class="mb-4 relative">
                     <label for="email" class="block text-sky-950 font-bold mb-2">Email Address</label>
-                    <input type="email" id="email" name="email" class="border-b border-custom-lightGray  form-input w-full focus:outline-none" placeholder="Enter your email address" required autofocus>
+                    <div class="flex items-center relative">
+                        <input type="email" id="email" name="email" class="border-b form-input w-full pr-10 focus:outline-none" placeholder="Enter your email address" required autofocus>
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
                 </div>
                 @error('email')
                     <p class="text-red-500 text-sm">{{ $message }}</p>
                 @enderror
                 <div class="mb-4 relative">
                     <label for="password" class="block text-sky-950 font-bold mb-2">Password</label>
-                    <input type="password" id="password" name="password" class="border-b border-custom-lightGray form-input w-full focus:outline-none" placeholder="Enter your password" required>
-                    <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
-                        <i class="fas fa-eye text-custom-darkBlue hover:text-custom-gold"></i>
-                    </button>
+                    <div class="flex items-center relative">
+                        <input type="password" id="password" name="password" class="border-b border-custom-lightGray form-input w-full focus:outline-none" placeholder="Enter your password" required>
+                        <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 text-custom-darkBlue focus:outline-none">
+                            <i class="fas fa-eye text-custom-darkBlue hover:text-custom-gold"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="mb-4 relative">
                     <label for="password_confirmation" class="block text-sky-950 font-bold mb-2">Confirm Password</label>
-                    <input type="password" id="password_confirmation" name="password_confirmation" class="border-b border-custom-lightGray form-input w-full focus:outline-none" placeholder="Confirm your password" required>
-                    <button type="button" id="toggleConfirmPassword" class="absolute inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
-                        <i class="fas fa-eye text-custom-darkBlue hover:text-custom-gold"></i>
-                    </button>
+                    <div class="flex items-center relative">
+                        <input type="password" id="password_confirmation" name="password_confirmation" class="border-b border-custom-lightGray form-input w-full focus:outline-none" placeholder="Confirm your password" required>
+                        <button type="button" id="toggleConfirmPassword" class="absolute inset-y-0 right-0 pr-3 flex items-center h-full text-custom-darkBlue focus:outline-none">
+                            <i class="fas fa-eye text-custom-darkBlue hover:text-custom-gold"></i>
+                        </button>
+                    </div>
                 </div>
                 @error('password')
                     <p class="text-red-500 text-sm">{{ $message }}</p>
