@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +21,7 @@ Route::get('/checkout', function () {
     return view('checkout');
 });
 
-Route::get('/profile', function () {
-    return view('profile');
-});
+
 Route::get('/', [ProductController::class, 'homepage'])->name('homepage');
 Route::get('/homepage', [ProductController::class, 'homepage'])->name('homepage');
 Route::get('/storepage', [ProductController::class, 'storepage'])->name('storepage');
@@ -33,3 +32,6 @@ Route::get('/storepage/{id}', [ProductController::class, 'storesearch'])->name('
 Route::get('/product/{productID}', [ProductController::class,'showProduct'])->name('product.show');
 Route::get('/login', [ProductController::class, 'login'])->name('login');
 Route::get('/signup', [ProductController::class, 'signup'])->name('signup');
+Route::get('/profile', [ProductController::class, 'profile'])->name('profile');
+
+Route::post('/store', [UserController::class,'store'])->name('');

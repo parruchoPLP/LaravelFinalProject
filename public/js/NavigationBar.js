@@ -24,11 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
         searchContainer.classList.toggle('hidden');
     });
 
-    svgLink.addEventListener('mouseover', function(event) {
-        event.preventDefault();
-        searchContainer.classList.remove('hidden');
-    });
-
     searchBar.addEventListener('focus', function() {
         phoneDropdown.classList.remove('hidden');
     });
@@ -84,5 +79,19 @@ document.addEventListener('DOMContentLoaded', function() {
     supportDropdown.addEventListener('click', function(event) {
         event.preventDefault();
         supportDropdownContent.classList.toggle('hidden');
+    });
+
+    const cartDropdown = document.getElementById("cartDropdown");
+    const checkoutButton = document.getElementById("cartButton");
+
+    // Function to toggle the cart dropdown
+    function toggleCartDropdown() {
+        cartDropdown.classList.toggle("hidden");
+    }
+
+    // Event listener for the checkout button
+    checkoutButton.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        toggleCartDropdown();
     });
 });

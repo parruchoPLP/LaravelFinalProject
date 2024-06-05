@@ -5,21 +5,15 @@ use App\Models\User;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 
 class UserController extends Controller {
-    public function login(){
-        return view ('login');
-    }
-
-    public function register(){
-        return view ('signup');
-    }
 
     public function store(Request $request) {
         $validated = $request->validate([
             "name" => ['required', 'min:2'],
             "email" => ['required', 'email', Rule::unique('users', 'email')],
-            "password" => 'required|confirmed'
+            "password" => 'required|confirmed|min:6'
         ], [
             "name.min" => "The name must be at least 2 characters.",
             "email.unique" => "This email address has already been taken.",
@@ -28,11 +22,11 @@ class UserController extends Controller {
     
         $validated['password'] = Hash::make($validated['password']);
     
-        $user = User::create($validated);
+        $users = User::create($validated);
     
-        auth()->login($user);
+        auth()->login($users);
+        return Redirect::to('/login');
     }
-    
 
     public function authenticate(Request $request) {
         $credentials = $request->validate([

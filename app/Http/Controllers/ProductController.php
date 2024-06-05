@@ -121,6 +121,13 @@ class ProductController extends Controller
         ]);
     }
 
+    public function profile()
+    {
+        return view('profile', [
+            'allkeyphone'=>$this->keyphone
+        ]);
+    }
+
     public function deliveryandshipping()
     {
         return view('delivery-and-shipping', [

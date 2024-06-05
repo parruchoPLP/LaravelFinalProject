@@ -1,3 +1,22 @@
+@php
+// Dummy cart items
+$cartItems = [
+    [ 'name' => 'Apple iPhone 11', 'price' => 'Php 24,990', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-11.png'),'brand' => 'Apple'],
+    [ 'name' => 'Apple iPhone 12', 'price' => 'Php 30,990', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-12.png'),'brand' => 'Apple'],
+    [ 'name' => 'Apple iPhone 13', 'price' => 'Php 42,990', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-13.png'),'brand' => 'Apple'],
+    [ 'name' => 'Apple iPhone 14 Plus', 'price' => 'Php 56,990', 'rating' => '★★★★★','image' => asset('images/products/iPhone-14-Plus.png'),'brand' => 'Apple'],
+    [ 'name' => 'Apple iPhone 14', 'price' => 'Php 49,990', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-14.png'),'brand' => 'Apple'],
+    [ 'name' => 'Apple iPhone 15 Plus', 'price' => 'Php 63,990', 'rating' => '★★★★★','image' => asset('images/products/iPhone-15-Plus.png'),'brand' => 'Apple'],
+    [ 'name' => 'Apple iPhone 15 Pro Max', 'price' => 'Php 84,990', 'rating' => '★★★★★','image' => asset('images/products/iPhone-15-Pro-Max.png'),'brand' => 'Apple'],
+    [ 'name' => 'Apple iPhone 15 Pro', 'price' => 'Php 70,990', 'rating' => '★★★★★','image' => asset('images/products/iPhone-15-Pro.png'),'brand' => 'Apple'],
+    [ 'name' => 'Apple iPhone 15', 'price' => 'Php 56,990', 'rating' => '★★★★☆','image' => asset('images/products/iPhone-15.png'),'brand' => 'Apple'],
+    [ 'name' => 'Apple iPhone SE 3rd Gen 2022', 'price' => 'Php 33,990', 'rating' => '★★★☆☆','image' => asset('images/products/iPhone-SE-3rd-gen-2022.png'),'brand' => 'Apple'],
+    [ 'name' => 'Vivo Y100', 'price' => 'Php 12,499', 'rating' => '★★★★☆','image' => asset('images/products/vivo-Y100.png'), 'brand' => 'Vivo'],
+    [ 'name' => 'Vivo Y27s', 'price' => 'Php 9,999', 'rating' => '★★★★★','image' => asset('images/products/vivo-Y27s.png'), 'brand' => 'Vivo'],
+    [ 'name' => 'Vivo Y17s', 'price' => 'Php 6,999', 'rating' => '★★★★☆','image' => asset('images/products/vivo-Y17s.png'), 'brand' => 'Vivo'],
+];
+@endphp
+
 <nav class="bg-custom-darkBlue py-2 fixed top-0 w-full z-50">
     <div class="w-full container mx-10 flex justify-between items-center">
         <ul class="flex items-center space-x-2 text-white">
@@ -14,7 +33,7 @@
                 </svg>
                 </a>
             </li>
-            <li><a href="/checkout" class="flex items-center">
+            <li><a href="#" class="flex items-center" id="cartButton">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -58,5 +77,36 @@
         <a href="/delivery-and-shipping" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Delivery and Shipping</a>
         <a href="/payment" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">Payment</a>
         <a href="/aboutus" class="text-white text-lg px-1 mx-12 py-1 hover:border-b hover:border-custom-gold font-semibold">About Us</a>
+    </div>
+    <div id="cartDropdown" class="absolute top-16 right-0 bg-white shadow-md rounded-md p-4 hidden w-96 max-h-80 overflow-y-auto">
+        <!-- Cart items will be dynamically added here -->
+        @foreach ($cartItems as $item)
+            <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center">
+                    <img src="{{ $item['image'] }}" alt="{{ $item['name'] }}" class="w-12 h-12 mr-2 rounded">
+                    <div>
+                        <div class="text-sm font-semibold">{{ $item['name'] }}</div>
+                        <div class="text-gray-500">Quantity: 2</div> <!-- I replaced the dynamic quantity with a static value -->
+                        <div class="text-gray-500">{{ $item['price'] }}</div>
+                    </div>
+                </div>
+                <button class="text-red-500 hover:text-red-700 focus:outline-none" >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M2 5a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zM8 14a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1zM5 8a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        @endforeach
+    
+        <!-- Cart total -->
+        <div class="flex justify-between border-t border-gray-200 pt-2 mt-2">
+            <span class="font-semibold">Total:</span>
+            <span class="font-semibold">100</span> <!-- I replaced the dynamic total with a static value -->
+        </div>
+    
+        <!-- Checkout button -->
+        <div class="text-center mt-4">
+            <a href="/checkout" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 inline-block">Checkout</a>
+        </div>
     </div>
 </nav>
