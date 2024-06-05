@@ -127,17 +127,7 @@
                             <p class="text-custom-darkBlue">Php 120943</p>
                         </td>
                         <td class="pt-4">
-                            <p class="text-gray-700">
-                                <span class="tooltip">
-                                    <i class="fas fa-minus-square text-blue-800 dark:hover:text-custom-gold cursor-pointer"></i>
-                                    <span class="tooltiptext">Remove Quantity</span>
-                                </span>
-                                1
-                                <span class="tooltip">
-                                    <i class="fas fa-plus-square text-blue-800 dark:hover:text-custom-gold cursor-pointer"></i>
-                                    <span class="tooltiptext">Add Quantity</span>
-                                </span>
-                            </p>
+                            <p class="text-gray-700">1</p>
                         </td>
                         <td class="pt-4">
                             <p class="text-gray-700">1765856785</p>
@@ -154,31 +144,19 @@
                             <p class="text-custom-darkBlue">Php 120943</p>
                         </td>
                         <td class="pt-4">
-                            <p class="text-gray-700">
-                                <span class="tooltip">
-                                    <i class="fas fa-minus-square text-blue-800 dark:hover:text-custom-gold cursor-pointer"></i>
-                                    <span class="tooltiptext">Remove Quantity</span>
-                                </span>
-                                1
-                                <span class="tooltip">
-                                    <i class="fas fa-plus-square text-blue-800 dark:hover:text-custom-gold cursor-pointer"></i>
-                                    <span class="tooltiptext">Add Quantity</span>
-                                </span>
-                            </p>
+                            <p class="text-gray-700">1</p>
                         </td>
                         <td class="pt-4">
                             <p class="text-gray-700">1765856785</p>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="p-4">
-                            <div class="flex justify-center">
-                                <p class="text-gray-700 p-4">Order Total:</p>
+                </table>
+                <div class="bg-white rounded-xl shadow mt-2">
+                <div class="flex justify-end">
+                                <p class="text-custom-blueGray font-bold p-4">Order Total:</p>
                                 <p class="text-gray-700 p-4">1765856785</p>
                             </div>
-                        </td>
-                    </tr>
-                </table>
+    </div>
                 <div class="container text-center mx-auto">
                     <div class="mt-2">
                         <div class="flex flex-col bg-white py-6 px-4 rounded-b-xl shadow border-t-4 border-custom-darkBlue">
@@ -217,7 +195,7 @@
                                 <p class="text-custom-darkBlue font-semibold text-xl">Php 123</p>
                             </div>
                             </div>
-                            <div class="flex justify-center">
+                            <div class="flex justify-end pt-6">
                                 <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                                     Place Order
                                 </button>
