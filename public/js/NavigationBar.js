@@ -91,7 +91,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Event listener for the checkout button
     checkoutButton.addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent the default link behavior
-        toggleCartDropdown();
+        if (checkoutButton.getAttribute("href") === "#") {
+            event.preventDefault(); // Prevent the default link behavior if href is "#"
+            toggleCartDropdown();
+        }
     });
 });
