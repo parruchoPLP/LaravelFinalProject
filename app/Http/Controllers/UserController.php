@@ -87,13 +87,15 @@ class UserController extends Controller {
                 ]);
                 /** @var \App\Models\User $user **/
                 $user->save();
-                UserDetail::updateOrCreate(
-                    ['user_id' => $user->id],
-                    [
-                        'mobile_number' => $validatedData['contact_number'],
-                        'address' => $validatedData['address'],
-                    ]
-                );
+                if(!empty($validatedData['contact_number'] && !empty($validatedData['address']))) {
+                    UserDetail::updateOrCreate(
+                        ['user_id' => $user->id],
+                        [
+                            'mobile_number' => $validatedData['contact_number'],
+                            'address' => $validatedData['address'],
+                        ]
+                    );
+                }
                 if(!empty($validatedData['password'])) {
                     $user->password = Hash::make($validatedData['password']);
                     /** @var \App\Models\User $user **/

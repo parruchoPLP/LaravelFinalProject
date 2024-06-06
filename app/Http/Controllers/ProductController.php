@@ -50,6 +50,15 @@ class ProductController extends Controller
         ]);
     }
 
+    public function payment()
+    {
+        $products = Product::all(); // Fetch all products if needed
+
+        return view('payment', [
+            'allkeyphone' => $products,
+        ]);
+    }
+
     public function checkout()
     {
         $products = Product::all(); // Fetch all products if needed

@@ -11,7 +11,7 @@
     @stack('scripts')
     @yield('styles')
 </head>
-@if(!Request::is('login') && !Request::is('signup') && !Request::is('profile'))
+@if(!Request::is('login') && !Request::is('signup') && !Request::is('profile') && !Request::is('payment'))
 <body class="bg-gray-100 overflow-x-hidden">
     <div class="flex items-center">
         <img src="{{ asset('images/products/vivo-Y03.png') }}" alt="Website Icon" class="w-8 h-auto mr-2">
@@ -64,6 +64,21 @@
 </body>
 @endif
 @if(Request::is('profile'))
+<body class="bg-cover bg-center bg-no-repeat" style="background-image: url('images/phones-bg.jpeg');">
+    <header>
+        <x-navigation-bar
+            :allkeyphone="$allkeyphone"
+        />
+    </header>
+
+    <main>
+        @yield('content')
+    </main>
+
+    <x-footer/>
+</body>
+@endif
+@if(Request::is('payment'))
 <body class="bg-cover bg-center bg-no-repeat" style="background-image: url('images/phones-bg.jpeg');">
     <header>
         <x-navigation-bar
