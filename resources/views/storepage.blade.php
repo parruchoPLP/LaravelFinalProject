@@ -24,8 +24,8 @@
             <img src="{{ asset('images/products/Xiaomi-14.png') }}" alt="14" class="w-64 h-auto">
             <div class="flex flex-col">
                 <h3 class="text-xl font-semibold mb-2 text-custom-darkBlue hover:border-b hover:border-custom-gold">Xiaomi 14</h3>
-                <p class="text-yellow-400 mb-2">★★★★★</p>
-                <p class="text-lg font-bold mb-2">Php 1231233r4</p>
+                <p class="text-yellow-400 mb-2">★★★★☆</p>
+                <p class="text-lg font-bold mb-2">Php 45,999</p>
             </div>
         </div>
         <div class="flex mb-8">
@@ -33,15 +33,15 @@
             <div class="flex flex-col">
                 <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">Vivo Y03</h3>
                 <p class="text-yellow-400 mb-2">★★★★☆</p>
-                <p class="text-lg font-bold mb-2">$999</p>
+                <p class="text-lg font-bold mb-2">Php 3,999</p>
             </div>
         </div>
         <div class="flex mb-8">
             <img src="{{ asset('images/products/SAMSUNG-Galaxy-Z-Flip5.png') }}" alt="Flip5" class="w-64 h-auto">
             <div class="flex flex-col">
                 <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">Samsung Galaxy Z Flip 5</h3>
-                <p class="text-yellow-400 mb-2">★★★★★</p>
-                <p class="text-lg font-bold mb-2">$999</p>
+                <p class="text-yellow-400 mb-2">★★★★☆</p>
+                <p class="text-lg font-bold mb-2">Php 54,990</p>
             </div>
         </div>
         <div class="flex mb-8">
@@ -49,15 +49,15 @@
             <div class="flex flex-col">
                 <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">iPhone 15 Pro Max</h3>
                 <p class="text-yellow-400 mb-2">★★★★★</p>
-                <p class="text-lg font-bold mb-2">$999</p>
+                <p class="text-lg font-bold mb-2">Php 84,990</p>
             </div>
         </div>
         <div class="flex">
             <img src="{{ asset('images/products/OPPO-Reno11-Pro-5G.png') }}" alt="15" class="w-64 h-auto">
             <div class="flex flex-col">
                 <h3 class="text-xl font-semibold mb-2 hover:border-b hover:border-custom-gold">Oppo Reno 11 Pro 5G</h3>
-                <p class="text-yellow-400 mb-2">★★★★★</p>
-                <p class="text-lg font-bold mb-2">$999</p>
+                <p class="text-yellow-400 mb-2">★★★★☆</p>
+                <p class="text-lg font-bold mb-2">Php 31,999</p>
             </div>
         </div>
         </div>
