@@ -12,48 +12,56 @@
     </button>
     
     <!-- Cart items will be dynamically added here -->
-    @foreach ($cartItems as $item)
-        <div class="flex items-center justify-between mb-2">
-            <div class="flex items-center">
-                <img src="{{ asset($item->product->image) }}" alt="{{ $item->product->name }}" class="w-12 h-12 mr-2 rounded">
-                <div>
-                    <div class="text-lg font-semibold">{{ $item->product->name }}</div>
-                    <div class="text-gray-500">Quantity: {{ $item->quantity }}</div>
-                    <div class="text-gray-500">{{ $item->product->price }}</div>
+    @if($cartItems->isEmpty())
+        <p class="text-center text-gray-500 dark:text-gray-400">Your cart is empty.</p>
+    @else
+        @foreach ($cartItems as $item)
+            <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center">
+                    <img src="{{ asset($item->product->image) }}" alt="{{ $item->product->name }}" class="w-12 h-12 mr-2 rounded">
+                    <div>
+                        <div class="text-lg font-semibold">{{ $item->product->name }}</div>
+                        <div class="text-gray-500">Quantity: {{ $item->quantity }}</div>
+                        <div class="text-gray-500">{{ $item->product->price }}</div>
+                    </div>
                 </div>
+                <form action="{{ route('cart.removeFromCart') }}" method="POST">
+                    @csrf
+                    <input type="hidden" name="product_id" value="{{ $item->product_id }}">
+                    <button type="submit" class="text-red-500 hover:text-red-700 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M2 5a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zM8 14a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1zM5 8a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </form>
             </div>
-            <form action="{{ route('cart.removeFromCart') }}" method="POST">
-                @csrf
-                <input type="hidden" name="product_id" value="{{ $item->product_id }}">
-                <button type="submit" class="text-red-500 hover:text-red-700 focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M2 5a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zM8 14a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1zM5 8a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
-                    </svg>
-                </button>
-            </form>
-        </div>
-    @endforeach
+        @endforeach
 
-    <!-- Cart total -->
-    <div class="flex justify-between border-t border-gray-200 pt-2 mt-2">
-        <span class="font-semibold">Total:</span>
-        <span class="font-semibold">
-            {{
-                $cartItems->sum(function($item) {
-                    // Remove 'Php ' and commas from the price string and convert it to an integer
-                    $priceWithoutPhp = str_replace('Php ', '', $item->product->price);
-                    $priceWithoutComma = str_replace(',', '', $priceWithoutPhp);
-                    $priceInt = intval($priceWithoutComma);
-    
-                    // Calculate the total for each item and return the result
-                    return $item->quantity * $priceInt;
-                })
-            }}
-        </span>
-    </div>
+        <!-- Cart total -->
+        <div class="flex justify-between border-t border-gray-200 pt-2 mt-2">
+            <span class="font-semibold">Total:</span>
+            <span class="font-semibold">
+                {{
+                    $cartItems->sum(function($item) {
+                        // Remove 'Php ' and commas from the price string and convert it to an integer
+                        $priceWithoutPhp = str_replace('Php ', '', $item->product->price);
+                        $priceWithoutComma = str_replace(',', '', $priceWithoutPhp);
+                        $priceInt = intval($priceWithoutComma);
+
+                        // Calculate the total for each item and return the result
+                        return $item->quantity * $priceInt;
+                    })
+                }}
+            </span>
+        </div>
+    @endif
 
     <!-- Checkout button -->
     <div class="text-center mt-4">
-        <a href="/checkout" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 inline-block">Checkout</a>
+        @if($cartItems->isEmpty())
+            <button class="bg-gray-500 text-white px-4 py-2 rounded cursor-not-allowed" disabled>Checkout</button>
+        @else
+            <a href="/checkout" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 inline-block">Checkout</a>
+        @endif
     </div>
 </div>
