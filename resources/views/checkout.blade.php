@@ -109,8 +109,10 @@
                                     </div>
                                 </div>
                                 <div class="flex justify-end pt-6">
-                                    <form action="{{ route('checkout') }}" method="POST">
+                                    <form action="{{ route('cart.placeorder') }}" method="POST">
                                         @csrf
+                                        <input type="hidden" name="address" value="{{ $user->details->address ?? '' }}">
+                                        <input type="hidden" name="mobile_number" value="{{ $user->details->mobile_number ?? '' }}">
                                         <button type="submit" class="bg-custom-darkBlue hover:bg-custom-blueGray text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                                             Place Order
                                         </button>

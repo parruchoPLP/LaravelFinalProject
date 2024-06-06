@@ -14,6 +14,7 @@ class ProductController extends Controller
 {
     public function storepage(Request $request)
     {
+        $allkeyphone = Product::all();
         $perPage = 9; // Number of items per page
         $page = $request->input('page', 1); // Get current page from request, default is 1
 
@@ -21,7 +22,7 @@ class ProductController extends Controller
 
         return view('storepage', [
             'keyphone' => $products,
-            'allkeyphone' => $products,
+            'allkeyphone' => $allkeyphone,
         ]);
     }
 

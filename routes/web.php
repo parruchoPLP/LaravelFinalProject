@@ -39,4 +39,5 @@ Route::put('/profile', [UserController::class, 'update'])->name('profile.update'
 Route::middleware(['auth'])->group(function () {
     Route::post('/cart/add', [CartController::class, 'addToCart'])->name('cart.addToCart');
     Route::post('/cart/remove', [CartController::class, 'removeFromCart'])->name('cart.removeFromCart');
+    Route::post('/placeorder', [CartController::class, 'checkout'])->name('cart.placeorder');
 });

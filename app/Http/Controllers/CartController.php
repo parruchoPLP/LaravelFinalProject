@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\CartItem;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class CartController extends Controller
 {
@@ -55,5 +56,25 @@ class CartController extends Controller
                 ->delete();
 
         return back()->with('removesuccess','Item successfully removed!');
+    }
+
+    public function checkout(Request $request)
+    {
+        $user = Auth::user();
+
+        $validatedData = $request->validate([
+            'address' => 'required|string|max:255',
+            'mobile_number' => 'required|string|max:15',
+        ]);
+
+        if(!$validatedData){
+            return back()->with('error','Set your address and/or mobile number first!');
+        }
+
+        // Clear the cart
+        CartItem::where('user_id', $user->id)->delete();
+
+        // Redirect to the homepage
+        return redirect('/homepage')->with('checkoutsuccess','Checkout Successful!');
     }
 }
