@@ -129,6 +129,9 @@
 @if (session('removesuccess'))
     <x-successAlert successTitle="Item Removed!" :successInfo="session('removesuccess')"/>
 @endif
+@if ($errors->any())
+    <x-errorAlert :errors="$errors"/>
+@endif
 @endsection
 
 @push('scripts')

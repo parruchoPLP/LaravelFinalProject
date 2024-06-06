@@ -68,7 +68,7 @@ class CartController extends Controller
         ]);
 
         if(!$validatedData){
-            return back()->with('error','Set your address and/or mobile number first!');
+            return back()->withErrors('error','Set your address and/or mobile number first!');
         }
 
         // Clear the cart
