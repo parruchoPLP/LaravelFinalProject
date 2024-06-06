@@ -83,8 +83,11 @@
     <x-errorAlert :errors="$errors"/>
 @endif
 @if (session('success'))
-        <x-successAlert successTitle="Update Success!" :successInfo="session('success')"/>
-    @endif
+    <x-successAlert successTitle="Update Success!" :successInfo="session('success')"/>
+@endif
+@if (session('removesuccess'))
+    <x-successAlert successTitle="Item Removed!" :successInfo="session('removesuccess')"/>
+@endif
 @endsection
 
 @push('scripts')

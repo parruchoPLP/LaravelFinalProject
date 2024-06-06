@@ -126,6 +126,9 @@
         </div>
     </div>
 </section>
+@if (session('removesuccess'))
+    <x-successAlert successTitle="Item Removed!" :successInfo="session('removesuccess')"/>
+@endif
 @endsection
 
 @push('scripts')
