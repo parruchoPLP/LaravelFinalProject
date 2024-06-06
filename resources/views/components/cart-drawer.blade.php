@@ -15,7 +15,7 @@
     @foreach ($cartItems as $item)
         <div class="flex items-center justify-between mb-2">
             <div class="flex items-center">
-                <img src="{{ $item->product->image }}" alt="{{ $item->product->name }}" class="w-12 h-12 mr-2 rounded">
+                <img src="{{ asset($item->product->image) }}" alt="{{ $item->product->name }}" class="w-12 h-12 mr-2 rounded">
                 <div>
                     <div class="text-lg font-semibold">{{ $item->product->name }}</div>
                     <div class="text-gray-500">Quantity: {{ $item->quantity }}</div>
