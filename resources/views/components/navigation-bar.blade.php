@@ -56,7 +56,7 @@ $cartItems = [
                     @csrf
                     <button type="submit" class="text-white hover:border-b hover:border-custom-gold"> 
                         <a href="#" class="flex items-center" id="signOutLink">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" class="ml-4" id="signOutIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 24 24" fill="none" class="ml-4" id="signOutIcon">
                                 <path d="M16 13V11H7V9H16V7L20 10L16 13ZM12 20H4V4H12V6H6V18H12V20Z" fill="#ffffff"/>
                             </svg>
                         </a> 
