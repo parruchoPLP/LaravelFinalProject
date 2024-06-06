@@ -16,14 +16,14 @@ $cartItems = [
     [ 'name' => 'Vivo Y17s', 'price' => 'Php 6,999', 'rating' => '★★★★☆','image' => asset('images/products/vivo-Y17s.png'), 'brand' => 'Vivo'],
 ];
 @endphp
-
-<nav class="bg-custom-darkBlue py-2 fixed top-0 w-full z-50">
-    <div class="w-full container mx-10 flex justify-between items-center">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<nav class="bg-custom-darkBlue py-2 fixed top-0 w-full z-50 text-lg">
+    <div class="w-full container mx-auto flex justify-between items-center p-3">
         <ul class="flex items-center space-x-2 text-white">
             <li><a href="/homepage"><img src="{{ asset('images/keyphone.png') }}" style="width: 50px; height: 50px;"></a></li>
-            <li><a href="/homepage" class="text-white text-2xl font-bold">KeyPhone</a></li>
+            <li><a href="/homepage" class="text-white text-3xl font-bold">KeyPhone</a></li>
         </ul>
-        <ul class="flex space-x-6 text-white w-16">
+        <ul class="flex space-x-6 text-white ml-auto">
             <li><a href="/homepage" class="hover:border-b hover:border-custom-gold">Home</a></li>
             <li><a href="/storepage" class="hover:border-b hover:border-custom-gold">Store</a></li>
             <li><a href="#" class="hover:border-b hover:border-custom-gold" id="supportDropdown">Support</a></li>
@@ -54,7 +54,13 @@ $cartItems = [
             @auth
                 <form method="POST" action="/logout" class="flex items-center ml-4">
                     @csrf
-                    <button type="submit" class="text-white hover:border-b hover:border-custom-gold">Sign Out</button>
+                    <button type="submit" class="text-white hover:border-b hover:border-custom-gold"> 
+                        <a href="#" class="flex items-center" id="signOutLink">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" class="ml-4" id="signOutIcon">
+                                <path d="M16 13V11H7V9H16V7L20 10L16 13ZM12 20H4V4H12V6H6V18H12V20Z" fill="#ffffff"/>
+                            </svg>
+                        </a> 
+                    </button>
                 </form>
             @endauth
         </ul>
