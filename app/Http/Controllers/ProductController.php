@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 use App\Models\Product;
+use App\Models\CartItem;
+use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {
@@ -44,6 +46,25 @@ class ProductController extends Controller
 
         return view('aboutus', [
             'allkeyphone' => $products,
+        ]);
+    }
+
+    public function checkout()
+    {
+        $products = Product::all(); // Fetch all products if needed
+        $user = Auth::user();
+        $cartItems = CartItem::with('product')->where('user_id', Auth::id())->get();
+    
+        // Calculate total price
+        $totalPrice = $cartItems->sum(function ($item) {
+            $price = intval(str_replace(['Php', ','], '', $item->product->price));
+            return $item->quantity * $price;
+        });
+
+        return view('checkout', [
+            'user' => $user,
+            'allkeyphone' => $products,
+            'totalPrice' => $totalPrice,
         ]);
     }
 

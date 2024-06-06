@@ -6,6 +6,9 @@
     @if (session('removesuccess'))
     <x-successAlert successTitle="Item Removed!" :successInfo="session('removesuccess')"/>
     @endif
+    @if (session('loginsuccess'))
+    <x-successAlert successTitle="Success!" :successInfo="session('loginsuccess')"/>
+    @endif
     <section class="relative bg-cover bg-center" style="background-image: url('images/phones-bg.jpeg');">
         <div class="bg-custom-darkBlue bg-opacity-75 text-white py-52 flex flex-wrap items-center justify-center p-12 relative z-20">
             <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">

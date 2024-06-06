@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\UserDetail;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
@@ -25,8 +26,7 @@ class UserController extends Controller {
     
         $users = User::create($validated);
 
-        auth()->login($users);
-        return Redirect::to('/login');
+        return Redirect::to('/login')->with('signupsuccess','Signup Successful!');
     }
 
     public function authenticate(Request $request) {
@@ -39,9 +39,15 @@ class UserController extends Controller {
         if(!$emailExists){
             return redirect('/login')->withErrors(['error' => 'Email does not exist']);
         }
+
+        $remember = $request->has('remember');
     
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('/homepage')->with('success','Login Successful!');
+            if($remember){
+                $request->session()->regenerate();
+                $request->session()->put('last_user_email', $request->input('email'));
+            }
+            return redirect()->intended('/homepage')->with('loginsuccess','Login Successful!');
         } else {
             return back()->withErrors(['password' => 'Wrong password. Please try again.'])->withInput($request->only('email'));
         }
@@ -57,4 +63,53 @@ class UserController extends Controller {
         // Redirect to the login page
         return redirect('/login')->with('logoutsuccess', 'You have been logged out.');
     }
+
+    public function update(Request $request)
+    {
+        $user = Auth::user();
+        // Validate the request data
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users,email,' . $user->id,
+            'contact_number' => 'nullable|string|max:15',
+            'address' => 'nullable|string|max:255',
+            'current_password' => 'nullable|string',
+            'password' => 'nullable|string|min:6|confirmed',
+        ]);
+
+        if (!empty($validatedData['current_password'])) {
+            if (Hash::check($validatedData['current_password'], $user->password)) {
+                // Update user data
+                /** @var \App\Models\User $user **/
+                $user->update([
+                    'name' => $validatedData['name'],
+                    'email' => $validatedData['email'],
+                ]);
+                /** @var \App\Models\User $user **/
+                $user->save();
+                UserDetail::updateOrCreate(
+                    ['user_id' => $user->id],
+                    [
+                        'mobile_number' => $validatedData['contact_number'],
+                        'address' => $validatedData['address'],
+                    ]
+                );
+                if(!empty($validatedData['password'])) {
+                    $user->password = Hash::make($validatedData['password']);
+                    /** @var \App\Models\User $user **/
+                    $user->save();
+                }
+                if ($user->details) {
+                    $user->details->save();
+                }
+            } else {
+                return back()->withErrors(['current_password' => 'Current password is incorrect']);
+            }
+
+            return back()->with('success', 'Profile updated successfully');
+        }else {
+            return back()->withErrors(['current_password'=> 'Current password cannot be empty!']);
+        }
+    }
+
 }

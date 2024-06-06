@@ -17,6 +17,9 @@
     @if (session('logoutsuccess'))
         <x-successAlert successTitle="Logout Success!" :successInfo="session('logoutsuccess')"/>
     @endif
+    @if (session('signupsuccess'))
+        <x-successAlert successTitle="Success!" :successInfo="session('signupsuccess')"/>
+    @endif
     <section class="bg-white p-14 rounded-2xl shadow-lg mx-auto max-w-4xl text-custom-darkBlue flex text-lg">
         <div class="w-2/5 flex items-center justify-center border-r-2 border-custom-lightGray pr-5">
             <img src="{{ asset('images/loginpic.png') }}" class="rounded-lg">
@@ -43,27 +46,9 @@
                         </button>
                     </div>
                 </div>
-                <div class="mb-4">
-                    <input type="checkbox" id="remember" class="mr-1">
-                    <label for="remember" class="text-sky-950">Remember me</label>
-                </div>
                 <div>
                     <button type="submit" name="submit" class="bg-custom-darkBlue text-white font-bold px-6 py-2 rounded-xl mt-4 hover:bg-custom-gold hover:text-custom-darkBlue">Login</button>
                 </div>
-                @if ($errors->has('email'))
-                    <div class="text-red-500">
-                        <ul>
-                            <li>{{ $errors->first('email') }}</li>
-                        </ul>
-                    </div>
-                @endif
-                @if ($errors->has('password'))
-                    <div class="text-red-500">
-                        <ul>
-                            <li>{{ $errors->first('password') }}</li>
-                        </ul>
-                    </div>
-                @endif
             </form>
             <h3 class="text-l mt-6">Doesn't have an account yet? <a href="/signup" class="text-custom-darkBlue font-bold hover:underline">Sign up here</a>. </h3>
         </div>

@@ -23,7 +23,7 @@
             :allkeyphone="$allkeyphone"
         />
         
-        @if(!Request::is('aboutus') && !Request::is('delivery-and-shipping') && !Request::is('homepage') && !Request::is('/'))
+        @if(!Request::is('aboutus') && !Request::is('delivery-and-shipping') && !Request::is('homepage') && !Request::is('/') && !Request::is('checkout'))
             <section class="relative bg-cover bg-center" style="background-image: url('{{ asset('images/phones-bg.jpeg') }}');">
                 <div class="bg-custom-darkBlue bg-opacity-75 text-white py-32 flex flex-wrap items-center justify-center p-10 relative z-20">
                     <div class="container mx-auto text-center md:w-1/2 lg:w-2/3">
