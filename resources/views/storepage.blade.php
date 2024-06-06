@@ -67,7 +67,7 @@
             @foreach($keyphone as $product)
                 <div id="{{ Str::slug($product['name'], '-') }}" class="bg-white p-6 rounded-lg shadow-md product relative flex flex-col" phone-brand="{{ $product['brand'] }}">
                     <a href="{{ url('/product/' . Str::slug(str_replace(' ', '', strtolower($product['name'])), '-')) }}">
-                        <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}" class="w-full mb-4">
+                        <img src="{{ asset($product['image']) }}" alt="{{ $product['name'] }}" class="w-full mb-4">
                     </a>
                     <h3 class="text-xl font-semibold mb-2">{{ $product['name'] }}</h3>
                     <p class="text-yellow-400 font-semibold text-lg">{{ $product['rating'] }}</p>

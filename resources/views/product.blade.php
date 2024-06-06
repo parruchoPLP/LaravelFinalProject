@@ -41,7 +41,9 @@
             </select>
             <input type="number" id="custom-quantity" class="mb-4" style="display: none;" placeholder="Enter quantity" min="1">
         </div>
-        <a href="/login" class="bg-custom-darkBlue text-white text-center py-2 px-6 rounded-lg hover:bg-custom-blueGray">Add to Cart</a>
+        <div class="w-1/5">
+            <a href="/login" class="block bg-custom-darkBlue text-white text-center py-2 px-6 rounded-lg hover:bg-custom-blueGray">Add to Cart</a>
+        </div>
         @endauth
     </div>
     <div class="description p-20">

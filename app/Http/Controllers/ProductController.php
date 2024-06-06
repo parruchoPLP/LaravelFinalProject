@@ -107,6 +107,7 @@ class ProductController extends Controller
 
     public function storesearch(Request $request, $id)
     {
+        $allkeyphone = Product::all();
         if ($id === 'all') {
             $products = Product::paginate(9);
         } else {
@@ -115,6 +116,7 @@ class ProductController extends Controller
 
         return view('storepage', [
             'keyphone' => $products,
+            'allkeyphone' => $allkeyphone,
         ]);
     }
 
