@@ -43,7 +43,7 @@ class ProductController extends Controller
 
     public function aboutus()
     {
-        $products = Product::all(); // Fetch all products if needed
+        $products = Product::all();
 
         return view('aboutus', [
             'allkeyphone' => $products,
@@ -52,7 +52,7 @@ class ProductController extends Controller
 
     public function payment()
     {
-        $products = Product::all(); // Fetch all products if needed
+        $products = Product::all();
 
         return view('payment', [
             'allkeyphone' => $products,
@@ -61,7 +61,7 @@ class ProductController extends Controller
 
     public function checkout()
     {
-        $products = Product::all(); // Fetch all products if needed
+        $products = Product::all();
         $user = Auth::user();
         $cartItems = CartItem::with('product')->where('user_id', Auth::id())->get();
     
@@ -80,7 +80,7 @@ class ProductController extends Controller
 
     public function profile()
     {
-        $products = Product::all(); // Fetch all products if needed
+        $products = Product::all();
 
         return view('profile', [
             'allkeyphone' => $products,
@@ -89,7 +89,7 @@ class ProductController extends Controller
 
     public function deliveryandshipping()
     {
-        $products = Product::all(); // Fetch all products if needed
+        $products = Product::all();
 
         return view('delivery-and-shipping', [
             'allkeyphone' => $products,
@@ -98,7 +98,7 @@ class ProductController extends Controller
 
     public function login()
     {
-        $products = Product::all(); // Fetch all products if needed
+        $products = Product::all();
 
         return view('loginandsignup', [
             'allkeyphone' => $products,
@@ -107,7 +107,7 @@ class ProductController extends Controller
 
     public function signup()
     {
-        $products = Product::all(); // Fetch all products if needed
+        $products = Product::all();
 
         return view('loginandsignup', [
             'allkeyphone' => $products,
