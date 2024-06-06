@@ -35,3 +35,5 @@ Route::get('/signup', [ProductController::class, 'signup'])->name('signup');
 Route::get('/profile', [ProductController::class, 'profile'])->name('profile');
 
 Route::post('/store', [UserController::class,'store'])->name('');
+Route::post('/authenticate', [UserController::class,'authenticate'])->name('');
+Route::post('/logout', [UserController::class,'logout'])->name('');

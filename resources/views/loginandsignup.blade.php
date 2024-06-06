@@ -11,6 +11,12 @@
 @section('content')
 <div class="bg-custom-darkBlue bg-opacity-50 flex justify-center items-center min-h-screen"> 
     @if(Request::is('login'))
+    @if ($errors->any())
+        <x-errorAlert :errors="$errors"/>
+    @endif
+    @if (session('logoutsuccess'))
+        <x-successAlert successTitle="Logout Success!" :successInfo="session('logoutsuccess')"/>
+    @endif
     <section class="bg-white p-14 rounded-2xl shadow-lg mx-auto max-w-4xl text-custom-darkBlue flex text-lg">
         <div class="w-2/5 flex items-center justify-center border-r-2 border-custom-lightGray pr-5">
             <img src="{{ asset('images/loginpic.png') }}" class="rounded-lg">
@@ -65,6 +71,9 @@
     @endif
 
     @if(Request::is('signup'))
+    @if ($errors->any())
+        <x-errorAlert :errors="$errors"/>
+    @endif
     <section class="bg-white p-14 rounded-2xl shadow-md mx-auto max-w-4xl text-custom-darkBlue flex text-lg">
         <div class="w-2/5 flex items-center justify-center border-r-2 border-custom-lightGray p-5"> 
             <img src="{{ asset('images/signuppic.png') }}" class="rounded-lg">
@@ -83,9 +92,6 @@
                         </div>
                     </div>
                 </div>
-                @error('name')
-                    <p class="text-red-500 text-sm">{{ $message }}</p>
-                @enderror
                 <div class="mb-4 relative">
                     <label for="email" class="block text-sky-950 font-bold mb-2">Email Address</label>
                     <div class="flex items-center relative">
@@ -95,9 +101,6 @@
                         </div>
                     </div>
                 </div>
-                @error('email')
-                    <p class="text-red-500 text-sm">{{ $message }}</p>
-                @enderror
                 <div class="mb-4 relative">
                     <label for="password" class="block text-sky-950 font-bold mb-2">Password</label>
                     <div class="flex items-center relative">
@@ -116,9 +119,6 @@
                         </button>
                     </div>
                 </div>
-                @error('password')
-                    <p class="text-red-500 text-sm">{{ $message }}</p>
-                @enderror
                 <div>
                     <button type="submit" name="submit" class="bg-custom-darkBlue text-white font-bold px-6 py-2 rounded-xl mt-4 hover:bg-custom-lightGray hover:text-custom-darkBlue">Register</button>
                 </div>

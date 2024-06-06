@@ -39,7 +39,7 @@ $cartItems = [
                 </svg>
                 </a>
             </li>
-            <li><a href="/login" class="flex items-center">
+            <li><a href="{{ Auth::check() ? '/' : '/login' }}" class="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 20 20" version="1.1" class="text-white fill-current">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="Dribbble-Light-Preview" transform="translate(-380.000000, -2159.000000)" fill="#ffffff">
@@ -51,6 +51,12 @@ $cartItems = [
                 </svg>
                 </a>
             </li>
+            @auth
+                <form method="POST" action="/logout" class="flex items-center ml-4">
+                    @csrf
+                    <button type="submit" class="text-white hover:border-b hover:border-custom-gold">Sign Out</button>
+                </form>
+            @endauth
         </ul>
     </div>
     <div id="searchContainer" class="relative w-1/2 mx-auto bg-custom-darkBlue pt-4 pb-2 px-4 hidden">

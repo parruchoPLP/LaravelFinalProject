@@ -6,6 +6,7 @@ use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller {
 
@@ -23,7 +24,7 @@ class UserController extends Controller {
         $validated['password'] = Hash::make($validated['password']);
     
         $users = User::create($validated);
-    
+
         auth()->login($users);
         return Redirect::to('/login');
     }
@@ -34,15 +35,26 @@ class UserController extends Controller {
             'password' => 'required'
         ]);
         $emailExists = User::where('email', $credentials['email'])->exists();
+
+        if(!$emailExists){
+            return redirect('/login')->with('error','Email does not exist');
+        }
     
         if (Auth::attempt($credentials)) {
-            return redirect('/register');
+            return redirect()->intended('/homepage')->with('success','Login Successful!');
         } else {
-            if (!$emailExists) {
-                return back()->withErrors(['email' => 'No account registered with this email.'])->withInput($request->only('email'));
-            } else {
-                return back()->withErrors(['password' => 'Wrong password. Please try again.'])->withInput($request->only('email'));
-            }
+            return back()->withErrors(['password' => 'Wrong password. Please try again.'])->withInput($request->only('email'));
         }
     }  
+    public function logout()
+    {
+        // Log out the user
+        Auth::logout();
+
+        // Destroy the session
+        Session::flush();
+
+        // Redirect to the login page
+        return redirect('/login')->with('logoutsuccess', 'You have been logged out.');
+    }
 }
