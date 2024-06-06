@@ -7,7 +7,7 @@
 @section('content')
 <div class="card-holder bg-white mt-5 rounded-lg" style="margin: 100px;">
     <div class="text-right p-10">
-        <img src="{{ $keyphone['image'] }}" alt="15" class="w-100 h-auto mx-auto float-left" style="max-width: 100%; height: auto;">
+        <img src="{{ asset($keyphone['image']) }}" alt="15" class="w-100 h-auto mx-auto float-left" style="max-width: 100%; height: auto;">
     </div>
     <div class="product-details flex flex-col p-20">
         <h2 class="text-4xl font-bold mb-4 text-custom-darkBlue">{{ $keyphone['name'] }}</h2>

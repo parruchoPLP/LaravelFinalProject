@@ -37,7 +37,7 @@ class UserController extends Controller {
         $emailExists = User::where('email', $credentials['email'])->exists();
 
         if(!$emailExists){
-            return redirect('/login')->with('error','Email does not exist');
+            return redirect('/login')->withErrors(['error' => 'Email does not exist']);
         }
     
         if (Auth::attempt($credentials)) {

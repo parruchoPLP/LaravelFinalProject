@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +38,10 @@ Route::get('/profile', [ProductController::class, 'profile'])->name('profile');
 Route::post('/store', [UserController::class,'store'])->name('');
 Route::post('/authenticate', [UserController::class,'authenticate'])->name('');
 Route::post('/logout', [UserController::class,'logout'])->name('');
+
+Route::middleware(['auth'])->group(function () {
+    Route::post('/cart/add', [CartController::class, 'addToCart'])->name('cart.addToCart');
+    Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
+    Route::get('/cart/items', [CartController::class, 'getCart'])->name('cart.getCart');
+    Route::post('/cart/remove', [CartController::class, 'removeFromCart'])->name('cart.removeFromCart');
+});

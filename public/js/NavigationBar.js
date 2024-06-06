@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchButton = document.getElementById('searchButton');
     const phoneDropdown = document.getElementById('phoneDropdown');
     const phoneItems = document.querySelectorAll('.phoneItem');
+    const checkoutButton = document.getElementById("cartButton");
     const supportDropdown = document.getElementById('supportDropdown');
     const supportDropdownContent = document.getElementById('supportDropdownContent');
 
@@ -81,19 +82,34 @@ document.addEventListener('DOMContentLoaded', function() {
         supportDropdownContent.classList.toggle('hidden');
     });
 
-    const cartDropdown = document.getElementById("cartDropdown");
-    const checkoutButton = document.getElementById("cartButton");
-
-    // Function to toggle the cart dropdown
-    function toggleCartDropdown() {
-        cartDropdown.classList.toggle("hidden");
-    }
-
     // Event listener for the checkout button
     checkoutButton.addEventListener("click", function(event) {
         if (checkoutButton.getAttribute("href") === "#") {
             event.preventDefault(); // Prevent the default link behavior if href is "#"
-            toggleCartDropdown();
+        }
+    });
+
+    const drawers = document.querySelectorAll('[data-drawer-target]');
+    drawers.forEach(drawer => {
+        const targetId = drawer.getAttribute('data-drawer-target');
+        const target = document.getElementById(targetId);
+        if (!target) return;
+
+        const showEvent = drawer.getAttribute('data-drawer-show');
+        if (showEvent) {
+            drawer.addEventListener(showEvent, () => {
+                target.classList.add('translate-x-0');
+            });
+        }
+
+        const hideEvent = drawer.getAttribute('data-drawer-hide');
+        if (hideEvent) {
+            const hideButton = target.querySelector(`[data-drawer-hide="${hideEvent}"]`);
+            if (hideButton) {
+                hideButton.addEventListener(hideEvent, () => {
+                    target.classList.remove('translate-x-0');
+                });
+            }
         }
     });
 });

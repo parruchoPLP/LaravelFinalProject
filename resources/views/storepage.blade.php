@@ -73,7 +73,15 @@
                     <p class="text-yellow-400 font-semibold text-lg">{{ $product['rating'] }}</p>
                     <p class="text-lg font-bold mb-4 pt-1 py-10">{{ $product['price'] }}</p>
                     <div class="flex-grow"></div>
-                    <a href="#" class="block bg-custom-darkBlue text-white text-center py-2 rounded-lg hover:bg-custom-blueGray absolute bottom-0 left-0 right-0 mb-6 mx-6">Add to Cart</a>
+                    <a id="add-to-cart-button" data-product-id="{{ $product->id }}" href="{{ Auth::check() ? '#' : '/login' }}" class="block bg-custom-darkBlue text-white text-center py-2 rounded-lg hover:bg-custom-blueGray absolute bottom-0 left-0 right-0 mb-6 mx-6">Add to Cart</a>
+                    @auth
+                    <form action="{{ route('cart.addToCart') }}" method="POST">
+                        @csrf
+                        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                        <input type="hidden" name="quantity" value="1">
+                        <button type="submit" class="block bg-custom-darkBlue text-white text-center py-2 rounded-lg hover:bg-custom-blueGray absolute bottom-0 left-0 right-0 mb-6 mx-6">Add to Cart</button>
+                    </form>
+                    @endauth
                 </div>
             @endforeach
         </div>
@@ -85,6 +93,12 @@
     </div>
     </div>
     </section>
+    @if (session('removesuccess'))
+        <x-successAlert successTitle="Item Removed!" :successInfo="session('removesuccess')"/>
+    @endif
+    @if (session('addtocartsuccess'))
+        <x-successAlert successTitle="Item Added!" :successInfo="session('addtocartsuccess')"/>
+    @endif
 @endsection
 
 @push('scripts')
