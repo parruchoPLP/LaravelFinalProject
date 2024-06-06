@@ -16,11 +16,20 @@
                 </a>
             </li>
             <li>
-                <a href="{{ Auth::check() ? '#' : '/login' }}" class="flex items-center" id="cartButton" {{ Auth::check() ? 'data-drawer-target=drawer-cart data-drawer-show=drawer-cart aria-controls=drawer-cart' : '' }}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                </a>
+                <a href="{{ Auth::check() ? '#' : '/login' }}" class="flex items-center relative" id="cartButton" {{ Auth::check() ? 'data-drawer-target=drawer-cart data-drawer-show=drawer-cart aria-controls=drawer-cart' : '' }}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                            
+                    @if(Auth::check())
+                        @php
+                            $cartItemCount = $cartItems->count();
+                            $badgeContent = ($cartItemCount > 99) ? '99+' : $cartItemCount;
+                        @endphp
+                
+                        <div class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-4 -end-2 dark:border-gray-900">{{ $badgeContent }}</div>
+                    @endif
+                </a>                
             </li>
             <li><a href="{{ Auth::check() ? '/profile' : '/login' }}" class="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 20 20" version="1.1" class="text-white fill-current">
